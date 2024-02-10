@@ -146,17 +146,24 @@ Annotation platform was developed through the use of the following technologies:
 ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react)
 
 Research was conducted using the following technologies:
-
+    
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
-OpenAI CLIP Model:  https://github.com/openai/CLIP
-OpenAI GLIDE Model: https://github.com/openai/glide-text2im
-Salesforce BLIP-2 Model: https://github.com/salesforce/LAVIS/tree/main/projects/blip2
-StabilityAI SDXL Model: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
+OpenAI CLIP Model
+https://github.com/openai/CLIP
+
+OpenAI GLIDE Model
+https://github.com/openai/glide-text2im
+
+Salesforce BLIP-2 Model
+https://github.com/salesforce/LAVIS/tree/main/projects/blip2
+
+StabilityAI SDXL Model
+https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 We thank all researchers for their implication and expertise and annotators for their incredible work amounting to our dataset.
