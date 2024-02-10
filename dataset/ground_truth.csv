@@ -1,4 +1,4 @@
-id,image_id,best_caption,mrr_score,p10_score,generative_score
+id,image_id,best_caption,rr_score,p10_score,generative_score
 319365,363951,Black and white of windsurfers on a lake.,1.0,0.1,1.25
 592015,568311,A black and white picture of several buses driving down a street.,0.1875,0.15000000000000002,1.6666666666666663
 297524,78896,"A bed made up with linens, is outside on a street corner.",0.6666666666666666,0.1,0.5833333333333334
