@@ -38,8 +38,9 @@ If you are interested to conduct your own research on the dataset (any of the re
 
 ## Dataset Description <a name="dataset-description"></a>
 Our dataset consists of two major parts:
-    1. ground_truth.csv (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the score for the generative setting )
-    2. image folder ( contains the SDXL/GLIDE generated images alongside the original MS COCO image).
+
+        1. ground_truth.csv (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the score for the generative setting )
+        2. image folder ( contains the SDXL/GLIDE generated images alongside the original MS COCO image).
     
 The image folder has the following structure:
 
@@ -57,7 +58,9 @@ The image folder has the following structure:
             {IMG_ID_N}\
 
 The suffies _4, _5 denote generation by SDXL.
+
 THe suffix _6 denote the MS-COCO dataset.
+
 The suffixes _7,_8 denote generation by GLIDE.
 
 ## Project structure <a name="project-structure"></a>
