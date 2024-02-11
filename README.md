@@ -33,7 +33,9 @@ We add instructions and full code in order to allow other researchers to easily 
 We provide ground truth data for both generative and retrieval formats in order to facilitate integrations within your own code.
 
 ## Note <a name="note"></a>
-If you are interested to conduct your own research on the dataset (any of the retrieval/generative setting) without understanding our code or models, then you can simply access the dataset inside \dataset\ground_truth.csv, and you can download the generated images and the groundtruth image at https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ.
+If you are interested to conduct your own research on the dataset (any of the retrieval/generative setting) without understanding our code or models, then you can simply access the dataset inside \dataset\ground_truth.csv, and you can download the generated images and the groundtruth image at 
+
+https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ.
 
 
 ## Dataset Description <a name="dataset-description"></a>
