@@ -1,6 +1,5 @@
 # PQPP <a name="pqpp"></a>
-This repository hosts the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction".
-
+This repository hosts the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction". We present our aggregation of over 1.5M prompt / query annotations obtained from over 270 annotators.
 
 
 ## Table of contents <a name = "table-of-contents"></a>
