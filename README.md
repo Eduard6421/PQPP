@@ -22,6 +22,7 @@ This repository hosts the implementation and dataset for the scientific paper "P
   - [⛏️ Developed with ](#️developed-with)
   - [Citation ](#citation-)
   - [🎉 Acknowledgements ](#acknowledgement)
+  - [License](#license)
 
 
 
@@ -174,7 +175,11 @@ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 We thank all researchers for their implication and expertise and annotators for their incredible work amounting to our dataset.
-Thank you once again!
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+## License <a name = "license"></a>
+The MS COCO annotations are released under a Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse.
+THe MS COCO images are subject to Flickr Terms of Use https://www.flickr.com/creativecommons/
+
+We release our annotations and generated images maintaining the Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse
+[CC BY 4.0]([https://choosealicense.com/licenses/mit/](https://creativecommons.org/licenses/by/4.0/deed))
