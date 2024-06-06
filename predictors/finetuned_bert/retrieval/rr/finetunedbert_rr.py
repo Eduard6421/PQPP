@@ -47,45 +47,49 @@ from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import plotly.graph_objs as go
 
-with open('avg_scores_mrr_new.pickle', 'rb') as file:
+with open("../../../dataset/avg_scores_mrr_new.pickle", "rb") as file:
     avg_scores_mrr = pickle.load(file)
 
-file_path = 'best_captions_df.pickle'
-with open(file_path, 'rb') as file:
+file_path = "best_captions_df.pickle"
+with open(file_path, "rb") as file:
     best_captions_df = pd.read_pickle(file)
 
 best_captions_df = best_captions_df.head(10000)
 avg_scores_mrr_list = list(avg_scores_mrr.values())
 
 
-best_captions_df['score'] = avg_scores_mrr_list
+best_captions_df["score"] = avg_scores_mrr_list
 
 total_size = len(best_captions_df)
 train_size = int(total_size * 0.6)
 eval_size = int(total_size * 0.2)
 train_data = best_captions_df.iloc[:train_size]
-eval_data = best_captions_df.iloc[train_size:train_size + eval_size]
-test_data = best_captions_df.iloc[train_size + eval_size:]
+eval_data = best_captions_df.iloc[train_size : train_size + eval_size]
+test_data = best_captions_df.iloc[train_size + eval_size :]
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+tokenizer = BertTokenizer.from_pretrained("bert-base-cased")
 
 
 def tokenize_and_prepare(dataframe):
-    inputs = tokenizer(list(dataframe['best_caption']),padding=True, truncation=True, return_tensors="pt")
-    labels = torch.tensor(dataframe['score'].values).unsqueeze(-1).float()
-    return inputs['input_ids'], inputs['attention_mask'], labels
+    inputs = tokenizer(
+        list(dataframe["best_caption"]),
+        padding=True,
+        truncation=True,
+        return_tensors="pt",
+    )
+    labels = torch.tensor(dataframe["score"].values).unsqueeze(-1).float()
+    return inputs["input_ids"], inputs["attention_mask"], labels
 
 
-merged_df = pd.merge(train_data, test_data, on='best_caption', how='inner')
-matches = train_data['best_caption'].isin(eval_data['best_caption']).any()
+merged_df = pd.merge(train_data, test_data, on="best_caption", how="inner")
+matches = train_data["best_caption"].isin(eval_data["best_caption"]).any()
 
 train_inputs, train_masks, train_labels = tokenize_and_prepare(train_data)
 eval_inputs, eval_masks, eval_labels = tokenize_and_prepare(eval_data)
 test_inputs, test_masks, test_labels = tokenize_and_prepare(test_data)
 
-test_scores_list = test_data['score'].tolist()
+test_scores_list = test_data["score"].tolist()
 
 # +
 train_dataset = TensorDataset(train_inputs, train_masks, train_labels)
@@ -99,25 +103,30 @@ test_loader = DataLoader(test_dataset, batch_size=256)
 
 # -
 
+
 class BertRegressor(nn.Module):
     def __init__(self, n_outputs=1):
         super(BertRegressor, self).__init__()
-        self.bert = BertModel.from_pretrained('bert-base-cased')
+        self.bert = BertModel.from_pretrained("bert-base-cased")
         self.drop = nn.Dropout(p=0.3)
         self.linear1 = nn.Linear(self.bert.config.hidden_size, 512)
         self.linear2 = nn.Linear(512, n_outputs)
         self.relu = nn.ReLU()
 
     def forward(self, input_ids, attention_mask):
-        _, pooled_output = self.bert(input_ids=input_ids, attention_mask=attention_mask, return_dict=False)
+        _, pooled_output = self.bert(
+            input_ids=input_ids, attention_mask=attention_mask, return_dict=False
+        )
         x = self.linear1(pooled_output)
         x = self.drop(x)
         x = self.linear2(x)
         x = self.relu(x)
         return x
-    
+
     def get_embeddings(self, input_ids, attention_mask):
-        _, pooled_output = self.bert(input_ids=input_ids, attention_mask=attention_mask, return_dict=False)
+        _, pooled_output = self.bert(
+            input_ids=input_ids, attention_mask=attention_mask, return_dict=False
+        )
         x = self.linear1(pooled_output)
         return x
 
@@ -142,23 +151,22 @@ def evaluate_model(model, data_loader):
     return mse, r_squared
 
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using {device} device")
 
 param_grid = {
-    'learning_rate': [1e-5, 1e-4, 5e-5],
-    'num_epochs': [12],
-    'weight_decay': [0, 0.1, 0.01]
+    "learning_rate": [1e-5, 1e-4, 5e-5],
+    "num_epochs": [12],
+    "weight_decay": [0, 0.1, 0.01],
 }
 
 # +
-best_mse = float('inf')
+best_mse = float("inf")
 best_params = {}
 
-for lr in param_grid['learning_rate']:
-    for epochs in param_grid['num_epochs']:
-        for decay in param_grid['weight_decay']:
+for lr in param_grid["learning_rate"]:
+    for epochs in param_grid["num_epochs"]:
+        for decay in param_grid["weight_decay"]:
             # Initialize model
             model = BertRegressor()
             model.to(device)
@@ -179,29 +187,34 @@ for lr in param_grid['learning_rate']:
 
             # Evaluation
             mse_eval, r_squared_eval = evaluate_model(model, eval_loader)
-            print(f'LR: {lr}, Epochs: {epochs}, Weight Decay: {decay}, Eval MSE: {mse_eval}, Eval R-squared: {r_squared_eval}')
-
+            print(
+                f"LR: {lr}, Epochs: {epochs}, Weight Decay: {decay}, Eval MSE: {mse_eval}, Eval R-squared: {r_squared_eval}"
+            )
 
             # Update best model if current model is better
             if mse_eval < best_mse:
                 best_mse = mse_eval
-                best_params = {'learning_rate': lr, 'num_epochs': epochs, 'weight_decay': decay}
+                best_params = {
+                    "learning_rate": lr,
+                    "num_epochs": epochs,
+                    "weight_decay": decay,
+                }
                 # Save the best model
-                torch.save(model.state_dict(), 'best_model.pth')
+                torch.save(model.state_dict(), "best_model.pth")
 
 # Print best parameters
-print(f'Best Parameters: {best_params}')
+print(f"Best Parameters: {best_params}")
 
 # -
 
 model = BertRegressor()
-model.load_state_dict(torch.load('best_model.pth'))
+model.load_state_dict(torch.load("best_model.pth"))
 model.to(device)
-print('loaded')
+print("loaded")
 
 mse_test, r_squared_test = evaluate_model(model, test_loader)
-print(f'Test MSE: {mse_test}')
-print(f'Test R-squared: {r_squared_test}')
+print(f"Test MSE: {mse_test}")
+print(f"Test R-squared: {r_squared_test}")
 
 
 # +
@@ -218,15 +231,15 @@ with torch.no_grad():
 predictions_scores = [float(pred) for pred in all_predictions]
 
 
-predictions_df = pd.DataFrame(predictions_scores, columns=['predicted_score'])
-predictions_csv_path = 'predicted_score_avg_scores_p10.csv'
+predictions_df = pd.DataFrame(predictions_scores, columns=["predicted_score"])
+predictions_csv_path = "predicted_score_avg_scores_p10.csv"
 predictions_df.to_csv(predictions_csv_path, index=False)
 
 
 def calculate_correlations(list1, list2):
     # Check if the lists are of the same length
     if len(list1) != len(list2):
-         return "The lists are not of the same length"
+        return "The lists are not of the same length"
 
     # Calculate Pearson correlation
     pearson_corr, pvaluep = scipy.stats.pearsonr(list1, list2)
@@ -237,8 +250,9 @@ def calculate_correlations(list1, list2):
     return pearson_corr, pvaluep, kendall_corr, pvalue
 
 
-
-pearson_corr, pvaluep, kendall_corr, pvalue = calculate_correlations(test_scores_list, predictions_scores)
+pearson_corr, pvaluep, kendall_corr, pvalue = calculate_correlations(
+    test_scores_list, predictions_scores
+)
 pearson_corr, pvaluep, kendall_corr, pvalue
 
 # +
@@ -281,7 +295,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     # Here you can write embeddings to a file or return them.
 #     # For example, to save to a numpy file:
 #     np.save(f"{set_name}_set_embeddings.npy", embeddings)
-    
+
 #     return embeddings
 
 
@@ -308,7 +322,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #             if silhouette_avg > best_score:
 #                 best_score = silhouette_avg
 #                 best_n_clusters = n_clusters
-    
+
 #     # Plotting the silhouette scores
 #     plt.figure(figsize=(10, 6))
 #     plt.plot(list(scores.keys()), list(scores.values()), marker='o', linestyle='-')
@@ -316,7 +330,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     plt.ylabel('Silhouette score')
 #     plt.title(f'Silhouette Scores for {cluster_method.__name__} Clustering')
 #     plt.show()
-    
+
 #     return best_n_clusters, scores
 
 # # DBSCAN doesn't require the number of clusters to be specified, so we search for the best parameters differently
@@ -344,8 +358,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 
 # # Find best number of clusters for KMeans and Agglomerative Clustering
 # best_kmeans, _ = best_clusters_silhouette_and_plot(embeddings, KMeans, range_n_clusters=range(2, 25))
-
-
 
 
 # +
@@ -385,10 +397,9 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # color_test = 'red'
 
 
-
 # def create_trace(data, scores, name, color):
-    
-    
+
+
 #     color_strings = []
 #     for idx,score in enumerate(scores):
 #         r,g,b = (255*score, 255*(1-score),0)
@@ -404,14 +415,14 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #             r = int(255 * (1 - (score - 0.5) * 2))  # Adjust factor for range [0.5, 1]
 #             g = 165 + int((255 - 165) * ((score - 0.5) * 2))  # Adjust green from 165 to 255
 #             b = 0
-    
+
 #         color_string = f"rgba({r},{g},{b},1)"
 #         color_strings.append(color_string)
-    
+
 #     return go.Scattergl(
-#         x=data[:, 0], 
-#         y=data[:, 1], 
-#         mode='markers', 
+#         x=data[:, 0],
+#         y=data[:, 1],
+#         mode='markers',
 #         marker=dict(
 #             color=color_strings,
 #             size=10,
@@ -466,7 +477,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # +
 
 
-
 # from sklearn.preprocessing import MinMaxScaler
 # new_min = 0.15
 # new_max = 1.0
@@ -518,16 +528,16 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #             orange_to_red_factor = (score - 0.5) * 2  # Adjusted to [0, 1] for this subrange
 #             r = 255
 #             g = 165 * (1 - orange_to_red_factor)  # Decrease green to 0
-#             b = 0    
+#             b = 0
 #         specific_string = f"rgba({r},{g},{b},1)"
 #         color_strings.append(specific_string)
-    
-    
+
+
 #     return go.Scatter3d(
-#         x=data[:, 0], 
-#         y=data[:, 1], 
+#         x=data[:, 0],
+#         y=data[:, 1],
 #         z=data[:, 2],  # Add the z dimension
-#         mode='markers', 
+#         mode='markers',
 #         marker=dict(
 #             color=color_strings,
 #             size=5,
@@ -632,8 +642,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # )
 
 
-
-
 # fig.show()
 # pio.write_image(fig, 'boxplit_finetuned_bert_p10.pdf')
 
@@ -670,7 +678,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     width=1600,
 #     font = dict(size=25)
 # )
-
 
 
 # fig.show()

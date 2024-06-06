@@ -24,7 +24,7 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-gt_all_mrr_scores = "../../../../retrieval_models/avg_scores_mrr_new.pickle"
+gt_all_mrr_scores = "../../../dataset/avg_scores_mrr_new.pickle"
 with open(gt_all_mrr_scores, "rb") as f:
     gt_all_mrr_scores = pickle.load(f)
 parsed_scores = []
@@ -38,12 +38,8 @@ test_array_scores = parsed_scores[8000:10000]
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 
-clip_predictions_path = (
-    "../../../../retrieval_models/clip/clip_retrieval_results.pickle"
-)
-blip2_predictions_path = (
-    "../../../../retrieval_models/blip2/blip2_retrieval_results.pickle"
-)
+clip_predictions_path = "../../../dataset/clip/clip_retrieval_results.pickle"
+blip2_predictions_path = "../../../dataset/blip2_retrieval_results.pickle"
 
 
 with open(clip_predictions_path, "rb") as f:

@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch.nn.functional as F
 
 
-gt_all_mrr_scores = "../../../../retrieval_models/avg_scores_mrr_new.pickle"
+gt_all_mrr_scores = "../../../dataset/avg_scores_mrr_new.pickle"
 with open(gt_all_mrr_scores, "rb") as f:
     gt_all_mrr_scores = pickle.load(f)
 parsed_scores = []
@@ -43,16 +43,16 @@ class CNNRegressor(nn.Module):
         self.conv1 = nn.Conv2d(
             in_channels=2, out_channels=64, kernel_size=3, stride=1, padding=1
         )
-        self.conv2 = nn.Conv2d(64, 128, 3, padding=1)
-        self.conv3 = nn.Conv2d(128, 256, 3, padding=1)
-        self.conv4 = nn.Conv2d(256, 512, 3, padding=1)
+        self.conv2 = nn.Conv2d(32, 64, 3, padding=1)
+        self.conv3 = nn.Conv2d(64, 128, 3, padding=1)
+        self.conv4 = nn.Conv2d(128, 256, 3, padding=1)
 
         # Pooling layer
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
 
         # Fully connected layers
         self.fc1 = nn.Linear(
-            512 * 128 * 128, 1024
+            256 * 128 * 128, 1024
         )  # Adjust the input size to match the output of the last conv layer
         self.fc2 = nn.Linear(1024, 1)  # Output layer for regression (1 output value)
 
@@ -65,7 +65,7 @@ class CNNRegressor(nn.Module):
 
         # Flatten the output for the fully connected layer
         x = x.view(
-            -1, 512 * 128 * 128
+            -1, 256 * 128 * 128
         )  # Adjust the size to match the output of the last conv layer
 
         # Fully connected layers with ReLU activation for the first
@@ -94,9 +94,9 @@ best_val_loss = float("inf")
 best_hyperparams = {}
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
-validation_loader = DataLoader(validation_dataset, batch_size=128, shuffle=False)
-test_loader = DataLoader(test_dataset, batch_size=128, shuffle=False)
+train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
+validation_loader = DataLoader(validation_dataset, batch_size=64, shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 
 print("starting training")
 for lr in hyperparameters["learning_rate"]:

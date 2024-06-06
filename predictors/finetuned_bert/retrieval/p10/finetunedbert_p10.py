@@ -39,7 +39,9 @@ import torch.nn as nn
 import scipy.stats
 
 
-gt_for_generative_all_models_df =pd.read_csv('gt_for_generative_all_models_new.csv')
+gt_for_generative_all_models_df = pd.read_csv(
+    "../../../../gt_for_generative_all_models_new.csv"
+)
 
 import numpy as np
 from sklearn.manifold import TSNE
@@ -47,32 +49,38 @@ from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import plotly.graph_objs as go
 
-gt_for_generative_all_models_df['score'].min()
-gt_for_generative_all_models_df['normalized_score'] = (gt_for_generative_all_models_df['score'] + 1)/3
+gt_for_generative_all_models_df["score"].min()
+gt_for_generative_all_models_df["normalized_score"] = (
+    gt_for_generative_all_models_df["score"] + 1
+) / 3
 
 total_size = len(gt_for_generative_all_models_df)
 train_size = int(total_size * 0.6)
 eval_size = int(total_size * 0.2)
 train_data = gt_for_generative_all_models_df.iloc[:train_size]
-eval_data = gt_for_generative_all_models_df.iloc[train_size:train_size + eval_size]
-test_data = gt_for_generative_all_models_df.iloc[train_size + eval_size:]
+eval_data = gt_for_generative_all_models_df.iloc[train_size : train_size + eval_size]
+test_data = gt_for_generative_all_models_df.iloc[train_size + eval_size :]
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+tokenizer = BertTokenizer.from_pretrained("bert-base-cased")
 
 
 def tokenize_and_prepare(dataframe):
-    inputs = tokenizer(list(dataframe['best_caption']), padding=True, truncation=True, return_tensors="pt")
-    labels = torch.tensor(dataframe['normalized_score'].values).unsqueeze(-1).float()
-    return inputs['input_ids'], inputs['attention_mask'], labels
+    inputs = tokenizer(
+        list(dataframe["best_caption"]),
+        padding=True,
+        truncation=True,
+        return_tensors="pt",
+    )
+    labels = torch.tensor(dataframe["normalized_score"].values).unsqueeze(-1).float()
+    return inputs["input_ids"], inputs["attention_mask"], labels
 
 
 train_inputs, train_masks, train_labels = tokenize_and_prepare(train_data)
 eval_inputs, eval_masks, eval_labels = tokenize_and_prepare(eval_data)
 test_inputs, test_masks, test_labels = tokenize_and_prepare(test_data)
 
-test_scores_list = test_data['score'].tolist()
+test_scores_list = test_data["score"].tolist()
 
 
 # +
@@ -87,35 +95,39 @@ test_loader = DataLoader(test_dataset, batch_size=256)
 
 # -
 
+
 class BertRegressor(nn.Module):
     def __init__(self, n_outputs=1):
         super(BertRegressor, self).__init__()
-        self.bert = BertModel.from_pretrained('bert-base-cased')
+        self.bert = BertModel.from_pretrained("bert-base-cased")
         self.drop = nn.Dropout(p=0.3)
         self.linear1 = nn.Linear(self.bert.config.hidden_size, 512)
         self.linear2 = nn.Linear(512, n_outputs)
         self.relu = nn.ReLU()
 
     def forward(self, input_ids, attention_mask):
-        _, pooled_output = self.bert(input_ids=input_ids, attention_mask=attention_mask, return_dict=False)
+        _, pooled_output = self.bert(
+            input_ids=input_ids, attention_mask=attention_mask, return_dict=False
+        )
         x = self.linear1(pooled_output)
         x = self.relu(x)
         x = self.drop(x)
         x = self.linear2(x)
         x = self.relu(x)
         return x
-    
+
     def get_embeddings(self, input_ids, attention_mask):
-        _, pooled_output = self.bert(input_ids=input_ids, attention_mask=attention_mask, return_dict=False)
+        _, pooled_output = self.bert(
+            input_ids=input_ids, attention_mask=attention_mask, return_dict=False
+        )
         x = self.linear1(pooled_output)
         return x
 
 
-
 param_grid = {
-    'learning_rate': [1e-5, 1e-4, 5e-5],
-    'num_epochs': [15],
-    'weight_decay': [0, 0.1, 0.01]
+    "learning_rate": [1e-5, 1e-4, 5e-5],
+    "num_epochs": [15],
+    "weight_decay": [0, 0.1, 0.01],
 }
 
 
@@ -139,17 +151,16 @@ def evaluate_model(model, data_loader):
     return mse, r_squared
 
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using {device} device")
 
 # +
-best_mse = float('inf')
+best_mse = float("inf")
 best_params = {}
 
-for lr in param_grid['learning_rate']:
-    for epochs in param_grid['num_epochs']:
-        for decay in param_grid['weight_decay']:
+for lr in param_grid["learning_rate"]:
+    for epochs in param_grid["num_epochs"]:
+        for decay in param_grid["weight_decay"]:
             # Initialize model
             model = BertRegressor()
             model.to(device)
@@ -170,28 +181,33 @@ for lr in param_grid['learning_rate']:
 
             # Evaluation
             mse_eval, r_squared_eval = evaluate_model(model, eval_loader)
-            print(f'LR: {lr}, Epochs: {epochs}, Weight Decay: {decay}, Eval MSE: {mse_eval}, Eval R-squared: {r_squared_eval}')
-
+            print(
+                f"LR: {lr}, Epochs: {epochs}, Weight Decay: {decay}, Eval MSE: {mse_eval}, Eval R-squared: {r_squared_eval}"
+            )
 
             # Update best model if current model is better
             if mse_eval < best_mse:
                 best_mse = mse_eval
-                best_params = {'learning_rate': lr, 'num_epochs': epochs, 'weight_decay': decay}
+                best_params = {
+                    "learning_rate": lr,
+                    "num_epochs": epochs,
+                    "weight_decay": decay,
+                }
                 # Save the best model
-                torch.save(model.state_dict(), 'best_model.pth')
+                torch.save(model.state_dict(), "best_model.pth")
 
 # Print best parameters
-print(f'Best Parameters: {best_params}')
+print(f"Best Parameters: {best_params}")
 
 # -
 
 model = BertRegressor()
-model.load_state_dict(torch.load('best_model.pth'))
+model.load_state_dict(torch.load("best_model.pth"))
 model.to(device)
 
 mse_test, r_squared_test = evaluate_model(model, test_loader)
-print(f'Test MSE: {mse_test}')
-print(f'Test R-squared: {r_squared_test}')
+print(f"Test MSE: {mse_test}")
+print(f"Test R-squared: {r_squared_test}")
 
 
 # +
@@ -208,8 +224,8 @@ with torch.no_grad():
 predictions_scores = [float(pred) for pred in all_predictions]
 
 
-predictions_df = pd.DataFrame(predictions_scores, columns=['predicted_score'])
-predictions_csv_path = 'predicted_scores_gt_for_generative_all_model.csv'
+predictions_df = pd.DataFrame(predictions_scores, columns=["predicted_score"])
+predictions_csv_path = "predicted_scores_gt_for_generative_all_model.csv"
 predictions_df.to_csv(predictions_csv_path, index=False)
 
 
@@ -217,7 +233,7 @@ predictions_df.to_csv(predictions_csv_path, index=False)
 def calculate_correlations(list1, list2):
     # Check if the lists are of the same length
     if len(list1) != len(list2):
-         return "The lists are not of the same length"
+        return "The lists are not of the same length"
 
     # Calculate Pearson correlation
     pearson_corr, pvaluep = scipy.stats.pearsonr(list1, list2)
@@ -227,7 +243,10 @@ def calculate_correlations(list1, list2):
 
     return pearson_corr, pvaluep, kendall_corr, pvalue
 
-pearson_corr, pvaluep, kendall_corr, pvalue = calculate_correlations(test_scores_list, predictions_scores)
+
+pearson_corr, pvaluep, kendall_corr, pvalue = calculate_correlations(
+    test_scores_list, predictions_scores
+)
 pearson_corr, pvaluep, kendall_corr, pvalue
 
 # -
@@ -276,7 +295,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     # Here you can write embeddings to a file or return them.
 #     # For example, to save to a numpy file:
 #     np.save(f"{set_name}_set_embeddings.npy", embeddings)
-    
+
 #     return embeddings
 
 
@@ -303,7 +322,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #             if silhouette_avg > best_score:
 #                 best_score = silhouette_avg
 #                 best_n_clusters = n_clusters
-    
+
 #     # Plotting the silhouette scores
 #     plt.figure(figsize=(10, 6))
 #     plt.plot(list(scores.keys()), list(scores.values()), marker='o', linestyle='-')
@@ -311,7 +330,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     plt.ylabel('Silhouette score')
 #     plt.title(f'Silhouette Scores for {cluster_method.__name__} Clustering')
 #     plt.show()
-    
+
 #     return best_n_clusters, scores
 
 # # DBSCAN doesn't require the number of clusters to be specified, so we search for the best parameters differently
@@ -347,7 +366,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # print("tsne - 3d")
 
 # +
-# #Write embeddings 
+# #Write embeddings
 # np.save('2d_embeddings.npy',embeddings_2d)
 # np.save('3d_embeddings.npy',embeddings_3d)
 # embeddings_2d = np.load('2d_embeddings.npy')
@@ -401,9 +420,8 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # color_test = 'red'
 
 
-
 # def create_trace(data, scores, name, color):
-    
+
 #     color_strings = []
 #     for idx,score in enumerate(scores):
 #         r,g,b = (255*score, 255*(1-score),0)
@@ -419,14 +437,14 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #             r = int(255 * (1 - (score - 0.5) * 2))  # Adjust factor for range [0.5, 1]
 #             g = 165 + int((255 - 165) * ((score - 0.5) * 2))  # Adjust green from 165 to 255
 #             b = 0
-    
+
 #         color_string = f"rgba({r},{g},{b},1)"
 #         color_strings.append(color_string)
-    
+
 #     return go.Scattergl(
-#         x=data[:, 0], 
-#         y=data[:, 1], 
-#         mode='markers', 
+#         x=data[:, 0],
+#         y=data[:, 1],
+#         mode='markers',
 #         marker=dict(
 #             color=color_strings,
 #             size=10,
@@ -456,7 +474,7 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     ),
 #     yaxis=dict(
 #         tickfont=dict(size=35)  # Adjust the y-axis tick font size here
-#     )       
+#     )
 # )
 
 # # Show the figure
@@ -554,8 +572,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 # )
 
 
-
-
 # fig.show()
 # pio.write_image(fig, 'density_contour_finetuned_bert_gt.pdf')
 
@@ -592,7 +608,6 @@ pearson_corr, pvaluep, kendall_corr, pvalue
 #     width=1600,
 #     font = dict(size=25)
 # )
-
 
 
 # fig.show()

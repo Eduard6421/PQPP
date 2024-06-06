@@ -7,10 +7,10 @@ from scipy.stats import pearsonr, kendalltau
 with open("test_predictions.pickle", "rb") as f:
     predictions = pickle.load(f)
 
-with open("../../../../retrieval_models/avg_scores_mrr_new.pickle", "rb") as f:
+with open("../../../retrieval_models/avg_scores_mrr_new.pickle", "rb") as f:
     mrr_scores = pickle.load(f)
 
-with open("../../../../retrieval_models/avg_scores_p10_new.pickle", "rb") as f:
+with open("../../../retrieval_models/avg_scores_p10_new.pickle", "rb") as f:
     p10_scores = pickle.load(f)
 
 

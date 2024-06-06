@@ -19,15 +19,17 @@ import scipy.stats
 from nltk.corpus import stopwords
 from nltk.corpus import wordnet as wn
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
-nltk.download('wordnet')
+nltk.download("punkt")
+nltk.download("averaged_perceptron_tagger")
+nltk.download("stopwords")
+nltk.download("wordnet")
+
 
 def load_dataset(file_path):
-    with open(file_path, 'rb') as file:
+    with open(file_path, "rb") as file:
         data = pickle.load(file)
     return data
+
 
 def split_data(data):
 
@@ -37,15 +39,16 @@ def split_data(data):
 
     # Split the data
     train_data = data[:train_size]
-    validation_data = data[train_size:train_size + validation_size]
-    test_data = data[train_size + validation_size:]
+    validation_data = data[train_size : train_size + validation_size]
+    test_data = data[train_size + validation_size :]
 
     return test_data
+
 
 def calculate_correlations(list1, list2):
     # Check if the lists are of the same length
     if len(list1) != len(list2):
-         return "The lists are not of the same length"
+        return "The lists are not of the same length"
 
     # Calculate Pearson correlation
     pearson_corr, pvaluep = scipy.stats.pearsonr(list1, list2)
@@ -55,15 +58,26 @@ def calculate_correlations(list1, list2):
 
     return pearson_corr, pvaluep, kendall_corr, pvalue
 
+
 def calculate_all_correlations(list_to_corelate, *lists):
     results = {}
-    list_names = ['count_synsets','count_words', 'avg_word_length', 'average_proper_nouns', 'average_number_of_acronyms', 'average_numerals_occurrence', 'average_conjunctions_per_word', 'average_prepositions_per_word']
+    list_names = [
+        "count_synsets",
+        "count_words",
+        "avg_word_length",
+        "average_proper_nouns",
+        "average_number_of_acronyms",
+        "average_numerals_occurrence",
+        "average_conjunctions_per_word",
+        "average_prepositions_per_word",
+    ]
 
     for list_name, data_list in zip(list_names, lists):
         correlation_result = calculate_correlations(list_to_corelate, data_list)
         results[list_name] = correlation_result
 
     return results
+
 
 def count_synsets(sentence):
     # Tokenize the sentence into words
@@ -87,11 +101,13 @@ def count_synsets(sentence):
 
     return total_synsets
 
+
 def count_words(sentence):
     words = word_tokenize(sentence)
     words = [word for word in words if word not in string.punctuation]
     number_of_words = len(words)
     return number_of_words
+
 
 def avg_word_length(sentence):
     words = word_tokenize(sentence)
@@ -102,6 +118,7 @@ def avg_word_length(sentence):
         sum(len(word) for word in words) / num_words if num_words > 0 else 0
     )
     return avg_word_length
+
 
 def average_proper_nouns(text):
     words = word_tokenize(text)
@@ -114,6 +131,7 @@ def average_proper_nouns(text):
     # Calculate the average
     average = proper_noun_count / len(words) if words else 0
     return average
+
 
 def average_number_of_acronyms(text):
     """
@@ -136,13 +154,14 @@ def average_number_of_acronyms(text):
     average_acronyms = total_acronyms / len(words) if words else 0
     return average_acronyms
 
+
 def average_numerals_occurrence(text):
     # Tokenize the text into sentences
     words = word_tokenize(text)
     words = [word for word in words if word not in string.punctuation]
 
     # Regular expression for numeral values (including dates and quantities)
-    numeral_pattern = r'\b\d{4}-\d{2}-\d{2}\b|\b\d{2}/\d{2}/\d{4}\b|\b\d+\b'
+    numeral_pattern = r"\b\d{4}-\d{2}-\d{2}\b|\b\d{2}/\d{2}/\d{4}\b|\b\d+\b"
 
     # Count the occurrence of numeral values in each sentence
     numeral_counts = [len(re.findall(numeral_pattern, word)) for word in words]
@@ -152,13 +171,14 @@ def average_numerals_occurrence(text):
 
     return average_occurrence
 
+
 def average_conjunctions_per_word(text):
     # Tokenize the text into words, removing punctuation
     words = word_tokenize(text)
     words = [word.lower() for word in words if word not in string.punctuation]
 
     # Prepare a set of English conjunctions
-    english_conjunctions = set(['for', 'and', 'nor', 'but', 'or', 'yet', 'so'])
+    english_conjunctions = set(["for", "and", "nor", "but", "or", "yet", "so"])
 
     # Count the total number of conjunctions
     conjunction_count = sum(word in english_conjunctions for word in words)
@@ -168,19 +188,73 @@ def average_conjunctions_per_word(text):
 
     return average_occurrence
 
+
 def average_prepositions_per_word(text):
     words = word_tokenize(text)
     words = [word.lower() for word in words if word not in string.punctuation]
 
     # Prepare a set of English prepositions
-    english_prepositions = set([
-        'aboard', 'about', 'above', 'across', 'after', 'against', 'along', 'amid', 'among',
-        'around', 'as', 'at', 'before', 'behind', 'below', 'beneath', 'beside', 'between',
-        'beyond', 'by', 'concerning', 'considering', 'despite', 'down', 'during', 'except',
-        'for', 'from', 'in', 'inside', 'into', 'like', 'near', 'of', 'off', 'on', 'onto', 'out',
-        'outside', 'over', 'past', 'regarding', 'round', 'since', 'through', 'to', 'toward',
-        'towards', 'under', 'underneath', 'unlike', 'until', 'up', 'upon', 'with', 'within', 'without'
-    ])
+    english_prepositions = set(
+        [
+            "aboard",
+            "about",
+            "above",
+            "across",
+            "after",
+            "against",
+            "along",
+            "amid",
+            "among",
+            "around",
+            "as",
+            "at",
+            "before",
+            "behind",
+            "below",
+            "beneath",
+            "beside",
+            "between",
+            "beyond",
+            "by",
+            "concerning",
+            "considering",
+            "despite",
+            "down",
+            "during",
+            "except",
+            "for",
+            "from",
+            "in",
+            "inside",
+            "into",
+            "like",
+            "near",
+            "of",
+            "off",
+            "on",
+            "onto",
+            "out",
+            "outside",
+            "over",
+            "past",
+            "regarding",
+            "round",
+            "since",
+            "through",
+            "to",
+            "toward",
+            "towards",
+            "under",
+            "underneath",
+            "unlike",
+            "until",
+            "up",
+            "upon",
+            "with",
+            "within",
+            "without",
+        ]
+    )
 
     preposition_count = sum(word in english_prepositions for word in words)
 
@@ -188,45 +262,85 @@ def average_prepositions_per_word(text):
 
     return average_occurrence
 
-avg_scores_p10_df = load_dataset("avg_scores_p10_new.pickle")
-avg_scores_mrr_df = load_dataset("avg_scores_mrr_new.pickle")
+
+avg_scores_p10_df = load_dataset("../../../dataset/avg_scores_p10_new.pickle")
+avg_scores_mrr_df = load_dataset("../../../dataset/avg_scores_mrr_new.pickle")
 avg_scores_p10_test = split_data(list(avg_scores_p10_df.values()))
 avg_scores_mrr_test = split_data(list(avg_scores_mrr_df.values()))
 
-best_captions_df = load_dataset("best_captions_df.pickle")
+best_captions_df = load_dataset("../../../dataset/best_captions_df.pickle")
 best_captions_df = best_captions_df.head(10000)
 best_captions_test = split_data(best_captions_df)
 
-gt_for_generative_all_df = pd.read_csv("gt_for_generative_all_models_new.csv")
-gt_for_generative_all_list = gt_for_generative_all_df['score'].to_list()
+gt_for_generative_all_df = pd.read_csv(
+    "../../../dataset/gt_for_generative_all_models_new.csv"
+)
+gt_for_generative_all_list = gt_for_generative_all_df["score"].to_list()
 gt_for_generative_all_test = split_data(gt_for_generative_all_list)
 
-best_captions_test['count_synsets'] = best_captions_test['best_caption'].apply(count_synsets)
-best_captions_test['count_words'] = best_captions_test['best_caption'].apply(count_words)
-best_captions_test['avg_word_length'] = best_captions_test['best_caption'].apply(avg_word_length)
+best_captions_test["count_synsets"] = best_captions_test["best_caption"].apply(
+    count_synsets
+)
+best_captions_test["count_words"] = best_captions_test["best_caption"].apply(
+    count_words
+)
+best_captions_test["avg_word_length"] = best_captions_test["best_caption"].apply(
+    avg_word_length
+)
 
 
-best_captions_test['average_proper_nouns'] = best_captions_test['best_caption'].apply(average_proper_nouns)
-best_captions_test['average_number_acronyms'] = best_captions_test['best_caption'].apply(average_number_of_acronyms)
-best_captions_test['average_numerals_occurrence'] = best_captions_test['best_caption'].apply(average_numerals_occurrence)
-best_captions_test['average_conjunctions_per_word'] = best_captions_test['best_caption'].apply(average_conjunctions_per_word)
-best_captions_test['average_prepositions_per_word'] = best_captions_test['best_caption'].apply(average_prepositions_per_word)
+best_captions_test["average_proper_nouns"] = best_captions_test["best_caption"].apply(
+    average_proper_nouns
+)
+best_captions_test["average_number_acronyms"] = best_captions_test[
+    "best_caption"
+].apply(average_number_of_acronyms)
+best_captions_test["average_numerals_occurrence"] = best_captions_test[
+    "best_caption"
+].apply(average_numerals_occurrence)
+best_captions_test["average_conjunctions_per_word"] = best_captions_test[
+    "best_caption"
+].apply(average_conjunctions_per_word)
+best_captions_test["average_prepositions_per_word"] = best_captions_test[
+    "best_caption"
+].apply(average_prepositions_per_word)
 
-correlation_results_p10 = calculate_all_correlations(avg_scores_p10_test, best_captions_test['count_synsets'], best_captions_test['count_words'], best_captions_test['avg_word_length'], best_captions_test['average_proper_nouns'].to_list() , best_captions_test['average_number_acronyms'].to_list(),
-                                                 best_captions_test['average_numerals_occurrence'].to_list(), best_captions_test['average_conjunctions_per_word'].to_list(),
-                                                 best_captions_test['average_prepositions_per_word'].to_list())
+correlation_results_p10 = calculate_all_correlations(
+    avg_scores_p10_test,
+    best_captions_test["count_synsets"],
+    best_captions_test["count_words"],
+    best_captions_test["avg_word_length"],
+    best_captions_test["average_proper_nouns"].to_list(),
+    best_captions_test["average_number_acronyms"].to_list(),
+    best_captions_test["average_numerals_occurrence"].to_list(),
+    best_captions_test["average_conjunctions_per_word"].to_list(),
+    best_captions_test["average_prepositions_per_word"].to_list(),
+)
 
 print(correlation_results_p10)
 
-correlation_results_mrr = calculate_all_correlations(avg_scores_mrr_test, best_captions_test['average_proper_nouns'].to_list() , best_captions_test['average_number_acronyms'].to_list(),
-                                                 best_captions_test['average_numerals_occurrence'].to_list(), best_captions_test['average_conjunctions_per_word'].to_list(),
-                                                 best_captions_test['average_prepositions_per_word'].to_list())
+correlation_results_mrr = calculate_all_correlations(
+    avg_scores_mrr_test,
+    best_captions_test["average_proper_nouns"].to_list(),
+    best_captions_test["average_number_acronyms"].to_list(),
+    best_captions_test["average_numerals_occurrence"].to_list(),
+    best_captions_test["average_conjunctions_per_word"].to_list(),
+    best_captions_test["average_prepositions_per_word"].to_list(),
+)
 
 print(correlation_results_mrr)
 
-correlation_results_gt = calculate_all_correlations(gt_for_generative_all_test, best_captions_test['count_synsets'], best_captions_test['count_words'], best_captions_test['avg_word_length'], best_captions_test['average_proper_nouns'].to_list() , best_captions_test['average_number_acronyms'].to_list(),
-                                                 best_captions_test['average_numerals_occurrence'].to_list(), best_captions_test['average_conjunctions_per_word'].to_list(),
-                                                 best_captions_test['average_prepositions_per_word'].to_list())
+correlation_results_gt = calculate_all_correlations(
+    gt_for_generative_all_test,
+    best_captions_test["count_synsets"],
+    best_captions_test["count_words"],
+    best_captions_test["avg_word_length"],
+    best_captions_test["average_proper_nouns"].to_list(),
+    best_captions_test["average_number_acronyms"].to_list(),
+    best_captions_test["average_numerals_occurrence"].to_list(),
+    best_captions_test["average_conjunctions_per_word"].to_list(),
+    best_captions_test["average_prepositions_per_word"].to_list(),
+)
 
 print(correlation_results_gt)
 

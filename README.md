@@ -75,7 +75,7 @@ The suffixes _7,_8 denote generation by GLIDE.
             \ avg_scores_mrr.pickle - Average RR for each query in the retrieval setting.
             \ avg_scores_p10.pickle - Average P@10 for each query in the retrieval setting.
             \ best_captions_df.pickle - File containing extra information about each query caption
-            \ ground_truth.csv - Centralized ground truth file. This is the file to use if you plan to train new models or study the results in a "clean" method.
+            \ dataset.csv - Centralized ground truth file. This is the file to use if you plan to train new models or study the results in a "clean" method.
             \ gt_for_generative_all_models.csv - Score for each query in the generative seetting as described in the paper.
             \ merged_retrieval_gt.pickle - File containing the ground truth image matches for the retrieval setting.
             \ train_examples_new.pickle - File containing annotation for automated retrieval model training

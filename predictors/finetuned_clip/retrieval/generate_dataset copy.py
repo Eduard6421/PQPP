@@ -34,7 +34,7 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-ground_truth_map = "../../../dataset/merged_retrieval_gt_new.pickle"
+ground_truth_map = "../../../../dataset/merged_retrieval_gt_new.pickle"
 ground_truth = pickle.load(open(ground_truth_map, "rb"))
 
 
@@ -55,10 +55,12 @@ def split_obj_to_dataset(obj):
     return train, validation, test
 
 
-clip_retrieved_items = "../../../dataset/clip_retrieval_results.pickle"
+clip_retrieved_items = "../../../../retrieval_models/clip/clip_retrieval_results.pickle"
 clip_retrieved = pickle.load(open(clip_retrieved_items, "rb"))
 
-blip2_retrieved_items = "../../../dataset/blip2_retrieval_results.pickle"
+blip2_retrieved_items = (
+    "../../../../retrieval_models/blip2/blip2_retrieval_results.pickle"
+)
 blip2_retrieved = pickle.load(open(blip2_retrieved_items, "rb"))
 
 

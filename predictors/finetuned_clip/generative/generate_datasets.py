@@ -23,7 +23,7 @@ model, preprocess = clip.load("ViT-B/32", device=device)
 
 
 # dataframe that contains the best caption for each item
-best_caption_path = "../../../../dataset/best_captions_df.pickle"
+best_caption_path = "../../../dataset/best_captions_df.pickle"
 best_captions_df = pd.read_pickle(best_caption_path).head(10000)
 
 
@@ -31,7 +31,7 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-individual_scores_path = "../../../../dataset/gt_for_generative_individual_new.csv"
+individual_scores_path = "../../../dataset/gt_for_generative_individual_new.csv"
 individual_scores = pd.read_csv(individual_scores_path)
 
 
