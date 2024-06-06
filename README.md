@@ -85,6 +85,7 @@ The suffixes _7,_8 denote generation by GLIDE.
         \predictors - folder containing performance predictors as described in the paper
             \ correlation_cnn - Contains the CNN-based approach inspired by Sun. et al
             \ finetuned_bert - Contains the finetuned bert model training script
+            \ lingvistic_features - Contains the lingvistic features model training script
             \ finetuned_clip - Contains the finetuned clip model trainig script described in our research
             \ neural_embeddings - Contains the implementation of Arabzadeh et al.
             \ query_drift - Contains script to implement query drift.
