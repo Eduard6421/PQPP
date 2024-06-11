@@ -1,0 +1,159 @@
+{
+    "@context": {
+        "@vocab": "http://schema.org/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "id": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "image_id": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        },
+        "best_caption": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@type": "http://www.w3.org/2001/XMLSchema#string"
+        },
+        "blip2_rr": {
+            "@id": "http://example.org/blip2_rr",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "clip_rr": {
+            "@id": "http://example.org/clip_rr",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "retrieval_avg_rr": {
+            "@id": "http://example.org/retrieval_avg_rr",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "blip2_pk": {
+            "@id": "http://example.org/blip2_pk",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "clip_pk": {
+            "@id": "http://example.org/clip_pk",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "retrieval_avg_pk": {
+            "@id": "http://example.org/retrieval_avg_pk",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "glide_score": {
+            "@id": "http://example.org/glide_score",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "sdxl_score": {
+            "@id": "http://example.org/sdxl_score",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "avg_generative_score": {
+            "@id": "http://example.org/avg_generative_score",
+            "@type": "http://www.w3.org/2001/XMLSchema#float"
+        },
+        "csvFile": "dcat:distribution",
+        "images": "dcat:distribution"
+    },
+    "@type": "Dataset",
+    "name": "PQPP Dataset",
+    "description": "A dataset containing images and captions with various retrieval and generative model scores.",
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "encodingFormat": "text/csv",
+            "contentUrl": "./dataset/train.csv",
+            "name": "Training Data"
+        },
+        {
+            "@type": "DataDownload",
+            "encodingFormat": "text/csv",
+            "contentUrl": "./dataset/validation.csv",
+            "name": "Validation Data"
+        },
+        {
+            "@type": "DataDownload",
+            "encodingFormat": "text/csv",
+            "contentUrl": "./dataset/test.csv",
+            "name": "Test Data"
+        },
+        {
+            "@type": "DataDownload",
+            "encodingFormat": "application/zip",
+            "contentUrl": "https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip&parent=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP&ga=1",
+            "name": "Images"
+        }
+    ],
+    "variableMeasured": [
+        {
+            "@type": "PropertyValue",
+            "name": "id",
+            "valueType": "http://www.w3.org/2001/XMLSchema#integer",
+            "description": "ID of the query in MS COCO"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "image_id",
+            "valueType": "http://www.w3.org/2001/XMLSchema#integer",
+            "description": "ID of original image"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "best_caption",
+            "valueType": "http://www.w3.org/2001/XMLSchema#string",
+            "description": "Text containing selected prompt"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "blip2_rr",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Reciprocal rank for query using blip2 retrieval method"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "clip_rr",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Reciprocal rank for query using clip retrieval method"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "retrieval_avg_rr",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Average of the reciprocal rank scores of both retrieval models"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "blip2_pk",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Precision @ 10 for the query using blip2 retrieval method"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "clip_pk",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Precision @ 10 for the query using clip retrieval method"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "retrieval_avg_pk",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Average of the precision @ 10 scores of both retrieval methods"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "glide_score",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Human annotated generative score for the glide model"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "sdxl_score",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Human annotated generative score for the sdxl model"
+        },
+        {
+            "@type": "PropertyValue",
+            "name": "avg_generative_score",
+            "valueType": "http://www.w3.org/2001/XMLSchema#float",
+            "description": "Average of the human annotated generative scores"
+        }
+    ]
+}
