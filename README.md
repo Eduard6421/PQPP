@@ -159,6 +159,29 @@ Dataset Research
 1. Clone the GitHub from the official repo.
 2. [Download the support files](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
 3. Unarchive the content inside the base repo folder.
+
+
+#### Loading data
+
+```
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv('dataset/test.csv')
+
+# Map the image paths for each row
+df['sdxl1'] = df['image_id'].apply(lambda x: f'images/{x}/image_4.png')
+df['sdxl2'] = df['image_id'].apply(lambda x: f'images/{x}/image_5.png')
+df['gt_image'] = df['image_id'].apply(lambda x: f'images/{x}/image_6.png')
+df['glide_1'] = df['image_id'].apply(lambda x: f'images/{x}/image_7.png')
+df['glide_2'] = df['image_id'].apply(lambda x: f'images/{x}/image_8.png')
+
+# Print the first row
+print(df.iloc[0])
+```
+
+
+
     
 ### Installing Pre-requisites <a name="prereqs"></a>
 In order to run our models you will need to install the requirements found in requirements.txt
