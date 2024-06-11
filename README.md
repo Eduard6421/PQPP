@@ -1,10 +1,9 @@
-# PQPP <a name="pqpp"></a>
+# PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction (Official Repository) <a name="pqpp"></a>
 This repository hosts the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction". We present our aggregation of over 1.5M prompt / query annotations obtained from over 270 annotators.
-
 
 ## Table of contents <a name = "table-of-contents"></a>
 - [PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction](#pqpp)
-  - [📝 Table of Contents ](#-table-of-contents)
+  - [Citation ](#citation-)
   - [About ](#about-)
   - [Note](#note)  
   - [Dataset Description](#dataset-description)
@@ -23,7 +22,17 @@ This repository hosts the implementation and dataset for the scientific paper "P
   - [🎉 Acknowledgements ](#acknowledgement)
   - [License](#license)
 
+## Citation <a name = "citation"></a>
 
+Please cite our work if you use any material released in this repository.
+```
+@article{Poesina-Arxiv-2024,
+      title="{PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction}", 
+      author={Eduard Poesina and Adriana Valentina Costache and Adrian-Gabriel Chifu and Josiane Mothe and Radu Tudor Ionescu},
+      year={2024},
+      journal={arXiv preprint arXiv:2406.04746},
+  }
+```
 
 ## About <a name = "about"></a>
 This repository hosts the annotated dataset and the implementations of the prediction models described in the original paper.
