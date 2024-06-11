@@ -19,10 +19,6 @@ df_annotations = pd.read_pickle(df_annotations_path)
 best_caption_path = "../../dataset/best_captions_df.pickle"
 best_captions_df = pd.read_pickle(best_caption_path)
 
-# A set of best_caption_id and image_id matches
-query_matches_path = "../../dataset/query_matches.pickle"
-query_matches = pd.read_pickle(query_matches_path)
-
 IMAGE_FOLDER = "../../dataset/train2017/train2017"
 EMBEDDINGS_FOLDER = "./clip_image_embeddings"
 

@@ -24,7 +24,7 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-gt_all_mrr_scores = "../../../dataset/avg_scores_mrr_new.pickle"
+gt_all_mrr_scores = "../../../dataset/retrieval_models_scores/avg_scores_rr.pickle"
 with open(gt_all_mrr_scores, "rb") as f:
     gt_all_mrr_scores = pickle.load(f)
 parsed_scores = []
@@ -38,7 +38,7 @@ test_array_scores = parsed_scores[8000:10000]
 model, preprocess = clip.load("ViT-B/32", device=device)
 
 
-clip_predictions_path = "../../../dataset/clip/clip_retrieval_results.pickle"
+clip_predictions_path = "../../../dataset/clip_retrieval_results.pickle"
 blip2_predictions_path = "../../../dataset/blip2_retrieval_results.pickle"
 
 
@@ -70,7 +70,7 @@ def prepare_image(image):
 
 
 def generate_corr_matrices(image_ids):
-    base_folder = "../../../../dataset/train2017/train2017/"
+    base_folder = "../../../dataset/train2017/train2017/"
 
     feature_arrays = []
     for image_id in image_ids:

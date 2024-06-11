@@ -33,15 +33,75 @@ We add instructions and full code in order to allow other researchers to easily 
 We provide ground truth data for both generative and retrieval formats in order to facilitate integrations within your own code.
 
 ## Note <a name="note"></a>
-If you are interested to conduct your own research on the dataset (any of the retrieval/generative setting) without understanding our code or models, then you can simply access the dataset inside \dataset\ground_truth.csv, and you can download the generated images and the groundtruth image at 
+If you are interested to conduct your own research on the dataset (or any of the retrieval/generative setting models) you you can download the generated images and original MS COCO used images at:
 
 https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ.
 
+# Dataset Card
+## PQPP
+This dataset is used to train,validate and test query performance prediction ( BLIP2 / CLIP ) and prompt performance prediction models (SDXL / GLIDE). The dataset aggregates ~1.5M annotation collected from more than 200 annotators as per our methodology described in the original paper.
 
-## Dataset Description <a name="dataset-description"></a>
+#### Dataset Link
+Dataset Links: 
+Official repo: https://github.com/Eduard6421/PQPP
+Additional Resources: https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/onedrive.aspx?ga=1
+
+
+#### Data Card Author(s)
+- **Poesina Eduard-Gabriel, University of Bucharest** (Author) (eduardgabriel.poe@gmail.com)
+- **Adriana-Valentina Costache, University of Bucharest** (Author) (adriana.costache@s.unibuc.ro)
+- **Adrian-Gabriel Chifu, Aix-Marseille Universite** (Author)
+- **Josiane Mothe, Aix-Marseille Universite** (Author)
+- **Radu TUdor Ionescu, University of Bucharest Namee** (Author)
+
+
+#### Industry Type(s)
+- Academic - Tech
+
+#### Contact Detail(s)
+- **Contact:** Eduard-Gabriel Poesina, eduardgabriel.poe@gmail.com
+
+
+## Dataset Overview
+#### Data Subject(s)
+- Non-Sensitive Data about people ( Contains Original Images from MS COCO)
+
+#### Dataset Snapshot
+Category | Data
+--- | ---
+Size of Dataset | 123456 MB
+Number of Instances | 10000
+Human Labels Collected | 1,489,836
+
+
+#### Content Description
+```
+id - number, id of the query in MS COCO
+image_id - number, id of original image of th e
+best_caption - string, text containing selected prompt
+blip2_rr - float, reciprocal rank for query using blip2 retrieval method
+clip_rr - float, reciprocal rank for query using clip retrieval method
+retrieval_avg_rr - float, average of the reciprocal rank scores of both retrieval models
+blip2_pk - float, precision @ 10 for the query using blip2 retrieval method
+clip_pk - float, precision @ 10 for the query using clip retrieval method
+retrieval_avg_pk - float, average of the precision @ 10 scores of both retrieval methods
+glide_score - human annotated generative score for the glide model 
+sdxl_score - human annotated generative score for the sdxl model
+avg_generative_score - average of the humman annotated generative scores
+```
+
+#### Typical Data Point
+```
+id,image_id,best_caption,blip2_rr,clip_rr,retrieval_avg_rr,blip2_pk,clip_pk,retrieval_avg_pk,glide_score,sdxl_score,avg_generative_score
+319365,363951,Black and white of windsurfers on a lake.,1.0,1.0,1.0,0.1,0.1,0.1,0.5,2.0,1.25
+```
+
+
+
+## Dataset Folder Description <a name="dataset-description"></a>
 Our dataset consists of two major parts:
 
-        1. ground_truth.csv (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the score for the generative setting )
+        1. train.csv/validation.csv/test.csv (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the scores for the generative setting )
         2. image folder ( contains the SDXL/GLIDE generated images alongside the original MS COCO image).
     
 The image folder has the following structure:
@@ -71,16 +131,29 @@ The suffixes _7,_8 denote generation by GLIDE.
 
     \PQPP
         \dataset - folder containing the annotated dataset
+            \generative_annotation_scores
+                \ gt_for_generative_all_models.csv - Score for each query in the generative seetting as described in the paper.
+                \ gt_for_generative_glide_new.csv - Score for each query of the glide method.
+                \ gt_for_generative_all_models.csv - Score for each query of SDXL method.
+            \retrieval_model_scores
+                \ avg_scores_rr.pickle - the average rr score per query of the two retrieval models.
+                \ avg_scores_p10.pickle - the average p@10 score per query  of the two retrieval models.
+                \ blip_2_rr_scores_map.pickle - the rr score per query of the BLIP2 model.
+                \ blip_2_pk_scores_map.pickle - the P@10 score per query of the BLIP2 model.
+                \ clip_rr_scores.pickle - the rr score per query for the CLIP model.
+                \ clip_pk_scores.pickle - the p@10 score per query for the CLIP model.
             \ all_users_ann_new.csv - Original generative setting annotations. Anonymized file
-            \ avg_scores_mrr.pickle - Average RR for each query in the retrieval setting.
-            \ avg_scores_p10.pickle - Average P@10 for each query in the retrieval setting.
             \ best_captions_df.pickle - File containing extra information about each query caption
-            \ dataset.csv - Centralized ground truth file. This is the file to use if you plan to train new models or study the results in a "clean" method.
-            \ gt_for_generative_all_models.csv - Score for each query in the generative seetting as described in the paper.
-            \ merged_retrieval_gt.pickle - File containing the ground truth image matches for the retrieval setting.
-            \ train_examples_new.pickle - File containing annotation for automated retrieval model training
-            \ val_examples_new.pickle - File containg validation split 
-            \ test_examples_new.pickle
+
+
+            === Files to be user for training new models of replicating the current CSV files include query caption, image ids, scores for the retrieval and generative settings === 
+
+
+            \ dataset.csv - Centralized ground truth file which contains all data.
+            \ train.csv - File containing training data split. (60% of data)
+            \ vaidation.csv - Centralized ground truth file for validation data. (20% of data)
+            \ test.csv - Centralized ground truth file for test data.  (20% of data)
+
         \pipelines - folder containing scripts to generate images for the generative setting
         \predictors - folder containing performance predictors as described in the paper
             \ correlation_cnn - Contains the CNN-based approach inspired by Sun. et al
@@ -131,7 +204,62 @@ Prediction models can be found at:
         \neural_embeddings
         \score-variation
 
+
+## Instructions
+
+Dataset Research 
+1. Clone the github from the official repo
+2. Download the support files if 
+
+
+Paper Reproduction
+
+Retrieval-Models Results Generation:
+1. Download the extra resource containing the ![processed retrieval groundtruth]()
+2. If you wish to reproduce the retrieval models go to the retrieval models folder and select the preferred model.
+3. Run ```python {model}_retrieval.py```. This will allow you to rerun the selected model retrieval process.
+4. Run ```python save_{model}_scores.py```. This will compute the scores of the retrieval model and save it to 
+
+
+
+#### Domain(s) of Application
+<br>Machine Learning</br>,<br> Computer Vision</br>, <br>Query Performance Prediction</br>, <br>Prompt Performance Prediction</br>, <br>Retrieval Models</br>, <br>Generative Models</br>
+
+
+## Provenance
+### Collection
+#### Method(s) Used
+- Crowdsourced - Volunteer
+
+
+
+
+
+### Dataset Version and Maintenance
+#### Maintenance Status
+**Actively Maintained** - No new versions will be made
+available, but this dataset will
+be actively maintained,
+including but not limited to
+updates to the data.
+
+
+#### Version Details
+**Current Version:** 1.0
+**Last Updated:** 05/2024
+**Release Date:** 05/2024
+
+
+
 ## Complete benchmark <a name="benchmark"></a>
+
+
+
+Predictors
+
+1. Go to the selected predictor  folder ( ex: predictors/correlation_cnn)
+2. Select the setting you wish to run ( retrieval / generative) and enter the appropiate folder.
+3. For trainable models you will find a script entitled gen
 
 ### Retrieval <a name="benchmark-ret"> </a>
 

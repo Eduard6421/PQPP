@@ -18,18 +18,20 @@ import os
 import pickle
 import numpy as np
 
+
 def load_dataset(file_path):
-    with open(file_path, 'rb') as file:
+    with open(file_path, "rb") as file:
         data = pickle.load(file)
     return data
 
-avg_scores_p10 = load_dataset('avg_scores_p10.pickle')
 
-avg_scores_mrr = load_dataset('avg_scores_mrr.pickle')
+avg_scores_p10 = load_dataset("avg_scores_p10.pickle")
+
+avg_scores_mrr = load_dataset("avg_scores_mrr.pickle")
 
 gt_generative_all = pd.read_csv("gt_for_generative_all_models_new.csv")
 
-gt_generative_all_list = gt_generative_all['score'].to_list()
+gt_generative_all_list = gt_generative_all["score"].to_list()
 
 # if(gt_generative_all_list == avg_scores_p10):
 #   print("da")
@@ -37,216 +39,207 @@ gt_generative_all_list = gt_generative_all['score'].to_list()
 os.listdir("./")
 
 file_names = [
- 'gt_all_models_alpha_1_beta_0.99.pkl',
- 'gt_all_models_alpha_1_beta_0.95.pkl',
- 'gt_all_models_alpha_1_beta_0.975_validation.pkl',
- 'gt_all_models_alpha_2_beta_0.975_validation.pkl',
- 'gt_all_models_alpha_2_beta_0.95.pkl',
- 'gt_all_models_alpha_2_beta_0.99.pkl']
+    "gt_all_models_alpha_1_beta_0.99.pkl",
+    "gt_all_models_alpha_1_beta_0.95.pkl",
+    "gt_all_models_alpha_1_beta_0.975_validation.pkl",
+    "gt_all_models_alpha_2_beta_0.975_validation.pkl",
+    "gt_all_models_alpha_2_beta_0.95.pkl",
+    "gt_all_models_alpha_2_beta_0.99.pkl",
+]
 
 
 keys = []
 
 file_0 = file_names[0]
-with open(file_0,'rb') as f:
-  data = pickle.load(f)
-  keys = data[0].keys()
+with open(file_0, "rb") as f:
+    data = pickle.load(f)
+    keys = data[0].keys()
 
-#for file_name in file_names:#
+# for file_name in file_names:#
 #  with open(file_name,'rb') as f:
 #    data = pickle.load(file_name)
 
+
 def compute_val_gts(gt_data):
-  arr = []
-  for i in range(6000,8000):
-    arr.append(gt_data[i])
-  return arr
+    arr = []
+    for i in range(6000, 8000):
+        arr.append(gt_data[i])
+    return arr
+
 
 def compute_test_gts(gt_data):
-  arr = []
-  for i in range(8000,10000):
-    arr.append(gt_data[i])
-  return arr
+    arr = []
+    for i in range(8000, 10000):
+        arr.append(gt_data[i])
+    return arr
+
 
 gt_val = compute_val_gts(avg_scores_p10)
 gt_test = compute_test_gts(avg_scores_p10)
 
-fct_dict = {
-    "pearson" : scipy.stats.pearsonr,
-    "kendall": scipy.stats.kendalltau
-}
+fct_dict = {"pearson": scipy.stats.pearsonr, "kendall": scipy.stats.kendalltau}
 
 mrr_val = compute_val_gts(avg_scores_mrr)
 mrr_test = compute_test_gts(avg_scores_mrr)
 
-fct_dict = {
-    "pearson" : scipy.stats.pearsonr,
-    "kendall": scipy.stats.kendalltau
-}
+fct_dict = {"pearson": scipy.stats.pearsonr, "kendall": scipy.stats.kendalltau}
 
 gt__all_val = compute_val_gts(gt_generative_all_list)
 gt__all_test = compute_test_gts(gt_generative_all_list)
 
-fct_dict = {
-    "pearson" : scipy.stats.pearsonr,
-    "kendall": scipy.stats.kendalltau
-}
+fct_dict = {"pearson": scipy.stats.pearsonr, "kendall": scipy.stats.kendalltau}
 
 for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_names:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_names:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
 
-        correlation, p_value = computing_fct(values, gt_val)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
+                correlation, p_value = computing_fct(values, gt_val)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
 
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
-
-for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_names:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
-
-        correlation, p_value = computing_fct(values, mrr_val)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
-
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )
 
 for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_names:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_names:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
 
-        correlation, p_value = computing_fct(values, gt__all_val)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
+                correlation, p_value = computing_fct(values, mrr_val)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
 
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )
 
-file_test = ['gt_all_models_alpha_2_beta_0.99_test.pkl']
+for key in keys:
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_names:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
+
+                correlation, p_value = computing_fct(values, gt__all_val)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
+
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on val: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )
+
+file_test = ["gt_all_models_alpha_2_beta_0.99_test.pkl"]
 keys = []
 
 file_0 = file_test[0]
-with open(file_0,'rb') as f:
-  data = pickle.load(f)
-  keys = data[0].keys()
+with open(file_0, "rb") as f:
+    data = pickle.load(f)
+    keys = data[0].keys()
 
 for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_test:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_test:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
 
-        correlation, p_value = computing_fct(values, gt_test)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
+                correlation, p_value = computing_fct(values, gt_test)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
 
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
-
-Max correlation for edge_count, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.011150995334024793 - 0.6182081996120192
-Max correlation for edge_count, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.025420821353772077 - 0.10878403514330381
-Max correlation for edge_weight_sum, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.010938827182786201 - 0.6249068227596968
-Max correlation for edge_weight_sum, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.027398657440141833 - 0.07780426396836736
-Max correlation for inverse_edge_frequency, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.05987262651427853 - 0.00739937805549604
-Max correlation for inverse_edge_frequency, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.034306910955695685 - 0.029221303612758327
-Max correlation for degree_centrality, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.018969859231749892 - 0.39649154196034425
-Max correlation for degree_centrality, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.010620907375734652 - 0.5319581540101448
-Max correlation for closeness_centrality, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.061805333886998395 - 0.005693430511164445
-Max correlation for closeness_centrality, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.031225508819710892 - 0.046975515771556876
-Max correlation for between_centrality, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.03293360365994929 - 0.14093607402217134
-Max correlation for between_centrality, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.02127020654341995 - 0.21237174684479654
-Max correlation for page_rank, with  pearson achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. pearson - 0.05353971566970153 - 0.016638982259070123
-Max correlation for page_rank, with  kendall achieved on gt_all_models_alpha_2_beta_0.99_test.pkl, on test: gt_all_models_alpha_2_beta_0.99_test.pkl. kendall - 0.026351991049831415 - 0.0901435900051812
-
-file_test = ['gt_all_models_alpha_2_beta_0.99_test.pkl']
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )
+file_test = ["gt_all_models_alpha_2_beta_0.99_test.pkl"]
 keys = []
 
 file_0 = file_test[0]
-with open(file_0,'rb') as f:
-  data = pickle.load(f)
-  keys = data[0].keys()
+with open(file_0, "rb") as f:
+    data = pickle.load(f)
+    keys = data[0].keys()
 
 for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_test:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_test:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
 
-        correlation, p_value = computing_fct(values, mrr_test)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
+                correlation, p_value = computing_fct(values, mrr_test)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
 
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )
 
-file_test = ['gt_all_models_alpha_2_beta_0.99_test.pkl']
+file_test = ["gt_all_models_alpha_2_beta_0.99_test.pkl"]
 keys = []
 
 file_0 = file_test[0]
-with open(file_0,'rb') as f:
-  data = pickle.load(f)
-  keys = data[0].keys()
+with open(file_0, "rb") as f:
+    data = pickle.load(f)
+    keys = data[0].keys()
 
 for key in keys:
-  for metric in fct_dict:
-    computing_fct = fct_dict[metric]
-    max_abs_corr = 0
-    max_corespondent_p_value = 1
-    max_file_name = None
-    for file_name in file_test:
-      with open(file_name,'rb') as f:
-        data = pickle.load(f)
-        values = [item[key] for item in data]
+    for metric in fct_dict:
+        computing_fct = fct_dict[metric]
+        max_abs_corr = 0
+        max_corespondent_p_value = 1
+        max_file_name = None
+        for file_name in file_test:
+            with open(file_name, "rb") as f:
+                data = pickle.load(f)
+                values = [item[key] for item in data]
 
-        correlation, p_value = computing_fct(values, gt__all_test)
-        if(correlation != np.NaN):
-          if(abs(correlation) > max_abs_corr):
-            max_abs_corr = abs(correlation)
-            max_corespondent_p_value = p_value
-            max_file_name = file_name
+                correlation, p_value = computing_fct(values, gt__all_test)
+                if correlation != np.NaN:
+                    if abs(correlation) > max_abs_corr:
+                        max_abs_corr = abs(correlation)
+                        max_corespondent_p_value = p_value
+                        max_file_name = file_name
 
-    print(f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}")
+        print(
+            f"Max correlation for {key}, with  {metric} achieved on {file_name}, on test: {max_file_name}. {metric} - {max_abs_corr} - {max_corespondent_p_value}"
+        )

@@ -31,7 +31,9 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-individual_scores_path = "../../../dataset/gt_for_generative_individual_new.csv"
+individual_scores_path = (
+    "../../../dataset/generative_models_scores/gt_for_generative_individual_new.csv"
+)
 individual_scores = pd.read_csv(individual_scores_path)
 
 
@@ -92,35 +94,3 @@ test_dataset = extract_pairs_of_scores(
 pickle.dump(train_dataset, open("./train_dataset.pickle", "wb"))
 pickle.dump(validation_dataset, open("./validation_dataset.pickle", "wb"))
 pickle.dump(test_dataset, open("./test_dataset.pickle", "wb"))
-
-"""
-
-train_array = [(train_df["image_id_y"][i], train_df["caption"][i]) for i in range(6000)]
-validation_array = [
-    (validation_df["image_id_y"][i], validation_df["caption"][i]) for i in range(2000)
-]
-test_array = [(test_df["image_id_y"][i], test_df["caption"][i]) for i in range(2000)]
-
-print(train_array[0])
-
-"""
-"""
-
-class CustomCLIPModel(torch.nn.Module):
-    def __init__(self, clip_model):
-        super(CustomCLIPModel, self).__init__()
-        self.clip_model = clip_model
-        # Assuming the embedding size of CLIP is 512. Adjust according to your CLIP model version.
-        self.regressor = torch.nn.Linear(1024, 1)
-
-    def forward(self, images, input_ids, attention_mask):
-        # Concatenate or combine the features in a meaningful way for your task
-        combined_features = (
-            text_features + image_features
-        )  # This is a simplification; consider more complex fusion strategies
-
-        # Pass through the regressor to get the score
-        score = self.regressor(combined_features)
-
-        return score
-"""

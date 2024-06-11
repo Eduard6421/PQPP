@@ -7,7 +7,7 @@ with open("test_predictions.pickle", "rb") as f:
     predictions = pickle.load(f)
 
 
-gt_all_models_path = "../../../../dataset/gt_for_generative_all_models_new.csv"
+gt_all_models_path = "../../../../dataset/generative_annotation_scores/gt_for_generative_all_models_new.csv"
 gt_all_models = pd.read_csv(gt_all_models_path)
 
 

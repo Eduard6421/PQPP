@@ -6,14 +6,10 @@ from scipy.stats import pearsonr, kendalltau
 with open("test_predictions_mrr.pickle", "rb") as f:
     predictions = pickle.load(f)
 """
-gt_all_models_path = "../../../../dataset/gt_for_generative_all_models.csv"
-gt_all_models = pd.read_csv(gt_all_models_path)
 
-
-scores = gt_all_models["score"].tolist()
 """
 
-with open("../../../../retrieval_models/avg_scores_mrr_new.pickle", "rb") as f:
+with open("../../../dataset/retrieval_models_scores/avg_scores_rr.pickle", "rb") as f:
     scores = pickle.load(f)
 
 

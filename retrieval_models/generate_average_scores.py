@@ -30,4 +30,6 @@ for key in blip2_mrr:
     avg_score[key] = (blip2_score + clip_score) / 2
 
 
-pickle.dump(avg_score, open("./avg_scores_mrr_new.pickle", "wb"))
+pickle.dump(
+    avg_score, open("../dataset/retrieval_model_scores/avg_scores_rr.pickle", "wb")
+)

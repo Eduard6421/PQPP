@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch.nn.functional as F
 
 
-gt_all_mrr_scores = "../../../dataset/avg_scores_mrr_new.pickle"
+gt_all_mrr_scores = "../../../dataset/retrieval_annotation_scores/avg_scores_rr.pickle"
 with open(gt_all_mrr_scores, "rb") as f:
     gt_all_mrr_scores = pickle.load(f)
 parsed_scores = []

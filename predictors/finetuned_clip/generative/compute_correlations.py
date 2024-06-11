@@ -24,7 +24,9 @@ individual_predictions = split_into_groups(predictions, 4)
 avg_predictions = compute_mean_for_each_group(individual_predictions)
 
 
-gt_all_models_path = "../../../../dataset/gt_for_generative_all_models_new.csv"
+gt_all_models_path = (
+    "../../../dataset/generative_models_scores/gt_for_generative_all_models_new.csv"
+)
 gt_all_models = pd.read_csv(gt_all_models_path)
 
 

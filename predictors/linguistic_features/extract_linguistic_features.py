@@ -263,8 +263,12 @@ def average_prepositions_per_word(text):
     return average_occurrence
 
 
-avg_scores_p10_df = load_dataset("../../../dataset/avg_scores_p10_new.pickle")
-avg_scores_mrr_df = load_dataset("../../../dataset/avg_scores_mrr_new.pickle")
+avg_scores_p10_df = load_dataset(
+    "../../../dataset/retrieval_models_scores/avg_scores_p10.pickle"
+)
+avg_scores_mrr_df = load_dataset(
+    "../../../dataset/retrieval_models_scores/avg_scores_rr.pickle"
+)
 avg_scores_p10_test = split_data(list(avg_scores_p10_df.values()))
 avg_scores_mrr_test = split_data(list(avg_scores_mrr_df.values()))
 
@@ -273,7 +277,7 @@ best_captions_df = best_captions_df.head(10000)
 best_captions_test = split_data(best_captions_df)
 
 gt_for_generative_all_df = pd.read_csv(
-    "../../../dataset/gt_for_generative_all_models_new.csv"
+    "../../../dataset/generative_models_scores/gt_for_generative_all_models_new.csv"
 )
 gt_for_generative_all_list = gt_for_generative_all_df["score"].to_list()
 gt_for_generative_all_test = split_data(gt_for_generative_all_list)

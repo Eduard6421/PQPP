@@ -6,8 +6,12 @@ blip2_noised_results_path = (
     "../../../retrieval_models/blip2/blip2_retrieval_results_noised.pickle"
 )
 
-mrr_scores_path = "../../../retrieval_models/avg_scores_mrr_new.pickle"
-p10_scores_path = "../../../retrieval_models/avg_scores_p10_new.pickle"
+mrr_scores_path = (
+    "../../../retrieval_models/retrieval_models_scores/avg_scores_rr.pickle"
+)
+p10_scores_path = (
+    "../../../retrieval_models/retrieval_models_scores/avg_scores_p10.pickle"
+)
 
 
 TOP_K = 100

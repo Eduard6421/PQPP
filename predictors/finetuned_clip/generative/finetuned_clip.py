@@ -88,8 +88,7 @@ hyperparameters = {
 best_val_loss = float("inf")
 best_hyperparams = {}
 
-"""
-num_epochs = 100
+num_epochs = 25
 for lr in hyperparameters["learning_rate"]:
     for decay in hyperparameters["weight_decay"]:
         # Create a model
@@ -137,7 +136,6 @@ for lr in hyperparameters["learning_rate"]:
                 )
                 torch.save(model.state_dict(), "./best_model.pt")
             print("Epoch: ", epoch, "Val loss: ", val_loss, "lr: ", lr, "wd: ", decay)
-"""
 # Evaluate the best model on the test set and save the regression output to test_predictions.pickle
 model = NeuralNetworkRegressor().to(device)
 model.load_state_dict(torch.load("./best_model.pt"))

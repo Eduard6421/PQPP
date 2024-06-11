@@ -2,8 +2,8 @@ import pickle
 import numpy as np
 from scipy.stats import pearsonr, kendalltau
 
-clip_scores = pickle.load(open("clip_retrieval_results.pickle", "rb"))
-blip2_scores = pickle.load(open("blip2_retrieval_results.pickle", "rb"))
+clip_scores = pickle.load(open("../../dataset/clip_retrieval_results.pickle", "rb"))
+blip2_scores = pickle.load(open("../../dataset/blip2_retrieval_results.pickle", "rb"))
 
 
 def average_score(clip_scores, blip2_scores):
@@ -33,10 +33,10 @@ blip2_vars = [np.var(item) for item in blip2_top_100]
 avg_vars = [np.var(item) for item in avg_top_100]
 
 avg_scores_mrr = pickle.load(
-    open("../../../retrieval_models/avg_scores_mrr_new.pickle", "rb")
+    open("../../retrieval_models/retrieval_models_scores/avg_scores_rr.pickle", "rb")
 )
 avg_scores_p10 = pickle.load(
-    open("../../../retrieval_models/avg_scores_p10_new.pickle", "rb")
+    open("../../retrieval_models/retrieval_models_scores/avg_scores_p10.pickle", "rb")
 )
 
 # mrr_scores_map = pickle.load(open("mrr_scores_map.pickle", "rb"))

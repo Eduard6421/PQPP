@@ -20,7 +20,9 @@ train_df = best_captions_df.iloc[0:6000]
 validation_df = best_captions_df.iloc[6000:8000]
 test_df = best_captions_df.iloc[8000:10000]
 
-gt_all_models_path = "../../../../dataset/gt_for_generative_all_models_new.csv"
+gt_all_models_path = (
+    "../../../../dataset/generative_models_scores/gt_for_generative_all_models.csv"
+)
 gt_all_models = pd.read_csv(gt_all_models_path)
 
 # Join train_df with gt_all_models on best_caption
