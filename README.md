@@ -233,16 +233,13 @@ Retrieval-Models Results Generation:
 
 
 #### Domain(s) of Application
-<br>Machine Learning</br>,<br> Computer Vision</br>, <br>Query Performance Prediction</br>, <br>Prompt Performance Prediction</br>, <br>Retrieval Models</br>, <br>Generative Models</br>
+Machine Learning,Computer Vision, Query Performance Prediction, Prompt Performance Prediction, Retrieval Models, Generative Models
 
 
 ## Provenance
 ### Collection
 #### Method(s) Used
 - Crowdsourced - Volunteer
-
-
-
 
 
 ### Dataset Version and Maintenance
