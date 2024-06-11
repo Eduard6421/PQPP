@@ -50,8 +50,12 @@
             "@id": "http://example.org/avg_generative_score",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
-        "csvFile": "dcat:distribution",
-        "images": "dcat:distribution"
+        "csvFile": {
+            "@id": "dcat:distribution"
+        },
+        "images": {
+            "@id": "dcat:distribution"
+        }
     },
     "@type": "Dataset",
     "name": "PQPP Dataset",
@@ -60,19 +64,19 @@
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "./dataset/train.csv",
+            "contentUrl": "https://example-test.site/dataset/train.csv",
             "name": "Training Data"
         },
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "./dataset/validation.csv",
+            "contentUrl": "https://example-test.site/dataset/validation.csv",
             "name": "Validation Data"
         },
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "./dataset/test.csv",
+            "contentUrl": "https://example-test.site/dataset/test.csv",
             "name": "Test Data"
         },
         {
@@ -86,73 +90,61 @@
         {
             "@type": "PropertyValue",
             "name": "id",
-            "valueType": "http://www.w3.org/2001/XMLSchema#integer",
             "description": "ID of the query in MS COCO"
         },
         {
             "@type": "PropertyValue",
             "name": "image_id",
-            "valueType": "http://www.w3.org/2001/XMLSchema#integer",
             "description": "ID of original image"
         },
         {
             "@type": "PropertyValue",
             "name": "best_caption",
-            "valueType": "http://www.w3.org/2001/XMLSchema#string",
             "description": "Text containing selected prompt"
         },
         {
             "@type": "PropertyValue",
             "name": "blip2_rr",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Reciprocal rank for query using blip2 retrieval method"
         },
         {
             "@type": "PropertyValue",
             "name": "clip_rr",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Reciprocal rank for query using clip retrieval method"
         },
         {
             "@type": "PropertyValue",
             "name": "retrieval_avg_rr",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Average of the reciprocal rank scores of both retrieval models"
         },
         {
             "@type": "PropertyValue",
             "name": "blip2_pk",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Precision @ 10 for the query using blip2 retrieval method"
         },
         {
             "@type": "PropertyValue",
             "name": "clip_pk",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Precision @ 10 for the query using clip retrieval method"
         },
         {
             "@type": "PropertyValue",
             "name": "retrieval_avg_pk",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Average of the precision @ 10 scores of both retrieval methods"
         },
         {
             "@type": "PropertyValue",
             "name": "glide_score",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Human annotated generative score for the glide model"
         },
         {
             "@type": "PropertyValue",
             "name": "sdxl_score",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Human annotated generative score for the sdxl model"
         },
         {
             "@type": "PropertyValue",
             "name": "avg_generative_score",
-            "valueType": "http://www.w3.org/2001/XMLSchema#float",
             "description": "Average of the human annotated generative scores"
         }
     ]
