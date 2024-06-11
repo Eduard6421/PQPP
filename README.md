@@ -159,6 +159,7 @@ The suffixes _7,_8 denote generation by GLIDE.
 
 
             \ dataset.csv - Centralized ground truth file which contains all data.
+            \ retrieval_groundtruth.pickle - File containing manual relevant ids for each query.
             \ train.csv - File containing training data split. (60% of data)
             \ vaidation.csv - Centralized ground truth file for validation data. (20% of data)
             \ test.csv - Centralized ground truth file for test data.  (20% of data)
