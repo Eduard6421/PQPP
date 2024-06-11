@@ -167,7 +167,7 @@ Dataset Research
 import pandas as pd
 
 # Read the CSV file
-df = pd.read_csv('dataset/test.csv')
+df = pd.read_csv('./dataset/test.csv')
 
 # Map the image paths for each row
 df['sdxl1'] = df['image_id'].apply(lambda x: f'images/{x}/image_4.png')
