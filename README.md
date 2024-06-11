@@ -56,7 +56,7 @@ https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb
 #### Dataset Snapshot
 Category | Data
 --- | ---
-Size of Dataset | 123456 MB
+Size of Dataset | 33.5 GB
 Number of Instances | 10000
 Human Labels Collected | 1,489,836
 
