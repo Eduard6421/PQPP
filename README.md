@@ -88,8 +88,11 @@ id,image_id,best_caption,blip2_rr,clip_rr,retrieval_avg_rr,blip2_pk,clip_pk,retr
 ### Dataset Folder Description <a name="dataset-description"></a>
 Our dataset consists of two major parts:
 
-        1. train.csv/validation.csv/test.csv (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the scores for the generative setting )
-        2. image folder (contains the SDXL/GLIDE generated images alongside the original MS COCO image).
+        1. dataset/train.csv
+           dataset/validation.csv
+           dataset/test.csv 
+          (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the scores for the generative setting)
+        2. image folder (contains the SDXL/GLIDE generated images alongside the original MS COCO image). This must be downloaded from the extra resources ![URL](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
     
 The image folder has the following structure:
 
@@ -107,9 +110,7 @@ The image folder has the following structure:
             {IMG_ID_N}\
 
 The suffixes _4, _5 denote generation by SDXL.
-
 The suffix _6 denotes the MS-COCO dataset.
-
 The suffixes _7, _8 denote generation by GLIDE.
 
 ## Project Structure <a name="project-structure"></a>
@@ -153,6 +154,12 @@ The project is structured as follows:
     
 ## Getting Started <a name="getting-started"></a>
 
+### Instructions
+Dataset Research 
+1. Clone the GitHub from the official repo.
+2. Download the ![support](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ) files.
+3. Unarchive the content inside the base repo folder.
+    
 ### Installing Pre-requisites <a name="prereqs"></a>
 In order to run our models you will need to install the requirements found in requirements.txt
 
@@ -188,10 +195,7 @@ Prediction models can be found at:
         \neural_embeddings
         \score-variation
 
-## Instructions
-Dataset Research 
-1. Clone the GitHub from the official repo.
-2. Download the support files if needed.
+
 
 Paper Reproduction
 
