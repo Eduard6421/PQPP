@@ -92,7 +92,7 @@ Our dataset consists of two major parts:
            dataset/validation.csv
            dataset/test.csv 
           (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the scores for the generative setting)
-        2. image folder (contains the SDXL/GLIDE generated images alongside the original MS COCO image). This must be downloaded from the extra resources ![URL](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
+        2. image folder (contains the SDXL/GLIDE generated images alongside the original MS COCO image). This must be downloaded from the extra [resources](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
     
 The image folder has the following structure:
 
@@ -157,7 +157,7 @@ The project is structured as follows:
 ### Instructions
 Dataset Research 
 1. Clone the GitHub from the official repo.
-2. Download the ![support](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ) files.
+2. [Download the support files](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
 3. Unarchive the content inside the base repo folder.
     
 ### Installing Pre-requisites <a name="prereqs"></a>
