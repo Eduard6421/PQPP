@@ -1,11 +1,9 @@
-# PQPP <a name="pqpp"></a>
-This repository hosts the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction".
-
-
+# PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction (Official Repository) <a name="pqpp"></a>
+This repository hosts the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction". We present our aggregation of over 1.5M prompt / query annotations obtained from over 270 annotators.
 
 ## Table of contents <a name = "table-of-contents"></a>
 - [PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction](#pqpp)
-  - [📝 Table of Contents ](#-table-of-contents)
+  - [Citation ](#citation-)
   - [About ](#about-)
   - [Note](#note)  
   - [Dataset Description](#dataset-description)
@@ -22,8 +20,19 @@ This repository hosts the implementation and dataset for the scientific paper "P
   - [⛏️ Developed with ](#️developed-with)
   - [Citation ](#citation-)
   - [🎉 Acknowledgements ](#acknowledgement)
+  - [License](#license)
 
+## Citation <a name = "citation"></a>
 
+Please cite our work if you use any material released in this repository.
+```
+@article{Poesina-Arxiv-2024,
+      title="{PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction}", 
+      author={Eduard Poesina and Adriana Valentina Costache and Adrian-Gabriel Chifu and Josiane Mothe and Radu Tudor Ionescu},
+      year={2024},
+      journal={arXiv preprint arXiv:2406.04746},
+  }
+```
 
 ## About <a name = "about"></a>
 This repository hosts the annotated dataset and the implementations of the prediction models described in the original paper.
@@ -158,6 +167,7 @@ The suffixes _7,_8 denote generation by GLIDE.
         \predictors - folder containing performance predictors as described in the paper
             \ correlation_cnn - Contains the CNN-based approach inspired by Sun. et al
             \ finetuned_bert - Contains the finetuned bert model training script
+            \ lingvistic_features - Contains the lingvistic features model training script
             \ finetuned_clip - Contains the finetuned clip model trainig script described in our research
             \ neural_embeddings - Contains the implementation of Arabzadeh et al.
             \ query_drift - Contains script to implement query drift.
@@ -301,7 +311,11 @@ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 We thank all researchers for their implication and expertise and annotators for their incredible work amounting to our dataset.
-Thank you once again!
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+## License <a name = "license"></a>
+The MS COCO annotations are released under a Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse.
+THe MS COCO images are subject to Flickr Terms of Use https://www.flickr.com/creativecommons/
+
+We release our annotations and generated images maintaining the Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse
+[CC BY 4.0]([https://choosealicense.com/licenses/mit/](https://creativecommons.org/licenses/by/4.0/deed))
