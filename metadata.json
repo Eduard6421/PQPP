@@ -3,51 +3,51 @@
         "@vocab": "http://schema.org/",
         "dcat": "http://www.w3.org/ns/dcat#",
         "id": {
-            "@id": "http://purl.org/dc/terms/identifier",
+            "@id": "pqpp:id",
             "@type": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "image_id": {
-            "@id": "http://purl.org/dc/terms/identifier",
+            "@id": "pqpp:image_id",
             "@type": "http://www.w3.org/2001/XMLSchema#integer"
         },
         "best_caption": {
-            "@id": "http://purl.org/dc/terms/title",
+            "@id": "pqpp:best_caption",
             "@type": "http://www.w3.org/2001/XMLSchema#string"
         },
         "blip2_rr": {
-            "@id": "http://example.org/blip2_rr",
+            "@id": "pqpp:blip2_rr",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "clip_rr": {
-            "@id": "http://example.org/clip_rr",
+            "@id": "pqpp:clip_rr",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "retrieval_avg_rr": {
-            "@id": "http://example.org/retrieval_avg_rr",
+            "@id": "pqpp:retrieval_avg_rr",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "blip2_pk": {
-            "@id": "http://example.org/blip2_pk",
+            "@id": "pqpp:blip2_pk",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "clip_pk": {
-            "@id": "http://example.org/clip_pk",
+            "@id": "pqpp:clip_pk",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "retrieval_avg_pk": {
-            "@id": "http://example.org/retrieval_avg_pk",
+            "@id": "pqpp:retrieval_avg_pk",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "glide_score": {
-            "@id": "http://example.org/glide_score",
+            "@id": "pqpp:glide_score",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "sdxl_score": {
-            "@id": "http://example.org/sdxl_score",
+            "@id": "pqpp:sdxl_score",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "avg_generative_score": {
-            "@id": "http://example.org/avg_generative_score",
+            "@id": "pqpp:avg_generative_score",
             "@type": "http://www.w3.org/2001/XMLSchema#float"
         },
         "csvFile": {
@@ -64,19 +64,19 @@
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "https://example-test.site/dataset/train.csv",
+            "contentUrl": "https://raw.githubusercontent.com/Eduard6421/PQPP/main/dataset/train.csv",
             "name": "Training Data"
         },
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "https://example-test.site/dataset/validation.csv",
+            "contentUrl": "https://raw.githubusercontent.com/Eduard6421/PQPP/main/dataset/validation.csv",
             "name": "Validation Data"
         },
         {
             "@type": "DataDownload",
             "encodingFormat": "text/csv",
-            "contentUrl": "https://example-test.site/dataset/test.csv",
+            "contentUrl": "https://raw.githubusercontent.com/Eduard6421/PQPP/main/dataset/test.csv",
             "name": "Test Data"
         },
         {
