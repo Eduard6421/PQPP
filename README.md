@@ -41,7 +41,6 @@ We provide ground truth data for both generative and retrieval formats in order 
 ## Note <a name="note"></a>
 If you are interested to conduct your own research on the dataset (or any of the retrieval/generative setting models) you can download the generated images and original MS COCO used images at:
 
-https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ.
 
 ## Data Card <a name="data-card"></a>
 
