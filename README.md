@@ -27,12 +27,7 @@ The dataset includes human annotations evaluating image retrieval performance us
 Please cite our work if you use any material released in this repository.
 
 ```
-@article{Poesina-Arxiv-2024,
-title="{PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction}",
-author={Eduard Poesina and Adriana Valentina Costache and Adrian-Gabriel Chifu and Josiane Mothe and Radu Tudor Ionescu},
-year={2024},
-journal={arXiv preprint arXiv:2406.04746},
-}
+
 ```
 
 
