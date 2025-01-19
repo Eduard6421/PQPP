@@ -152,7 +152,6 @@ The project is structured as follows:
 ### Instructions
 Dataset Research 
 1. Clone the GitHub from the official repo.
-2. [Download the support files](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
 3. Unarchive the content inside the base repo folder.
 
 
