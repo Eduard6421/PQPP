@@ -2,6 +2,7 @@
 This repository contains the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction." We have compiled over 1.5 million prompt and query annotations from more than 270 annotators.
 
 The dataset includes human annotations evaluating image retrieval performance using BLIP2 and CLIP, as well as prompt performance in generative models such as GLIDE and SDXL.
+
 ## Table of contents <a name="table-of-contents"></a>
 - [PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction](#pqpp)
   - [Citation](#citation)
@@ -26,8 +27,16 @@ The dataset includes human annotations evaluating image retrieval performance us
 ## Citation <a name="citation"></a>
 Please cite our work if you use any material released in this repository.
 
-```
+1. Eduard Poesina, Adriana Valentina Costache, Adrian-Gabriel Chifu, Josiane Mothe, Radu Tudor Ionescu. PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction. In Proceedings of CVPR (2025).
 
+Bibtex:
+```
+@inproceedings{Poesina-CVPR-2025,
+  title="{PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction}",
+  author={Poesina, Eduard and Costache, Adriana Valentina and Chifu, Adrian-Gabriel and Mothe, Josiane and Ionescu, Radu Tudor},
+  booktitle={Proceedings of CVPR},
+  year={2025}
+}
 ```
 
 
