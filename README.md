@@ -1,5 +1,5 @@
-# PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction (Official Repository) <a name="pqpp"></a>
-This repository contains the implementation and dataset for the scientific paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction." We have compiled over 1.5 million prompt and query annotations from more than 270 annotators.
+# PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction (Official Repository) - CVPR 2025<a name="pqpp"></a>
+This repository contains the implementation and dataset for the paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction", accepted at CVPR 2025. We have compiled over 1.5 million prompt and query annotations from more than 270 annotators.
 
 The dataset includes human annotations evaluating image retrieval performance using BLIP2 and CLIP, as well as prompt performance in generative models such as GLIDE and SDXL.
 
