@@ -1,0 +1,2049 @@
+,prompt,source,index,precision,reciprocal_rank,caption_id
+0,Two giraffes are shown walking at the zoo.,mscoco,7159,0.5,1.0,291534
+1,A girl in a bikini holding a surfboard on the beach.,mscoco,7866,0.3,0.16666666666666666,442164
+2,A young woman carrying an umbrella is looking at a cell phone.,mscoco,7707,0.2,0.5,685895
+3,A man skating on a runway as the crowd looks on.,mscoco,7523,0.1,0.1,253402
+4,A World War II-era bomber flying out of formation,mscoco,6392,0.1,1.0,155181
+5,a green light silhouettes of buildings and a cloudy sky,mscoco,7115,0.1,1.0,752791
+6,A family is eating dinner at a table full of food.,mscoco,6846,0.7,0.5,383391
+7,Person shown from waist down on a black and red ski.,mscoco,6946,0.1,1.0,627295
+8,An umbrella on top of a spoon.,drawbench,117,0.0,0.0,117
+9,"A plate of broccoli, grains, and carrots sits on a table.",mscoco,6013,0.0,0.02857142857142857,400335
+10,Man standing on a fishing boat stopped in front of man made falls.  ,mscoco,7734,0.1,1.0,395016
+11,Giraffe standing in open area on cloudy day.,mscoco,6246,0.5,0.5,420322
+12,Backlotter.,drawbench,139,0.0,0.0,139
+13,Eagle perched on a potted plant in a park.,mscoco,7712,0.1,0.125,790887
+14,A bright purple bird perches on a leafy branch.,mscoco,6687,0.4,1.0,188051
+15,Four small dogs fitted with restraints and sitting.,mscoco,7113,0.0,0.08333333333333333,670787
+16,Adult men actively play video games with Wii controllers.,mscoco,7116,0.3,0.5,635257
+17,A red and white boat floating across a body of water.,mscoco,6927,0.3,1.0,701117
+18,Several giraffes that are together in an enclosure.,mscoco,6112,0.7,1.0,820194
+19,A person on a snowboard goes down a mountain.,mscoco,7483,0.6,1.0,726154
+20,Three zebras grazing in an enclosed area that is a wooded area,mscoco,7219,0.2,0.5,530468
+21,small rowboat resting on moss and rocks at low tide,mscoco,6356,0.1,0.3333333333333333,497656
+22,A motorcycle stopped on the road during nighttime in the city. ,mscoco,6199,0.4,1.0,161068
+23,Looking down the length of a city street while cars pass by.,mscoco,6407,0.0,0.08333333333333333,102602
+24,"Meal of fried egg, canadian bacon, greens on top a croissant.",mscoco,6741,0.1,0.3333333333333333,375301
+25,A zebra and foal are standing on the ground.,mscoco,6097,0.5,1.0,568174
+26,Picture of double red traffic light while pedestrians cross street,mscoco,6060,0.0,0.024390243902439025,550386
+27,Chair and apartment size refrigerator in a small room.,mscoco,6412,0.0,0.038461538461538464,592462
+28,A red passenger bus makes its way past Big Ben in London.,mscoco,6042,0.4,0.25,772907
+29,A ramp and obstacles on a ski slope.,mscoco,6526,0.1,0.3333333333333333,722233
+30,Cavalry military unit with horses and wagons riding through a village in Europe.,mscoco,7149,0.1,1.0,201210
+31,A person is riding in front of a bus and looking out the window.,mscoco,6368,0.1,0.16666666666666666,562308
+32,A woman is petting a baby elephant's trunk.,mscoco,6030,0.3,0.16666666666666666,388187
+33,Two candles shine lite on flowers in a vase.,mscoco,7932,0.1,0.5,603942
+34,A man in an orange shirt prepares to serve the ball in a tennis match.,mscoco,7314,0.4,0.5,564291
+35,Two zebras eat from a food trough together.,mscoco,6689,0.3,1.0,514950
+36,A man riding a bicycle down a city street ,mscoco,7853,0.7,1.0,104086
+37,A man preparing to hit a tennis ball.,mscoco,7217,0.2,0.25,816112
+38,A person is swinging a toy in front of a white cockatoo. ,mscoco,7432,0.1,1.0,160214
+39,Sign indicating danger of falling rocks with snow,mscoco,7742,0.1,1.0,781327
+40,Snowboarder in middair performing a stunt on a half-pipe at night.,mscoco,7074,0.2,0.16666666666666666,279499
+41,Tennis player and white outfit holding up the yellow ball. ,mscoco,7504,0.3,0.2,758105
+42,Two people flying a kite from a wooden deck,mscoco,7658,0.1,1.0,210705
+43,A group of motorcycles are going down the street.,mscoco,6659,1.0,1.0,381992
+44,A woman eating a plate of spaghetti next to a dog,mscoco,7221,0.1,0.3333333333333333,94230
+45,A baby sitting in a stroller looks at a sheep and reaches his hand out toward it.,mscoco,6520,0.1,1.0,83584
+46,Woman asleep in bed with her dog during the day,mscoco,6612,0.2,1.0,68668
+47,A zebra eating grass off the ground in an enclosure.,mscoco,6533,0.2,1.0,34379
+48,Rams and goats standing in dirt and grass field.,mscoco,6134,0.4,0.5,665960
+49,a skier in an aqua and white parka and pants skiing  down hill,mscoco,7122,0.1,1.0,576027
+50,A plate topped with veggies and chicken wings with two dipping sauce.,mscoco,6733,0.1,1.0,507118
+51,Young basketball players run down the court in a game of basketball.,mscoco,6983,0.1,1.0,515580
+52,A plain ascending during take off against a gray sky.,mscoco,6037,0.2,0.1111111111111111,56166
+53,A cat that is standing on a bench.,mscoco,6290,0.8,1.0,789639
+54,Four red double decker passenger buses on a paved surface.,mscoco,6532,0.0,0.045454545454545456,653701
+55,A man and girl are in the snow on skis.,mscoco,7797,0.4,1.0,295164
+56,Many young soccer players are competing for the ball. ,mscoco,6591,0.9,1.0,450190
+57,Rose in dotted vase on desk next to stereo,mscoco,7439,0.1,1.0,442955
+58,Woman in a shop with wine and beer looking at her cellphone.,mscoco,7300,0.1,1.0,197442
+59,Skateboarders love to practice in this well-designed park.,mscoco,7924,0.0,0.009900990099009901,326013
+60,Motorcycles and cars are parked outside of an old building.,mscoco,6200,0.0,0.05,224695
+61,A herd of sheep in a country pasture.,mscoco,6250,0.5,1.0,341533
+62,A man and two women are standing beside an airplane.,mscoco,6140,0.1,1.0,648716
+63,A group of surfers walk in the water with their surf boards,mscoco,7774,0.3,1.0,443640
+64,"Two zebras seen from the posterior position, with tails swishing.",mscoco,7937,0.0,0.06666666666666667,364110
+65,"A bear with black fur from behind, standing in green grass with nose to a tree's trunk.",mscoco,6336,0.1,0.2,540076
+66,Two zebras walking in the sun along a dirt path.,mscoco,6170,0.0,0.08333333333333333,66473
+67,Hispanic people in sombreros walking and riding a horse,mscoco,7905,0.0,0.047619047619047616,614648
+68,a pair of orange handled scissors hanging on a board,mscoco,6506,0.1,0.25,352265
+69,a man jogging with his dog in the snow ,mscoco,6976,0.1,1.0,441549
+70,Baseball catcher in black and yellow uniform waiting for the ball.,mscoco,7723,0.1,0.14285714285714285,553013
+71,Brown bear eating a fish on the side of a river. ,mscoco,6447,0.1,1.0,498007
+72,Skiers are racing in a cross country competition. ,mscoco,7397,0.9,1.0,593239
+73,Cat lying on blue desk chair next to wooden table.,mscoco,6978,0.1,0.3333333333333333,679795
+74,Bus like vehicle on roadway in rural area on cloudy day.,mscoco,7289,0.2,1.0,777200
+75,Small boat anchored in urban inland calm waterway .,mscoco,7285,0.2,0.5,243413
+76,two male tennis players and one has a yellow shirt on,mscoco,6299,0.3,0.25,544539
+77,A man swing at a tennis ball on the court.,mscoco,6095,0.4,0.5,50279
+78,A little boy sitting on a bed in a bedroom ,mscoco,7640,0.3,1.0,670719
+79,Several motorcycles parked next to each other in a field.,mscoco,7601,0.5,0.3333333333333333,783067
+80,A man laying in bed with a book over his face.,mscoco,6370,0.2,1.0,285234
+81,a pink bus that is parked on a roadway,mscoco,6880,0.5,1.0,701454
+82,A large pink cake is topped with a horse figure.,mscoco,7234,0.1,1.0,615781
+83,Many objects are on the shelves and the refrigerator.,mscoco,6296,0.3,0.5,377963
+84,A plane is shown sitting on the pavement.,mscoco,6798,0.4,0.5,438417
+85,Pastries shaped like bear heads are displayed for sale in Japan.,mscoco,6346,0.1,1.0,209685
+86,A puppy rests his head on a person's shoe. ,mscoco,7042,0.3,1.0,162049
+87,korean taco stand open and all lit up at night,mscoco,6295,0.1,1.0,377882
+88,Two people hold gaming remotes at a social gathering.,mscoco,6452,0.1,0.1,143354
+89,A young man is riding a yellow bike while talking on his phone.,mscoco,6074,0.2,1.0,27910
+90,A modern commuter bus at a bus stop on a city street,mscoco,6904,0.0,0.008064516129032258,598636
+91,A young boy petting a pony while it eats.,mscoco,6086,0.2,1.0,390357
+92,a person getting food from a food truck,mscoco,6233,0.2,0.25,446811
+93,A large group of children practice playing tennis.,mscoco,7911,0.7,1.0,724636
+94,A bacon sandwich that expires on december 30th.,mscoco,6309,0.1,1.0,519052
+95,A hot dog is shown in a paper backing.,mscoco,7290,0.5,1.0,441965
+96,A beautiful clock in face of building with roman numerals,mscoco,6840,0.5,0.2,787650
+97,A person on a skateboard while another is on a bike.,mscoco,6895,0.1,1.0,674338
+98,An open curtain in a small home bathroom,mscoco,6063,0.4,1.0,550558
+99,A man wearing a tie is walking on the street.,mscoco,7650,0.3,0.25,330150
+100, A zebra is seen from the car window by the person driving the car.,mscoco,7114,0.2,0.5,255286
+101,A brown and white cow eating grass with two cows behind it.,mscoco,7868,0.1,0.5,653411
+102,"White bus on road with writing ""Lynns Travel""",mscoco,7355,0.1,1.0,378905
+103,Design paper sits on a cutting board beside scissors and glue.,mscoco,7984,0.1,1.0,100185
+104,"A train that is parked on tracks and has graffiti writing on it, with a mountain range in the background.",mscoco,7753,0.2,0.3333333333333333,812058
+105,An orange and black bird perched on a tree branch.,mscoco,6494,0.1,0.25,506477
+106,A league of Men play soccer in a large open field. ,mscoco,6620,0.2,1.0,176690
+107,A snow covered slope with a bunch of skis and snowboards on a rack.,mscoco,7153,0.3,1.0,670050
+108,a person holds a chili dog next to a soda ,mscoco,6391,0.0,0.03333333333333333,540930
+109,Man standing in the store use his cell phone.,mscoco,7831,0.4,1.0,253805
+110,Baseball player swinging at an approaching ball with catcher at the ready.,mscoco,6911,0.4,0.3333333333333333,100068
+111,four adult giraffes and one smaller giraffe all in captivity ,mscoco,7544,0.0,0.01282051282051282,400437
+112,"A fenced in area shows two leafy and low-hanging tree branches, casting shadows, and making shade for two horses that are grazing at some patchy grass.",mscoco,7130,0.1,0.125,716572
+113,Horseback riders ride their horses down a city sidewalk.,mscoco,7628,0.1,1.0,74527
+114,A woman rides a horse quickly around barrels.,mscoco,6748,0.1,0.16666666666666666,408524
+115,Modern all white kitchen are of residential home.,mscoco,6744,0.0,0.0030959752321981426,642618
+116,"A lone cow grazes in a grassy field, behind a fence.",mscoco,6812,0.3,0.5,739110
+117,A female tennis player swinging a tennis racket at a ball.,mscoco,7353,0.5,0.25,376233
+118,"An desk with a chair, a computer, a fishbowl and other items stand in an office. ",mscoco,6937,0.1,0.2,290441
+119,A plate of curry chicken with a side of broccoli,mscoco,6800,0.4,1.0,44525
+120,The front of a subway train in Japan,mscoco,6672,0.1,0.125,717987
+121,A large teddy bear sits at a yard sale.,mscoco,7821,0.1,1.0,291598
+122,Flowers and vases sitting on a table covered in a white table cloth.,mscoco,6606,0.1,1.0,46907
+123,A group of chefs in a kitchen preparing food,mscoco,7022,0.8,1.0,549199
+124,"Young lady smiling leaning on the bed holding a can
+",mscoco,7410,0.1,1.0,512932
+125,A man is cross country skiing on a course with other skiers.,mscoco,7512,0.1,0.5,470001
+126,"Close up photo of an uncooked pizza topped with ham, shredded cheese, and cherry tomatoes ",mscoco,6643,0.1,1.0,205595
+127,Photo of a traffic jam on a three lane highway from an overpass.,mscoco,6236,0.1,0.1111111111111111,191247
+128,"A butcher block features breads, tomatoes, cheeses, and meats.",mscoco,7516,0.1,0.3333333333333333,742914
+129,a man with a hat on sits in font of a laptop,mscoco,6017,0.5,1.0,792478
+130,A street has many electrical wires overhead the people.,mscoco,6410,0.1,0.3333333333333333,646381
+131,"A blue and yellow train runs down a track by the trees.
+",mscoco,7399,0.4,0.5,739177
+132,a sink and some tooth brush and hand wash,mscoco,6734,0.4,1.0,720084
+133,Woman playing on a Wii Controller during a group gathering.,mscoco,7912,0.6,1.0,368947
+134,An airplane flying in a blue sky with it's landing gear down.,mscoco,6439,0.3,0.5,29400
+135,Two people are riding along on an elephant.,mscoco,6531,0.9,1.0,82293
+136,Small bathroom with a large glass shower in it. ,mscoco,7582,0.3,0.5,249838
+137,Deer statue on desk near miniature traffic light ,mscoco,7519,0.1,1.0,645750
+138,Boy batting during a little league baseball game.,mscoco,7790,0.3,0.5,748717
+139,A man flying through the air while riding skis.,mscoco,6547,1.0,1.0,284298
+140,A large room features a wall shelf with drawers and a brown sofa and wood coffee table.,mscoco,7694,0.0,0.05263157894736842,423430
+141,A group of skiers enjoying standing at the top of the mountain.,mscoco,7709,0.5,1.0,6396
+142,Four Asian young adults play a Wii game together.,mscoco,7204,0.4,0.5,577166
+143,A green cup and a blue cell phone.,drawbench,18,0.0,0.0,18
+144,Several small boats are on the water on a foggy day.,mscoco,7710,0.3,1.0,506716
+145,A trailer is attached to a dump truck alongside another truck.,mscoco,7233,0.1,1.0,57049
+146,A metal clock hanging from a white support beam.,mscoco,6253,0.2,0.5,664609
+147,Elephants and their riders performing at a circus ,mscoco,6244,0.3,0.25,479223
+148,A woman is holding a small cake near a baby. ,mscoco,6661,0.3,0.3333333333333333,195276
+149,Two people talking under an umbrella while a third watches from his bike.,mscoco,6552,0.0,0.0196078431372549,796264
+150,A man riding a ramp on a skateboard.,mscoco,6382,0.5,1.0,635620
+151,Man stands on elephant's leg while bathing the elephant in the river,mscoco,7801,0.1,0.25,648060
+152,Small white dog with green and white bow tie on. ,mscoco,7818,0.1,1.0,413388
+153,A tennis player in all white serving a ball.,mscoco,7453,0.4,1.0,820654
+154,A stop sign written in Chinese and In English.,mscoco,6926,0.2,1.0,553296
+155,There is a doughnut with chocolate frosting and rainbow sprinkles.,mscoco,6166,0.6,1.0,169898
+156,Two zebras are standing next to each other in an enclosure.  ,mscoco,7757,0.2,0.3333333333333333,766060
+157,A view of a street with multiple store fronts. ,mscoco,7985,0.1,1.0,295433
+158,Some giraffes are standing by a tree and eating leaves.,mscoco,7242,0.5,0.16666666666666666,362168
+159,A young boy holding a Frisbee to his face.,mscoco,7316,0.1,1.0,820879
+160,Shower head in Bathroom with beige colored wall.,mscoco,7663,0.3,1.0,396602
+161,a surfer is flying off his board on a sunny day,mscoco,6501,0.1,0.125,39237
+162,some oranges a sign and some green and yellow bananas,mscoco,7991,0.0,0.025,443330
+163,Two computer keyboards and mouse from two different companies,mscoco,6839,0.1,0.5,54990
+164,Two horses are grazing in a green field.,mscoco,6323,0.7,1.0,612316
+165,Several traffic lights are seen near a busy highway.,mscoco,7366,0.3,1.0,630560
+166,A digital clock on a bus can be seen above people's heads.,mscoco,6914,0.1,1.0,746644
+167,Cars lined up along stretch of road with train approaching.,mscoco,6697,0.4,1.0,726997
+168,These zebra are standing by two wood logs.,mscoco,6073,0.2,0.5,319379
+169,People entering and exiting from a commuter train,mscoco,6401,0.0,0.002145922746781116,395020
+170,Two skiiers ski down a mountain in front of a village while it is snowing.,mscoco,6413,0.1,1.0,295906
+171,A refrigerator filled with food and drinks next to condiments.,mscoco,7482,0.6,0.25,182749
+172,A red brick clock tower and a church steeple.,mscoco,7220,0.1,0.14285714285714285,707652
+173,A group of people pose for a picture in a living room.,mscoco,6746,0.3,0.5,397466
+174,A passenger train that is pulling into the station.,mscoco,7665,0.1,0.2,501793
+175,Even toddlers can ski on a contraption like this.,mscoco,7687,0.1,0.2,254126
+176,A baseball player at home plate swings at a pitch.,mscoco,6472,0.3,0.2,729949
+177,a black brown and white animal and some wood and rocks,mscoco,7761,0.1,0.5,138250
+178,The man is carrying his surfboard while walking with a woman. ,mscoco,7500,0.2,0.3333333333333333,710339
+179,a pie on a stove in a kitchen,mscoco,6272,0.3,1.0,281921
+180,Many people flying kites in a park on a sunny day,mscoco,7870,0.9,1.0,568439
+181,A man eating a piece of cake in front of the camera.,mscoco,7826,0.4,0.5,770333
+182,A batter swings at a pitch in a baseball game,mscoco,7035,0.3,0.3333333333333333,630216
+183,A kite flying over a large flying united states flag.,mscoco,7594,0.1,1.0,527002
+184,The skier is ready to ski down the slope.,mscoco,7903,0.2,0.25,717940
+185,Giraffes in their natural habitat seen from a tour vehicle,mscoco,6007,0.2,0.2,621952
+186,Many people walk on the street carrying umbrellas on a stormy day.,mscoco,7672,0.9,1.0,320722
+187,a man holding a pair of scissors behind his ear,mscoco,7294,0.1,1.0,151337
+188,"Skateboarders are skateboarding along a trail, with some performing tricks.",mscoco,6830,0.1,0.25,700276
+189,A stove top oven with two large pots on top of it as food bakes inside of it.,mscoco,7390,0.1,0.3333333333333333,120207
+190,Commercial logging transport truck on dirt road near forest.,mscoco,7930,0.5,1.0,709621
+191,A cafeteria type kitchen that is not in use.,mscoco,6743,0.0,0.07142857142857142,13304
+192,"Plate of dinner roll, pot roast and boiled vegetables that has partially spilled onto a wooden dining table. ",mscoco,7805,0.3,0.5,391922
+193,A busy city at night with people crossing the street.,mscoco,6609,0.4,0.5,426844
+194,"A man jumping with a skateboard in the air, and other people in the background.",mscoco,7699,0.0,0.07692307692307693,167469
+195,Professional baseball player winding up to pitch the ball. ,mscoco,7554,0.6,1.0,343035
+196,Two plated hotdogs with mayonnaise and pickles. ,mscoco,7589,0.1,0.3333333333333333,601257
+197,An entertainer juggles fire while doing a balancing act.,mscoco,7062,0.1,0.5,360810
+198,A female tennis player about to serve the ball.,mscoco,7727,0.5,1.0,729616
+199,A school bus parking lot with three buses.,mscoco,6923,0.0,0.0625,390030
+200,surfer in calm ocean waiting for wave with sunlight rays,mscoco,7235,0.0,0.0012360939431396785,425820
+201,a tan teddy bear with a gold ribbon sitting on top of some shopping carts,mscoco,7608,0.1,1.0,322140
+202,"Various street signs with one that reads ""one way.""",mscoco,7711,0.3,1.0,215126
+203,A skateboarder flips his board as he jumps from the top of a flight of steps. ,mscoco,7992,0.2,0.25,564006
+204,Two lines of trains are parallel as one boy walks on one side and another walks on the other side.,mscoco,7095,0.1,1.0,78809
+205,Man swinging and connecting with a tennis racket during a match.,mscoco,6544,0.0,0.045454545454545456,45125
+206,Young adult male holding a frisbee at an event. ,mscoco,6930,0.1,1.0,362632
+207,A man rides a racing horse in front of a crowd of people. ,mscoco,6535,0.1,0.3333333333333333,209196
+208,"A man rides his bicycle through an intersection with a ""skating allowed"" pictogram.",mscoco,7009,0.1,1.0,22738
+209,a man on a surf board riding a small wave,mscoco,6530,0.1,0.1111111111111111,300263
+210,"A plate of broccoli, cauliflower, carrots, and sesame seeds",mscoco,7588,0.0,0.05555555555555555,733738
+211,A spotted brown and white cow with horns ,mscoco,7543,0.1,1.0,394395
+212,a woman is holding  pink umbrella in a field,mscoco,6771,0.1,0.3333333333333333,810574
+213,A black and white photo  of people riding bicycles,mscoco,7979,0.4,1.0,146132
+214,A young man in a baseball uniform throwing a baseball.,mscoco,7068,0.1,0.3333333333333333,192002
+215,mmm barbeque ribs broccoli and some rice on a plate,mscoco,6131,0.1,0.5,687891
+216,a number of animals with in a field with trees near by,mscoco,6348,0.3,0.5,418525
+217,A bicycle is chained to a parking meter on the street.,mscoco,6129,0.6,1.0,341266
+218,A large red double bus is leading the traffic. ,mscoco,6328,0.6,1.0,449282
+219,The luxurious boats are anchored in the pier.,mscoco,7000,0.0,0.043478260869565216,51449
+220,"Beautiful pink floweing tree spread over park bench, landscaping and striped garden shed. ",mscoco,7604,0.1,1.0,247084
+221,a person laying on a bench reading a book,mscoco,7398,0.2,1.0,406824
+222,A white horse pulling a cart down a street.,mscoco,7737,0.2,1.0,497216
+223,A traffic light is red on a city street.,mscoco,7142,0.5,1.0,169706
+224,A man dressed as a school girl poses for the camera.,mscoco,7862,0.1,0.25,590155
+225,A small dog sits in the front seat of a car and stares out the window.,mscoco,6867,0.2,0.25,447140
+226,A male tennis player holding a racket in his hand.  ,mscoco,7598,0.2,0.125,461794
+227,a deep dish meat pizza and a knife sitting on a wooden cutting board,mscoco,7047,0.1,0.5,661600
+228,Older gentleman standing at the front of a room giving a lecture,mscoco,7084,0.3,0.25,625022
+229,Two dogs on the street.,drawbench,41,0.0,0.00040551500405515005,41
+230,A blue teddy bear wearing a sweater sits on a window sill.,mscoco,7682,0.1,0.5,602066
+231,A huge train is seen passing by a big field.,mscoco,7701,0.3,1.0,491964
+232,Black cat near flowers lying upside down on wooden table.,mscoco,6453,0.1,1.0,390474
+233,Two orange and white buses park on a street.,mscoco,7592,0.0,0.0625,583217
+234,There are many people skiing on the slopes.,mscoco,6005,0.7,1.0,364801
+235,A cat is peeking out of a blue suitcase.,mscoco,7054,0.2,0.3333333333333333,329539
+236,a few men in suits are standing outside together,mscoco,6014,0.5,1.0,528925
+237,A very old stone building with a large clock on top is shown.,mscoco,7400,0.5,1.0,675845
+238,A young boy holds a baseball glove on top of his head. ,mscoco,7357,0.1,1.0,669309
+239,Boats in a mooring area with a sea wall at low tide.,mscoco,6025,0.4,1.0,102130
+240,two elephants walking in captivity with a building in the backgroun,mscoco,6747,0.0,0.08333333333333333,93746
+241,Some people are holding a union Jack umbrella.,mscoco,6944,0.2,0.3333333333333333,458203
+242,A soccer player takes a moment to recuperate.,mscoco,7732,0.0,0.02857142857142857,161290
+243,Back view of a female tennis player wearing orange shorts.,mscoco,6091,0.1,0.25,482763
+244,A black motorcycle is parked along the curb.,mscoco,7408,0.0,0.047619047619047616,231360
+245,A closeup picture of glazed doughnuts on a glass plate,mscoco,7530,0.6,1.0,90244
+246,people standing around in an airport terminal ,mscoco,6920,0.4,1.0,567733
+247,"On June 29, 2013, a train, its last car number 142053, takes a curve to the right.",mscoco,7330,0.0,0.002242152466367713,393090
+248,Baseball players converse with each other on the field.,mscoco,7773,0.3,0.5,460234
+249,An animal park with giraffe and several kinds of deer,mscoco,7189,0.0,0.0625,282091
+250,A flat-screen television sits on a stand next to a wall.,mscoco,6490,0.7,0.5,692114
+251,Several people and dogs are gathered by the water.,mscoco,7954,0.2,1.0,403860
+252,Three skiers posing at the top of a ski run.,mscoco,6476,0.8,1.0,139103
+253,A young lady is attempting to control the soccer ball as another looks on. ,mscoco,7547,0.1,0.25,469608
+254,Office signs help provide guidelines for shared appliances.,mscoco,7100,0.1,1.0,325820
+255,Four people stand outside a home holding tennis rackets.,mscoco,6045,0.2,1.0,385772
+256,"Fighter jet performing aerobatic stunts, with trailing smoke.",mscoco,6093,0.2,0.16666666666666666,348468
+257,A woman in a pink shirt is cutting into a cake. ,mscoco,7318,0.0,0.012048192771084338,670953
+258,A yellow fire hydrant in the snow covered yard.,mscoco,6393,0.7,1.0,149075
+259,A white microwave hangs in the cabinet area.,mscoco,6069,0.4,0.5,414450
+260,A boy in a suit in tie stands in front of signs,mscoco,7565,0.1,0.5,413764
+261,A red double decker bus in London. ,mscoco,7025,0.6,1.0,686548
+262,Several people sitting in a bedroom playing a WII game,mscoco,7145,0.1,1.0,574575
+263,Brown bears relaxing and playing in a pool at the zoo,mscoco,7612,0.4,1.0,488930
+264,A rustic cabin kitchen constructed of various wood species.,mscoco,7740,0.2,1.0,457500
+265,"ELDERLY MAN REACHING OUT, WHILE STANDING IN FRONT OF FIREPLACE",mscoco,7889,0.1,1.0,140536
+266,Three boats on a lake on a fall day.,mscoco,6333,0.4,1.0,732905
+267,Man with suit and tie with a close up on facial hair on lower part of face.,mscoco,7311,0.0,0.08333333333333333,658833
+268,Two people with helmets on standing on skis in the snow.,mscoco,7609,0.4,1.0,609568
+269,View of a kitchen with stainless refrigerator and black dish washer.,mscoco,6492,0.1,0.25,279372
+270,A beach in front of some tall buildings with beach-goers sitting under bright umbrellas or on towels,mscoco,6916,0.3,1.0,303813
+271,Dog standing on wooden floor in residential kitchen.,mscoco,7067,0.3,0.5,760263
+272,A person lay out everything in his travel kit.,mscoco,7272,0.2,0.5,716131
+273,Man in uniform with horse head sitting on chair at terminal.,mscoco,7541,0.1,1.0,419957
+274,The horse rider is galloping while wearing an orange shirt.,mscoco,6110,0.0,0.02631578947368421,629588
+275,"A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, nonretractable claws, and a barking, howling, or whining voice.",drawbench,87,0.0,0.02857142857142857,87
+276,Little boy making ironic face while holding pizza,mscoco,6057,0.1,1.0,788622
+277,A woman is smiling while holding a hot dog at a baseball game.,mscoco,7728,0.2,1.0,419862
+278,Baseball players and officials shaking hands while being filmed.,mscoco,7073,0.1,1.0,33666
+279,A small black dog watching an animal on a TV screen.,mscoco,7562,0.4,1.0,593284
+280,A marmalade jar being used as a toothbrush holder,mscoco,7535,0.0,0.0625,25475
+281,Two surfers walk down a beach with a pier in the background.,mscoco,7447,0.3,1.0,494274
+282,an image of an elephant walking in the wilderness,mscoco,7859,0.5,1.0,230267
+283,Two woman walk down a pathway under an umbrella. ,mscoco,6892,0.2,1.0,466262
+284,A three piece bathroom with white fixtures and beige wall tiles.,mscoco,6625,0.0,0.03571428571428571,53623
+285,A red stop sign with the american flag in the background.,mscoco,6189,0.1,0.5,752572
+286,Three cars on the street.,drawbench,37,0.0,0.02,37
+287,A person on the ski slopes with a snowboard,mscoco,6823,0.3,1.0,326192
+288,A double decker bus advertises the Rockettes Celebration.,mscoco,6882,0.0,0.07142857142857142,784337
+289,A blue bench sits on the walkway by some stairs.,mscoco,7178,0.1,1.0,341637
+290,"A refrigerator with different kinds of magnets, and cards.",mscoco,7485,0.7,1.0,729339
+291,Two elephants walk around in a large grassy field. ,mscoco,6709,0.7,1.0,549462
+292,This is a hotdog with french fries on a table.,mscoco,7652,0.7,1.0,656090
+293,Group of adults in kitchen area of home with wood flooring.,mscoco,6737,0.2,1.0,652356
+294,The baby elephant is standing underneath a large elephant. ,mscoco,6690,0.5,1.0,753287
+295,a person in a blue jacket sitting on a bench grass and trees,mscoco,6046,0.0,0.011627906976744186,444202
+296,A bicycle is attached to a pole on a curb.,mscoco,6562,0.6,1.0,738136
+297,Two shorn sheep graze on tall green grass in a sunny pasture.,mscoco,7231,0.6,1.0,506457
+298,a couple of white buses are parked on the curb,mscoco,7429,0.2,0.2,597429
+299,"A couch, computer, desk, and other items in a room ",mscoco,6132,0.1,0.25,707181
+300,A kitchen nook area features a white stove and a white microwave and brown cabinets.,mscoco,6080,0.2,0.125,265260
+301,Fruits and vegetables sitting in a bowl on a counter top.,mscoco,7735,0.3,0.3333333333333333,191028
+302,A large shrine in a kitchen to the virgin Mary.,mscoco,6320,0.0,0.0019230769230769232,522139
+303,A group of motorcycles are parked along a city street.,mscoco,7606,1.0,1.0,6705
+304,Some cows with very big horns in some tall grass.,mscoco,6306,0.3,1.0,587528
+305,Banana section of the supermarket with tons of bananas.,mscoco,6440,0.5,1.0,691406
+306,there are many boats that are passing under the bridge,mscoco,6238,0.3,0.5,546021
+307,"Pitcher in a windup, just before releasing the baseball.",mscoco,7018,0.0,0.09090909090909091,812111
+308,An old church with two arches and a tall clock tower.,mscoco,7369,0.0,0.02564102564102564,252860
+309,"The Colorado Convention's Center, on a main city artery, has a Big Blue Bear sculpture staring in to the lobby.",mscoco,7807,0.1,0.5,456534
+310,A herd of cattle grazing out in a grassy open field,mscoco,7237,0.7,0.5,68762
+311,Two women standing in a kitchen with person playing violin.,mscoco,7706,0.1,1.0,372742
+312,Two gondoliers have people in them as rowers stand on the back of them with long poles.,mscoco,6821,0.0,0.07142857142857142,467938
+313,Person flying kite with two strings on a clear blue day.,mscoco,6929,0.4,0.5,405967
+314,A chocolate cake with a fork is ready to be eaten,mscoco,6773,0.6,1.0,569996
+315,A dog jumping into the air catching a white frisbee.,mscoco,6718,1.0,1.0,597917
+316,A woman leads two sheep down the street.,mscoco,7874,0.1,0.5,12198
+317,Dirty water or clay running through something brown. ,mscoco,7236,0.0,0.012345679012345678,410625
+318,Professional tennis players in a doubles tennis match. ,mscoco,6775,0.4,1.0,366172
+319,A cat sitting on top of a carry-on bag.,mscoco,6912,0.6,0.3333333333333333,191530
+320,A man talking on a cellphone in a subway car.,mscoco,6065,0.2,1.0,235685
+321,Three people are wearing snow shoes traveling down a snowy hill. ,mscoco,6008,0.2,0.2,716317
+322,a red fire hydrant a super market and doors to a market,mscoco,6090,0.2,0.14285714285714285,324384
+323,A living room with leather furniture is pictured.,mscoco,6249,0.7,1.0,714749
+324,Zoo adults elephants on city roadway at night.,mscoco,7306,0.2,0.5,691745
+325,A Zebra and a horse are together in the wild. ,mscoco,6496,0.0,0.0051813471502590676,456809
+326,A group of people at train station next to a blue and yellow trains.,mscoco,7967,0.2,1.0,430552
+327,A FedEx airplane is parked at an airport near a mountain.,mscoco,6298,0.1,1.0,528388
+328,"Old, tusked elephants roam amongst tall, dry grasses",mscoco,6899,0.3,0.3333333333333333,94648
+329,A white and black horse standing on a lush green hillside.,mscoco,7143,0.1,1.0,334356
+330,Two blonde women looking at the screen of a laptop.,mscoco,6041,0.1,1.0,253591
+331,A tennis player waits for the ball to return to her side.,mscoco,7058,0.6,1.0,717345
+332,A toaster oven glows as it cooks a meal in a white pantry.,mscoco,6222,0.1,0.5,525577
+333,Man surfing on wave while another waits on surfboard in distance,mscoco,6040,0.2,1.0,600917
+334,A brown teddy bear sitting on top of a phone.,mscoco,6340,0.1,0.5,351519
+335,A baseball player wearing a white uniform and black socks waiting for the ball.,mscoco,7659,0.2,0.3333333333333333,296873
+336,"Display of snowboards against wall, posing for picture",mscoco,7214,0.2,1.0,782271
+337,A brown cow standing on a field with long horns.,mscoco,6977,0.6,1.0,593601
+338,Man with whistle around neck cutting a cake while students watch.,mscoco,6155,0.1,1.0,112937
+339,"Magazines, newspapers, and sports equipment hang on a wall.",mscoco,7055,0.1,1.0,789658
+340,A close view of an elephant's trunk and feet.,mscoco,6527,0.3,1.0,636778
+341,a laptop on a small table with a mouse ,mscoco,6414,0.6,0.5,759724
+342,A woman stands ready for action during a tennis match.,mscoco,7186,0.5,0.5,708722
+343,Man with yellow flying disc at indoor event.,mscoco,7552,0.1,1.0,423081
+344,a red and  black bus being towed in by a flatbed,mscoco,6710,0.1,0.14285714285714285,660526
+345,An empty kitchen is missing the shelve cabinets.,mscoco,7169,0.1,1.0,358471
+346,A baby giraffe being fed by a person holding a baby bottle with milk in it.,mscoco,6023,0.2,1.0,219174
+347,Sailing vessels are on a waterway within view of a lighthouse.,mscoco,7307,0.1,1.0,393220
+348,Mature elephant with asymmetrical tusks in a group.,mscoco,7848,0.1,0.16666666666666666,363595
+349,Two police motorcycles lead a motorcade or parade.,mscoco,6399,0.2,0.5,272736
+350,A young man is walking with his surf board on the beach.,mscoco,6844,0.9,1.0,177064
+351,A dog crouches before freshly shorn sheep in a field,mscoco,7702,0.0,0.05555555555555555,210704
+352,A cat sits on the top of a TV screen.,mscoco,6248,0.9,1.0,375072
+353,A cat laying on its arm looking at a mirror.,mscoco,7506,0.1,0.3333333333333333,754233
+354,Man about to throw a forehand frisbee in game,mscoco,7615,0.1,0.1111111111111111,782356
+355,A man and woman sitting on a park bench under a huge tree,mscoco,7065,0.6,1.0,278353
+356,A bathroom with a tiled counter and a mirror. ,mscoco,7928,0.2,0.16666666666666666,226209
+357,Commercial jetliner with a kangaroo design on its tail,mscoco,6915,0.1,1.0,411079
+358,a cheese pizza sitting on an open box on a counter ,mscoco,6154,0.1,1.0,406275
+359,A ceremony for military men from US and China ,mscoco,6181,0.1,0.5,603456
+360,an instructional information sign for bicycle riders and a stop sign,mscoco,7222,0.2,1.0,327922
+361,"A long hauler with numerous packages with packing tape, as well as other items surrounded by plastic strips, rests half on well-trimmed grass, and half on a parking lot with many other vehicles. ",mscoco,7202,0.0,0.047619047619047616,782373
+362,"An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",drawbench,69,0.0,0.0,69
+363,"Children wearing team uniforms, playing soccer in a grassy field.",mscoco,6953,0.7,1.0,400157
+364,"A piece of chocolate cake with chocolate icing in a ""To Go"" container",mscoco,6379,0.2,1.0,18641
+365,A zebra is grazing grass by itself on a sunny day. ,mscoco,6372,0.9,1.0,501915
+366,A crowded beach with sun umbrellas and many boats in the water.,mscoco,7748,0.1,0.3333333333333333,357009
+367,One street sign says Ward Rd and the other says Long Ridge Rd.,mscoco,6551,0.1,1.0,284598
+368,The view of two cows overlooking the mountains.,mscoco,7027,0.6,0.5,686238
+369,some green yellow and red apples in baskets,mscoco,6943,0.2,1.0,63910
+370,Adjustable magnifying mirror attached to a bathroom wall,mscoco,6981,0.1,0.2,94108
+371,A woman in a yellow shirt sitting on a bed.,mscoco,7413,0.2,1.0,648634
+372,A pair of horses stand in a corral.,mscoco,6064,0.7,1.0,696124
+373,a surfer in a wet suit is surfing on a white board,mscoco,6769,0.3,0.5,215166
+374,A plate with a meat sandwich and fries with ketchup,mscoco,7657,0.3,0.25,781225
+375,A zebra's head and neck is bent down towards the ground.,mscoco,6816,0.1,0.16666666666666666,220571
+376,Long electric freight train passing a station platform.,mscoco,6164,0.1,0.5,812289
+377,Modern espresso machine on counter in residential kitchen.,mscoco,7076,0.3,1.0,482544
+378,A flower vase is sitting on the glass table near the window. ,mscoco,7247,0.1,0.5,279962
+379,Closed captioning of a television program showing on a tv screen.,mscoco,7492,0.0,0.045454545454545456,190870
+380,A man and woman standing next to a bike near a fire hydrant.,mscoco,6217,0.1,1.0,729786
+381,A hotel bathroom with brown cabinets and folded towels.,mscoco,6951,0.0,0.09090909090909091,224192
+382,Three items containing giraffes are displayed in a window.,mscoco,7454,0.1,1.0,680467
+383,A potluck buffet set up on a long table.,mscoco,6622,0.4,0.3333333333333333,335116
+384,A herd of elephants walking along a river near a forest.,mscoco,6778,0.7,1.0,462475
+385,A pizza on a pan ready to be put into the oven.,mscoco,6900,0.0,0.05263157894736842,370341
+386,A motorcycle with an old fashioned side car attached.,mscoco,7393,0.3,0.5,140831
+387,Two images of a woman crouching down to hit a tennis ball.,mscoco,7980,0.5,1.0,778483
+388,A blue street sign hanging from the side of a building.,mscoco,6353,0.2,0.5,609043
+389,Man in a hoodie with his blazing birthday cake ,mscoco,7915,0.0,0.05263157894736842,191510
+390,A horse riding an astronaut.,drawbench,25,0.0,0.0,25
+391,A person prepares to cut a large cake on a table.,mscoco,7783,0.2,1.0,764778
+392,A lot of organization would be advisable for this messy area.,mscoco,7909,0.1,1.0,636022
+393,A black bear walks in front of a tree in a forest.,mscoco,6503,0.3,0.5,188145
+394,Boats are parked in a bright blue watered marina.,mscoco,6772,0.6,0.5,227021
+395,Two decker bus entering leaving Winchester Bus Station.,mscoco,6932,0.1,0.14285714285714285,80165
+396,Four extremely dirty and nasty urinals in bathroom,mscoco,7798,0.1,0.2,173864
+397,A black and white horse leaned over eating grass.,mscoco,7191,0.7,1.0,353386
+398,A small white dog playing with a frisbee. ,mscoco,7327,0.8,1.0,57709
+399,A man with a red shirt is playing tennis.,mscoco,7746,0.5,0.5,30984
+400,a person standing in a living room that has had fire damage,mscoco,6257,0.0,0.07692307692307693,181032
+401,A group of brown and white sheep in grassy area next to a building.,mscoco,7811,0.0,0.02564102564102564,403118
+402,A large white bed with a wooden headboard.,mscoco,6767,0.2,1.0,221722
+403,A bicycle parking sign on a pole at the corner of a street.,mscoco,6726,0.1,0.5,387592
+404,Two flowers sit in a folded up piece of paper on a table.,mscoco,7104,0.1,1.0,755743
+405,Table with a person eating cereal with a cup of coffee and muffin and another black coffee on the table across the table.,mscoco,7245,0.1,0.5,814647
+406,A family of both adult and child elephants.,mscoco,7795,0.5,0.5,443546
+407,Three zebras standing in sparse grass plain with trees.,mscoco,6632,0.4,0.2,427137
+408,A well lit room with a couch and a black and white patterned chair.,mscoco,7845,0.1,1.0,124377
+409,Large and small decorative lace umbrellas with wooden handles.,mscoco,7619,0.1,1.0,647623
+410,"A cooking wok that has stir fry cooking in it, consisting of broccoli, mushrooms and other food  items.",mscoco,6261,0.2,1.0,743218
+411,A man cutting food at counter with beers in the foreground.,mscoco,6138,0.0,0.012658227848101266,278689
+412,A yellow fire hydrant next to a tower.,mscoco,7262,0.2,1.0,710132
+413,"Young skier learning how to balance on a snow board, while an adult watches.",mscoco,7722,0.1,0.3333333333333333,515478
+414,A group of giraffes that are standing on the pavement.,mscoco,6161,0.0,0.09090909090909091,531835
+415,A man wearing sunglasses snowboards down a hillside.,mscoco,6589,0.2,0.16666666666666666,144065
+416,a clock on a tower with a church steeple and bell,mscoco,7526,0.1,0.125,537596
+417,A man in a buggy is being pulled by horses.,mscoco,7941,0.1,0.1,587238
+418,The inside of a fine bakery with glass kitchen walls,mscoco,7864,0.1,1.0,172523
+419,Three stuffed bears one is wearing a cape and a hat.,mscoco,7125,0.1,0.5,237677
+420,Two vintage motorcycles sitting in the grass on display.,mscoco,6329,0.5,1.0,647150
+421,Oranges with boxed people in a box on counter,mscoco,6288,0.1,1.0,371587
+422,A traffic jam after a three wheel car has been hit and turned over ,mscoco,6635,0.1,0.5,523321
+423,a girl and boy with bike having a picnic,mscoco,7808,0.1,0.125,85774
+424,A cardboard box containing a reef of glazed donuts.,mscoco,6331,0.9,1.0,744134
+425,Small children ski on a flat area at a ski resort. ,mscoco,7132,0.2,0.5,534549
+426,Cute long legged dog wearing a tan hat,mscoco,6420,0.1,0.3333333333333333,324028
+427,Downhill ski racer competing during winter race event.,mscoco,7880,0.4,0.5,391018
+428,a white top down car with five luggage on the back in a car show.,mscoco,7051,0.1,1.0,98772
+429,A man eating a pretzel at an outdoor event. ,mscoco,7050,0.1,0.5,413003
+430,Searching for autumn pictures on flickr using laptop.,mscoco,6666,0.1,1.0,233169
+431,A woman is in the bathroom posing for a picture.,mscoco,6318,0.3,0.5,812458
+432,a surfer is seen mid air jumping from a wave,mscoco,7044,0.2,0.3333333333333333,451463
+433,A group of zebras and a giraffe in an enclosure.,mscoco,6595,0.1,1.0,341728
+434,"Person in wet suit from front, looking to side, holding a surfboard and standing in water up to knees, in a large body of water with a pier in background against an evening pink sky with some clouds.",mscoco,7273,0.1,0.25,647740
+435,Herd of zebras grazing on tall grass in wide open range.,mscoco,6085,0.8,1.0,748331
+436,A man jumping up into the air holding a racquet.,mscoco,7064,0.4,1.0,385843
+437,A jockey is riding a horse across a river.,mscoco,6324,0.3,0.5,581896
+438,Person in orange coat with traffic sigh standing next to small boy at intersection.,mscoco,7226,0.1,1.0,422927
+439,Man laying down on the back of a motor boat.,mscoco,6590,0.1,1.0,239423
+440,"a family with little baby, eating dinner in front of big window",mscoco,6940,0.1,1.0,203677
+441,A dog shown in the side view mirror of a car.,mscoco,7961,1.0,1.0,820680
+442,"Sunshines through the window of a bedroom onto the bed, with folded clothing and a styrofoam wedge sitting on top of it, and an office chair beside it.",mscoco,7297,0.1,0.125,53523
+443,There are tooth brush and gum like candies.,mscoco,7080,0.0,0.07692307692307693,243260
+444,A skateboarder performing a jump off a ledge.,mscoco,6163,0.1,0.5,817361
+445,Blue and grey 95th street subway train in the subway.,mscoco,6502,0.1,0.1111111111111111,363798
+446,Man walking by red sign on sidewalk by window of building while another looks on.,mscoco,6369,0.0,0.00684931506849315,95765
+447,The luxury bathroom is equipped with all the necessities.,mscoco,6558,0.1,0.5,335888
+448,Parking meter on city street with car in parking space.,mscoco,6291,0.9,1.0,780938
+449,"A monitor, keyboard, mouse, and laptop are sitting on a desk in front of a window.",mscoco,6696,0.3,0.5,739319
+450,Multiple sheep with long wool eat grass next to a wire fence.,mscoco,7794,0.1,0.2,501298
+451,Vehicle passing through intersection in urban area at dusk.,mscoco,7426,0.1,0.25,551908
+452,Hot dogs in buns with beans and coleslaw is standard fair at most cookouts.,mscoco,7758,0.0,0.03225806451612903,765267
+453,People walking through an indoor fruit market on green tables. ,mscoco,6984,0.0,0.011627906976744186,217538
+454,A zebra and a giraffe eating from the grass and trees.,mscoco,7507,0.3,1.0,39358
+455,A giraffe standing in the grass by a tree limb.,mscoco,6226,0.3,0.5,818264
+456,Four adult elephants and one baby elephant standing on muddy shore by moving water with rocks.,mscoco,6571,0.2,0.25,489558
+457,A horse and dressage rider prepare to scale a hurdle.,mscoco,7377,0.1,0.1111111111111111,158628
+458,Men with hockey sticks and a surfboard play on a beach.,mscoco,6896,0.0,0.023809523809523808,630935
+459,Bananas are on sale for 47 cents per pound in the produce section.,mscoco,6354,0.0,0.08333333333333333,583144
+460,Giraffes and zebras stand in a grassy area.,mscoco,6829,0.7,1.0,739071
+461,A plate with a decorative horse design on it.,mscoco,7719,0.1,1.0,326820
+462,A helicopter spins up its blades on the deck of am aircraft carrier.,mscoco,7781,0.1,1.0,705876
+463,"Antique black and white photograph of a crowd of people, horses and buggies",mscoco,7394,0.0,0.07692307692307693,621752
+464,A man and woman walking with surfboards ,mscoco,7878,0.5,1.0,466790
+465,A red train is pulling into a train station.,mscoco,7103,0.4,0.5,507462
+466,Adult working on dog's teeth in living area of residence.,mscoco,7144,0.3,1.0,579555
+467,Close up of a brown banana roasting on a grill.,mscoco,6646,0.1,1.0,184198
+468,A girl swings her bat to hit the ball during a softball game.,mscoco,7322,0.7,1.0,253329
+469,One cat and one dog sitting on the grass.,drawbench,45,0.0,2.8885037550548817e-05,45
+470,Pedestrian with rolling suitcase heading towards busses in urban setting.,mscoco,6405,0.1,0.14285714285714285,243519
+471,A baseball batter stepping up to plate while a crowd watches.,mscoco,6126,0.1,0.16666666666666666,245889
+472,Horse grazes in pasture in front of large mountain range. ,mscoco,6387,0.4,1.0,4862
+473,Sleeping cat snuggled up to a pair of sneakers.,mscoco,7849,0.1,1.0,9440
+474,Umpire conferring with player at mound during game.,mscoco,7688,0.1,0.3333333333333333,571250
+475,a kitchen with a tiled floor and white fridge ,mscoco,6660,0.2,0.25,349238
+476,A cellphone being used by an individual in a room.,mscoco,7463,0.2,0.5,148458
+477,A man leaps in the air while on his ski board.,mscoco,7001,0.3,1.0,380382
+478,A man riding a kiteboard on top of a body of water.,mscoco,6877,0.4,0.5,589482
+479,A black dog laying on a tile floor next to wall.,mscoco,6339,0.3,1.0,275620
+480,Fake money in the process of being laminated and trimmed.,mscoco,7901,0.1,1.0,327504
+481,An old building with two towers has a large multi-faced clock between them.,mscoco,6286,0.0,0.0006067961165048543,420678
+482,A cafeteria cook prepares vegetables on a tray,mscoco,6316,0.3,0.5,773040
+483,Two elephant have platform chairs and one chair has two people sitting in it.,mscoco,6723,0.2,0.5,489844
+484,a FLOCK OF SEAGULS IS SEEN AT THE BEACH ON THE SAND,mscoco,7030,1.0,1.0,150729
+485,A Swiss Army Knife with man different selections of knives.,mscoco,6130,0.2,0.5,444324
+486,Professional baseball player hitting a ball during daytime.,mscoco,6477,0.5,1.0,212998
+487,Bear on trail in with grass and shrubs. ,mscoco,7309,0.2,1.0,728992
+488,The man poses with his snowboard in front of covered snowmobiles.,mscoco,7660,0.1,0.5,819334
+489,A rear view of several zebras standing next to each other.,mscoco,7713,0.3,1.0,279160
+490,An individual skiing at a mountain ski resort. ,mscoco,7284,0.1,0.5,671853
+491,Polar bear enjoying snack of carrots while standing on large rock.,mscoco,7049,0.3,0.5,588127
+492,a fish eye view of a small white living room,mscoco,7212,0.0,0.08333333333333333,574168
+493,"seven bowls of different foods rice greens etc,",mscoco,7481,0.0,0.027777777777777776,658396
+494,Man intently hitting baseball with aluminum bat and no batting helmet,mscoco,6784,0.1,1.0,174064
+495,Two bears kiss each other on the nose.,mscoco,7349,0.1,0.125,63104
+496,A man falling off a surfboard while riding  a wave.,mscoco,7569,0.3,1.0,64604
+497,Cross traffic sign under a stop sign in front of an intersection.,mscoco,6160,0.0,0.015873015873015872,684617
+498,A toilet and a bathtub  with tools on the floor and toilet seats.,mscoco,7952,0.0,0.006993006993006993,271397
+499,A man standing next to two dogs in a park.,mscoco,7138,0.1,1.0,829639
+500,Snowboarders strike a pose with a variety of boards. ,mscoco,7891,0.4,1.0,448011
+501,A large brick building with a clock tower.,mscoco,6963,0.4,1.0,680570
+502,A silhouetted person rushes through a damp plaza with an umbrella.,mscoco,7464,0.1,1.0,406721
+503,a woman gets ready to pet a big horse ,mscoco,6702,0.3,1.0,735045
+504,Fruits and vegetables in yellow dish with halloween items featured.,mscoco,7695,0.1,1.0,243045
+505,"In late afternoon in January in New England, a man stands in the shadow of a maple tree.",drawbench,97,0.0,0.0,97
+506,A red clock on a city street corner.,mscoco,7962,0.0,0.043478260869565216,109637
+507,a vintage truck with a barrel in the back ,mscoco,6000,0.2,0.2,518276
+508,Pair of scantily clad adults resting on red benches across of city skyline.,mscoco,7319,0.1,0.2,358829
+509,Several kites are flying on the beach in the blue sky.,mscoco,6373,0.5,0.5,450587
+510,A group of people in a kitchen prepare food. ,mscoco,7718,0.6,0.3333333333333333,163647
+511,A glider is flying over the beach on a foggy day.,mscoco,6770,0.1,0.3333333333333333,78496
+512,A group of zebras and birds are gathered around water.,mscoco,7253,0.4,1.0,134405
+513,A person types quickly on a laptop keyboard.,mscoco,7275,0.2,1.0,362481
+514,A skier is skiing alone down the ski run.,mscoco,6239,0.0,0.015151515151515152,751155
+515,Bathroom sink holding liquid soap and a cup with toothbrushes.,mscoco,7421,0.5,1.0,112971
+516,black sheep standing in large grass field during sunset,mscoco,6604,0.1,1.0,653189
+517,A skateboard with two different color and sized wheels.,mscoco,6941,0.0,0.05,43457
+518,A small child flies a kite near two small boats of people.,mscoco,6975,0.0,0.09090909090909091,422236
+519,a pitcher on the mound getting ready to throw a ball ,mscoco,6448,0.8,0.5,252327
+520,"View of a foreign bathroom that has the ""toilet"" in the floor",mscoco,7958,0.0,0.05555555555555555,355204
+521,A female tennis player bends down with legs apart while a boy ball runner looks ahead.,mscoco,7360,0.0,0.009615384615384616,367495
+522,a woman standing on the sidewalk holding onto a pink umbrella,mscoco,7762,0.1,0.3333333333333333,117343
+523,A white and black tiled bathroom with toilet and sink.,mscoco,6468,0.2,0.3333333333333333,317676
+524,Sleek train that is parked at the station,mscoco,7813,0.2,0.5,166729
+525,Person nuzzling cat on seat of motorized vehicle.,mscoco,6637,0.0,0.0625,264116
+526,A large black bird with a large orange  beak sitting on a rope.,mscoco,6141,0.1,0.5,662689
+527,"Snow boarder in mid-flight, inverted, with a steep snowy slope in the background.",mscoco,7435,0.1,0.3333333333333333,346041
+528,Baked items as seen through plate glass coming out of conveyor.,mscoco,7668,0.1,0.25,420893
+529,A person performing a stunt on a snowboard.,mscoco,7072,0.7,1.0,629458
+530,A clock that is on the side of a stone building.,mscoco,6563,0.7,1.0,744872
+531,a man wearing headphones looking something on his laptop,mscoco,6026,0.4,1.0,46146
+532,an image of giraffes that are in a barn,mscoco,7282,0.5,1.0,257459
+533,Baggage carriers at an airport next to a jet liner,mscoco,6303,0.0,0.007518796992481203,151111
+534,Several pieces of luggage stacked on top of one another.,mscoco,6350,0.9,1.0,257148
+535,Rancher with cowboy hat tending to horse around him,mscoco,6485,0.1,0.2,781410
+536,The person is flying a kite in the field by the monument.,mscoco,6436,0.3,1.0,538760
+537,A cat takes a rest on top of a computer keyboard.,mscoco,6768,0.9,1.0,425844
+538,"A living room with a couch, chair, and coffee table.",mscoco,6443,0.5,1.0,5310
+539,A series of photographs showing the stages of kitchen remodeling.,mscoco,7786,0.1,1.0,531877
+540,A zebra in a fenced area and a cheetah in a seperate fenced area in the front.,mscoco,7460,0.1,1.0,140246
+541,A man in a tan suit stands in front of curtains while holding a hat.,mscoco,7155,0.1,1.0,59706
+542,A brown and white dog between a persons legs in car.,mscoco,7407,0.1,1.0,439711
+543,"A coffee table containing various things, such as a mug of liquid, 3d glasses, and book and headphones.",mscoco,7648,0.1,0.5,394694
+544,"Two washers, red scissors, a box knife, and other materials",mscoco,6964,0.0,0.02702702702702703,668674
+545,A woman in a blue cardigan holds a plate of food while another woman eats.,mscoco,6913,0.0,0.038461538461538464,783260
+546,people gather around and sit at a table around a birthday cake,mscoco,7956,0.7,0.3333333333333333,764370
+547,A smiling man wearing a blue shirt checking his cell phone.,mscoco,6033,0.1,1.0,162202
+548,BLACK AND ORANGE BIKE WITH HIGH SEAT HAS DRINK CARRIER.,mscoco,7401,0.1,1.0,511602
+549,"A street sign reading ""Coronation Avenue"" on the side of a pole.",mscoco,6251,0.1,0.3333333333333333,179722
+550,A flock of sheep graze in a green pasture before towering trees.,mscoco,7990,1.0,1.0,519259
+551,A small red pickup truck loaded with things in the back.,mscoco,7158,0.6,1.0,275983
+552,A baseball player has just hit a ball.  ,mscoco,6815,0.3,0.25,252354
+553,Many different kites fly in the sky over a series of large buildings and a grassy field.,mscoco,6805,0.8,0.5,189212
+554,A man cross country skis down a snow covered street.,mscoco,7108,0.2,0.3333333333333333,80263
+555,A Blue Angel jet aircraft during a aerial display ,mscoco,7372,0.1,0.14285714285714285,420166
+556,A group of people waiting to walk across street as people on bicycles ride by.,mscoco,7395,0.0,0.002369668246445498,319924
+557,A street festival with booths and umbrellas and people.,mscoco,7542,0.1,0.2,168422
+558,Red and black model train on a toy track.,mscoco,6753,0.2,0.3333333333333333,417306
+559,A plane is flying through the clear sky,mscoco,6121,0.7,0.5,213177
+560,Group of brown cows with horns in front of a hut,mscoco,7931,0.2,1.0,184278
+561,A birthday cake is covered with partially melted candles.,mscoco,6212,0.5,1.0,634332
+562,A living room has a sofa and pictures on the walls.,mscoco,6152,0.8,1.0,143448
+563,Person driving a motorcycle down a road that is lined with motorcycles.,mscoco,7835,0.0,0.08333333333333333,557582
+564,Sunflowers in a vase cast shadows on a table. ,mscoco,7654,0.2,1.0,333402
+565,People making and selling bread at a stand.,mscoco,6383,0.1,0.1111111111111111,334904
+566,The banana plant has a large red leaf on it.,mscoco,6427,0.3,1.0,519351
+567,Two red train carts and a yellow cart on a track.,mscoco,6845,0.0,0.03225806451612903,252975
+568,A tray displaying a donut and coffee is shown while a person checks their cell phone.,mscoco,7430,0.1,1.0,684895
+569,A cat sits on top of a car outside a house.,mscoco,7799,0.4,1.0,692861
+570,"Skateboarder in a skate park at night, at the top of a bowl.",mscoco,7256,0.1,0.125,812505
+571,A man and woman are smiling at a restaurant table.,mscoco,7989,0.2,1.0,25283
+572,A person holds out a sandwich on a plate.,mscoco,6201,0.2,1.0,386426
+573,Professional female tennis player jumping and stretching to reach a ball.,mscoco,7635,0.3,0.16666666666666666,761641
+574,A bed has a white bedspread and decorative pillows along with some personal items on it.,mscoco,6760,0.0,0.006896551724137931,24303
+575,A young man is going down a ramp on a skateboard.,mscoco,6207,0.1,0.1111111111111111,233985
+576,Three people play a game of tennis on a tennis court.,mscoco,6158,0.2,0.5,562535
+577,A dog and a cat are sitting on the ground.,mscoco,7886,0.2,1.0,263671
+578,A microwave and computer are on top of a table. ,mscoco,6360,0.2,1.0,8886
+579,The Emirates airplane is able to carry many passengers.,mscoco,7497,0.2,0.3333333333333333,235428
+580,A man riding a wave on a white surfboard.,mscoco,6536,0.6,1.0,513789
+581,A lawn mower is loaded onto a truck,mscoco,7836,0.1,1.0,152809
+582,A closeup of a man and a donuts with people in the background.,mscoco,7037,0.0,0.045454545454545456,490066
+583,Several directional signs are set on a pole in a city street.,mscoco,6627,0.3,1.0,786523
+584,"Sheep graze in a pasture, near city buildings.",mscoco,7550,0.2,1.0,772209
+585,A hot dog with lots of toppings is served in a red basket with a soda. ,mscoco,7503,0.1,0.3333333333333333,496225
+586,One plate has biscuits and gravy and the other plate has sweet potato fries.  ,mscoco,6905,0.1,1.0,366743
+587,A surfboarder is at the beach riding a wave.,mscoco,7584,0.1,0.5,171321
+588,"A pitcher, a batter, and an umpire on a field",mscoco,6655,0.0,0.015873015873015872,369717
+589,a blurry picture of cars headed down a highway,mscoco,6553,0.1,1.0,778077
+590,A professional baseball game with the batter swinging at the ball,mscoco,6183,0.3,0.5,66370
+591,A man in a suit walking across a baseball field,mscoco,7951,0.1,1.0,383306
+592,Coach and young players in red shirts at baseball field.,mscoco,6454,0.0,0.005263157894736842,232087
+593,A red colored car.,drawbench,0,0.3,0.3333333333333333,0
+594,Two zebras stand together in a large grassy field,mscoco,7230,0.8,1.0,621969
+595,Two soccer players go for the soccer ball.,mscoco,7045,0.4,0.5,542716
+596,A dinner table with glasses of wine and a plates of cheese and crackers.,mscoco,7442,0.2,0.25,711090
+597,A baseball player wearing red swings at a ball.,mscoco,6451,0.2,0.3333333333333333,773803
+598,A look at a white refrigerator and brown cabinets. ,mscoco,6214,0.4,1.0,781872
+599,A soccer goalie blocking a kick from the net. ,mscoco,6857,0.7,1.0,560508
+600,A ski resort filled with skiers and people riding on tram cars.,mscoco,7517,0.0,0.07692307692307693,819253
+601,A gray and white cat sitting next to a pink teddy bear.,mscoco,6061,0.1,0.25,149264
+602,A blue and white truck that sell ice cream parked,mscoco,6785,0.0,0.07142857142857142,392815
+603,A shirtless man in shorts riding a skateboard,mscoco,7642,0.5,0.5,285220
+604,A teal bowl sits on a counter next to a microwave.,mscoco,6776,0.1,1.0,343554
+605,"A row of green donuts, a row of glazed donuts, and a row of chocolate donuts",mscoco,7255,0.1,1.0,270550
+606,A horse pulls a red wagon with people,mscoco,7540,0.2,1.0,607810
+607,the pitcher winding up to pitcher the ball ,mscoco,7514,0.6,1.0,759696
+608,A golden bird on a pole is next to a cathedral spire.  ,mscoco,7981,0.1,1.0,251744
+609,An orange train driving down the train tracks,mscoco,7844,0.8,0.5,132614
+610,"A kitchen with wood grain cabinets, hardwood floors and a stainless steal refrigerator.",mscoco,6614,0.5,0.5,609534
+611,Young bespectacled man cooks food on a stove top.,mscoco,7667,0.2,1.0,36113
+612,View from a park of a marina and mountains in the distance.,mscoco,7175,0.1,0.16666666666666666,481545
+613,A man standing by three large bowls full of donuts.,mscoco,6359,0.0,0.07142857142857142,253069
+614,Buses on opposite corners create illusion of one long bent bus.,mscoco,6417,0.0,0.01,240558
+615,Young girls in matching outfits carrying umbrellas at outdoor bus stop.,mscoco,7414,0.1,0.5,633802
+616,A large banana tree that has green colored bunches of bananas on it along with various branches. ,mscoco,6032,0.8,1.0,745188
+617,The trunk of a car is filled with many suitcases.,mscoco,7916,0.8,1.0,380281
+618,View of a traffic light and a stop sign at an intersection.,mscoco,7641,0.2,0.5,323271
+619,Young couple posing with a blender and stuffed animal.,mscoco,6146,0.1,1.0,362872
+620,Skier airborne while skiing down a forest slope.,mscoco,7935,0.5,1.0,182952
+621,A green and yellow passenger train passing under a foot bridge.,mscoco,6831,0.2,1.0,170019
+622,A group of men are practicing their tennis game.,mscoco,6460,0.5,0.5,5552
+623,a yellow red and green van and a person,mscoco,7754,0.1,1.0,542397
+624,a large bed sitting next to a wall with open windows,mscoco,6294,0.1,0.3333333333333333,695283
+625,A white colored sandwich.,drawbench,9,0.0,0.00025220680958385876,9
+626,Four surfers are standing on the beach with coordinating boards and posing for a photo.,mscoco,6593,0.2,1.0,176986
+627,A very cute bright colored bird on a clock.,mscoco,7698,0.2,0.5,728261
+628,Close picture of chihuahua dog and desktop screen,mscoco,6692,0.1,0.5,372486
+629,Front view of a blue and white jet airliner on runway. ,mscoco,6153,0.2,0.14285714285714285,374057
+630,Batter gets into a crouch for a possible ball bunt.,mscoco,6652,0.0,0.06666666666666667,67239
+631,The man adjusts the tie for a younger man.,mscoco,7933,0.7,1.0,150845
+632,A toilet has been fitted with a system to potty train a cat.,mscoco,7771,0.0,0.015873015873015872,657896
+633,Many lit candles with penguin figurines  on a birthday cake. ,mscoco,7993,0.1,1.0,587284
+634,A man in black jacket jumping on skateboard next to a brick wall.,mscoco,7749,0.0,0.005747126436781609,377860
+635,Two fuzzy puppies sleep on a towel next to a window.,mscoco,6608,0.0,0.00625,187853
+636,A man is holding a travel case in a living room.,mscoco,7974,0.1,0.25,774986
+637,Two men are sitting on motor scooters in a dirt yard.,mscoco,7228,0.0,0.0030211480362537764,744963
+638,A sign that says 'NeurIPS'.,drawbench,189,0.0,0.0,189
+639,A small piece of cake on a white saucer with a fork.,mscoco,6483,0.2,0.3333333333333333,475849
+640,"Woman seated on a park bench, reading and listening to music player.",mscoco,6104,0.1,1.0,634662
+641,"Plain color keyboard, mouse, and small iPod, against black background.",mscoco,7770,0.1,0.3333333333333333,481956
+642,Pink tulips are in a pitcher full of water.,mscoco,7016,0.3,1.0,59070
+643,A crowded market with people standing at several fruit stands.,mscoco,7515,0.3,0.3333333333333333,331325
+644,Tennis player wearing orange and white holding up a racket. ,mscoco,6685,0.1,0.5,197863
+645,a baseball player holding a bat on the field,mscoco,7412,0.9,1.0,313279
+646,Woman in brightly lit kitchen smiling near sink.,mscoco,6157,0.4,1.0,264633
+647,A man singing karaoke using the game Wii and a large TV screen.,mscoco,6684,0.0,0.00980392156862745,309157
+648,Two plates with sandwiches on them sitting on a table with a knife and a glass.,mscoco,6647,0.2,0.5,285742
+649,a bird with a mohawk stands in front of a plate,mscoco,6225,0.1,0.25,141319
+650,A handicapped bathroom on a plane with stainless steel toilet and handrails.,mscoco,6259,0.1,1.0,66685
+651,Men putting bags and gear into a moving van,mscoco,7375,0.0,0.08333333333333333,819537
+652,Open textbook near a computer keyboard and mouse on a mouse pad.,mscoco,7587,0.1,0.5,174233
+653,Pafrking metr.,drawbench,108,0.0,0.00641025641025641,108
+654,Snow boarders take a break at the bottom of the mountain.,mscoco,6265,0.2,0.5,234537
+655,A storefront with 'Text to Image' written on it.,drawbench,181,0.0,0.0,181
+656,Woman in blue shirt with a plate of food.,mscoco,6258,0.2,1.0,177763
+657,A teenaged girl in a purple shirt sits on a bench in the sun.,mscoco,6210,0.1,1.0,645650
+658,A person snow boarding under power lines with a forest in the background.,mscoco,6813,0.1,0.5,510746
+659,Orioles baseball player just hit the ball in a game,mscoco,6933,0.2,0.3333333333333333,439356
+660,Vehicles at roadway intersection on clear sunny day.,mscoco,6434,0.2,1.0,390841
+661,A blue and white fire hydrant in front of a chain link fence.,mscoco,7437,0.7,1.0,177897
+662,A man in a restaurant eating a pizza with a knife and fork.,mscoco,6505,0.1,0.16666666666666666,503806
+663,"Study desk set up with book, computers and sticky notes",mscoco,6024,0.1,0.2,332219
+664,The tall clock tower is built into the corner edge of the building.,mscoco,7577,0.0,0.018518518518518517,506264
+665,A group of men sitting next to each other on a bench.,mscoco,7338,0.7,0.5,352058
+666,A zebra bows its neck in a zoo enclosure,mscoco,6735,0.0,0.019230769230769232,208870
+667,a bundt cake with icing on a yellow plate.,mscoco,7741,0.1,0.5,539471
+668,"During a baseball game, a batter prepares to swing.",mscoco,7223,0.3,1.0,235054
+669,Two boats have been docked in the harbor.,mscoco,7947,0.3,0.3333333333333333,297252
+670,The back end of a train car painted orange and red with windows. ,mscoco,6050,0.0,0.010752688172043012,43883
+671,Tomatoes in a frying pan on a stove top.,mscoco,6143,0.0,0.010309278350515464,329817
+672,Two pieces of luggage sitting next to a pair of red shoes.,mscoco,7792,0.1,1.0,69752
+673,Two giraffes are looking over a sand ridge.,mscoco,7493,0.1,1.0,415949
+674,A London street is crowded with buses and people. ,mscoco,6375,0.3,1.0,583118
+675,A toilet with no service sits in a room with a wall painted with palm trees.,mscoco,6341,0.1,1.0,661779
+676,A train is leaving a station while a person is walking along side.,mscoco,7015,0.0,0.08333333333333333,684811
+677,Two women sitting at a table with a pizza in front of them.,mscoco,7011,0.4,1.0,795303
+678,A skier wearing an orange jacket and black pants swiftly skis down a pine laced hill.,mscoco,7244,0.1,0.14285714285714285,73782
+679,Two sheep are lying on the ground under a tree. ,mscoco,6036,0.1,1.0,1737
+680,A car park pay station in the rain.,mscoco,7960,0.1,0.14285714285714285,141298
+681,A young boy in the middle of hitting a tennis ball.,mscoco,6458,0.8,1.0,231173
+682,A person throwing a disc that is lit up and glowing red.,mscoco,6325,0.1,0.16666666666666666,63322
+683,Typical Indian fare which includes curry and roti.,mscoco,7785,0.2,1.0,183837
+684,a toothbrush with white pink and blue bristles laying on a wooden ledge,mscoco,6908,0.1,1.0,494219
+685,"A desk with a computer, monitor and a keyboard.",mscoco,6907,0.4,1.0,487729
+686,A suitcase packed with a variety of food products,mscoco,6308,0.3,1.0,504214
+687,"Street scape with speciman pine tree, bike coming towards person on recumbent bike which is presumably the photographer. ",mscoco,7528,0.1,0.125,547760
+688,An infant brushing his teeth in a bathtub.,mscoco,6642,0.5,1.0,139050
+689,two bows of food next to a cup of coffee on a table,mscoco,6224,0.0,0.02631578947368421,805255
+690,A ski slope is covered with hundreds of people skiing.,mscoco,6819,0.6,1.0,615408
+691,Pair of giraffes standing at edge of grassy area.,mscoco,6178,0.0,0.04,709649
+692,Man holding back dog while sheep are held in a holding area. ,mscoco,7850,0.1,0.25,108078
+693,These cars are parked near a fence and a stop sign.,mscoco,7207,0.1,1.0,314541
+694,"A view of a keyboard and mouse, on a table that reads ""workstation:.",mscoco,6810,0.0,0.030303030303030304,642764
+695,"A home studio is set up for music, video and web usage.",mscoco,6398,0.0,0.023809523809523808,54173
+696,A man sitting on the pier by the beach next to a umbrella.,mscoco,7480,0.0,0.09090909090909091,540716
+697,"A small bathroom has a toilet, sink, and bathtub.",mscoco,6491,0.3,1.0,287652
+698,"close up of a red, blue and yellow tie on someones neck",mscoco,7913,0.0,0.058823529411764705,331761
+699,Small light colored puppy with white flying disc in mouth.,mscoco,6967,0.1,0.5,358445
+700,A parking meter sits beside a street intersection where cars are parked.,mscoco,6352,0.0,0.07692307692307693,50484
+701,A light is illuminating a bathroom with a standup shower,mscoco,6931,0.1,0.2,800764
+702,Large grey colored tower with several clock faces.,mscoco,7436,0.2,0.25,281102
+703,A brown dog running in the grass holding a Frisbee. ,mscoco,7026,0.6,1.0,239000
+704,A man holds a flying disc in a wooded area.,mscoco,6568,0.0,0.06666666666666667,633066
+705,a street with cars parked on the side,mscoco,7269,0.7,0.5,427790
+706,A green wallet on top of a folded t-shirt and an assortment of other items on a night stand table. ,mscoco,6695,0.0,0.058823529411764705,776213
+707,A small gray elephant walking along a dirt field.,mscoco,6665,0.2,0.5,315473
+708,A bathroom is seen with towels on the floor.,mscoco,7524,0.0,0.09090909090909091,552757
+709,An elephants head has been photo-shopped onto a falcon.,mscoco,7714,0.1,0.5,611350
+710,A man raising an object to the sky near a beach,mscoco,6273,0.0,0.03125,127559
+711,"A living area with with chairs, counter and a television.",mscoco,6083,0.5,1.0,209254
+712,A healthy sandwich with meat and tomato and avocado.,mscoco,7520,0.0,0.05263157894736842,198210
+713,a brown and black tower with windows and a white clock ,mscoco,7456,0.0,0.034482758620689655,217195
+714,elephants in captivity with buildings and a sky background,mscoco,7998,0.2,0.16666666666666666,34955
+715,You can take pictures with this Windows phone.,mscoco,6922,0.0,0.05,240534
+716,"a motorcross bike that is red, white and black",mscoco,7766,0.1,0.25,508518
+717,Directional signs displayed outside of city building on cloudy day.,mscoco,6919,0.2,1.0,581411
+718,There is a zebra standing in the middle of the road.,mscoco,6124,0.6,1.0,542490
+719,Diners hold slices of cake on their forks.,mscoco,7123,0.1,0.25,27641
+720,"Boulevard with wooden bench with inscription ""You're Almost There"".",mscoco,7291,0.1,1.0,204280
+721,A woman pulls a loaf of bread from the oven.,mscoco,7111,0.1,0.16666666666666666,306612
+722,Kite in the design of female legs in the cloudy sky.,mscoco,7725,0.1,0.14285714285714285,261421
+723,A giraffe and several zebras walking in a grassy plain.,mscoco,6507,0.3,0.3333333333333333,789035
+724,a living room with two couches a lamp and windows,mscoco,6814,0.2,0.16666666666666666,158311
+725,A brown and white cat sits on a cluttered desk.,mscoco,6362,0.2,0.5,771380
+726,A bed and chairs are in a wall papered room.,mscoco,6012,0.2,0.2,612279
+727,Woman gives black dog a drink of water from blue plastic cup,mscoco,7131,0.1,1.0,185048
+728,"Three items of luggage of color blue, black, and red
+",mscoco,6428,0.0,0.09090909090909091,166193
+729,Closeup of a yellow teddy bear with a red shirt.,mscoco,6148,0.1,1.0,200712
+730,Big Ben is a tower that is near a ferris wheel.,mscoco,6397,0.0,0.015384615384615385,692715
+731,Three giraffes in an enclosure eat food from a trough.,mscoco,6610,0.1,0.25,252369
+732,Two women at a horse event wearing hats.,mscoco,6525,0.1,1.0,48058
+733,"Front door, windows, and bench of medical clinic.",mscoco,6230,0.1,0.125,340823
+734,"Two people on surfboards, one standing and the other paddling while seated.",mscoco,7097,0.0,0.005,303802
+735,Modified water hydrant fitted with faucet and sink basin.,mscoco,7385,0.1,0.5,790976
+736,A zebra is grazing in an open area.,mscoco,7259,0.9,1.0,675343
+737,a male in a white shirt and black shorts playing tennis,mscoco,6059,0.1,0.1111111111111111,405990
+738,Adult chasing young boy in game with flying disc.,mscoco,7545,0.0,0.0027548209366391185,641774
+739,Tables with purple table clothes under a large tree.,mscoco,7348,0.0,0.0033333333333333335,591097
+740,"A man in one picture five times, on a skateboard",mscoco,7572,0.0,0.014492753623188406,758133
+741,A zebra walks in a grassy fenced enclosure.,mscoco,6917,0.4,1.0,45381
+742,A white bathroom thats framed in gold color,mscoco,7602,0.1,0.3333333333333333,195343
+743,Two woman are standing in front of a candy bowl and one of them is holding glass and spoon.,mscoco,7767,0.1,1.0,365617
+744,A DAMAGED WHITE CD THAT IS DAMAGED ON THE TOP OF A COMPUTER DESK ,mscoco,6925,0.1,1.0,632054
+745,The man is sitting on the head of the elephant and adjusting the seat pad under the buckled belt.,mscoco,6116,0.0,0.004761904761904762,21114
+746,A series of photos showing people riding on skis.,mscoco,7927,0.3,1.0,622491
+747,A female tennis player dressed in orange engaged in competition.,mscoco,6569,0.1,0.3333333333333333,149365
+748,Children at a tennis camp pose on the court with tennis rackets.,mscoco,6056,0.3,1.0,818958
+749,"Examples of baseball moribilia include bats, balls, mitts, and needles.",mscoco,6639,0.0,0.017857142857142856,777233
+750,Bathroom mirror with brown towel hanging on rack.,mscoco,7563,0.2,0.125,607611
+751,Olympic skiers appear to race in Vancouver 2010,mscoco,6384,0.2,0.5,125104
+752,A lady in a pink shirt petting a brown horse,mscoco,7057,0.1,0.125,170338
+753,a knife stuck in a cake designed to look like a white dog,mscoco,7005,0.1,1.0,146390
+754,"Two head cars of a train are ""face to face"". ",mscoco,6388,0.1,1.0,457060
+755,A refrigerator door open filled with rotten looking food.,mscoco,7315,0.1,1.0,27535
+756,The large vase on display has a bird and flowers on it.,mscoco,6561,0.2,0.16666666666666666,431563
+757,Two girls on skateboards riding down a suburban street,mscoco,6389,0.1,1.0,622599
+758,Two skaters are boarding through a skate park.,mscoco,6314,0.1,0.125,299847
+759,Old rusted buses and parts of other big vehicles in a junk yard.,mscoco,7671,0.2,1.0,431648
+760,Three people enjoying drinks and eating food together.,mscoco,7586,0.0,0.07142857142857142,41171
+761,some bread with pate and cucumber slices on them,mscoco,6578,0.1,0.2,740325
+762,A group of brown horses are drinking from a pond.,mscoco,6211,0.3,1.0,210340
+763,A black and white photo of a woman sitting on a bench.,mscoco,7796,0.5,0.5,691298
+764,Image of a kitchen sink below a shelf with a dish rack nearby.,mscoco,6122,0.3,0.5,268873
+765,A woman feeding a carrot from her mouth to a giraffe.,mscoco,7328,0.1,1.0,387335
+766,A group of bicyclists speeding down a city street.,mscoco,7002,0.6,1.0,259194
+767,A girl plays with leaping dog in grassy area. ,mscoco,7060,0.1,0.5,278628
+768,The meal on the plate features steak and carrots.,mscoco,6338,0.7,1.0,400764
+769,"Woman sitting on straw and stroking a pony in a pink hat, and another pony is laying in the straw.",mscoco,7367,0.1,1.0,277540
+770,A man cuts a bowl of greens with scissors.,mscoco,6475,0.2,1.0,412396
+771,"High view of sink, toilet, and mirror in small bathroom.",mscoco,6564,0.6,1.0,406949
+772,An illustration of a small green elephant standing behind a large red mouse.,drawbench,64,0.0,0.0,64
+773,A close up shot of a street sign hanging below a traffic light.,mscoco,6221,0.0,0.0136986301369863,155902
+774,A man with a tennis racket in his hands during a game. ,mscoco,7208,0.1,0.2,812950
+775,A woman shows her flip phone to a man in a ball cap,mscoco,7261,0.0,0.0018587360594795538,177966
+776,City bus with passengers boarding for Ballston Station.,mscoco,7279,0.0,0.07142857142857142,748666
+777,A cat is photographed in its profile angle.,mscoco,7747,0.1,1.0,202306
+778,two black faced sheep sit in the grass and rest,mscoco,6827,0.2,0.3333333333333333,395422
+779,two catcher and a pitcher stand on the pitchers mound,mscoco,7079,0.0,0.0034602076124567475,573944
+780,A black and white picture of an intersection,mscoco,7264,0.2,1.0,64297
+781,A group of motorcycles are set up on display,mscoco,6402,0.8,1.0,636942
+782,A row of planted leafy greens in a garden.,mscoco,6456,0.3,0.3333333333333333,730
+783,Two brown cows are walking together eating grass,mscoco,7861,0.4,1.0,589079
+784,One way and do not enter road signs posted on a building.,mscoco,6835,0.0,0.007142857142857143,639425
+785,A man flying a rainbow kite in a clear blue sky,mscoco,6897,0.3,0.3333333333333333,766276
+786,A woman sitting at a table with entrees in front of her.,mscoco,6446,0.6,1.0,792683
+787,Two men walking down a street while using cell phones.,mscoco,7743,0.2,1.0,135453
+788,Queen size bed with grey and beige linens in a room with wood flooring.,mscoco,6750,0.1,0.25,733775
+789,Yellow fire hydrant sits in wooded area setting.,mscoco,7020,0.7,1.0,620513
+790,"An organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating center of sensation and intellectual and nervous activity.",drawbench,88,0.0,0.0,88
+791,A horse-shaped cake with white frosting and sprinkles.,mscoco,7839,0.1,0.5,169195
+792,Purple refrigerator sits outdoors in front of a warehouse. ,mscoco,6921,0.1,1.0,25238
+793,A baseball field with players playing a game,mscoco,6834,0.7,1.0,129406
+794,Air Canada plane being serviced at an airport gate.,mscoco,7209,0.2,0.2,556383
+795,A man riding a skateboard down the side of a ramp.,mscoco,7127,0.1,0.16666666666666666,368372
+796,Large white rhinoceros yard decoration in the back of a black pickup truck.,mscoco,6881,0.1,1.0,419977
+797,A blue plate with slices of bread covers in various toppings,mscoco,6107,0.1,0.2,18598
+798,Baseball player standing in the batters box hitting a ball.,mscoco,7117,0.0,0.025,418703
+799,A couple of doughnuts that are on a plate.,mscoco,6939,0.8,1.0,430663
+800,a man with a cane poses next to a fish tank,mscoco,7536,0.1,1.0,135500
+801,An airplane makes contrails behind a tree branch silouhette.,mscoco,6357,0.1,0.3333333333333333,620803
+802,Oriental family smiling at camera during a meal at a restaurant.,mscoco,6559,0.3,1.0,669490
+803,Two women are standing in front of a small plane,mscoco,6009,0.2,1.0,81715
+804,A wooly animal is laying on its back in a park.,mscoco,7350,0.0,0.01694915254237288,708257
+805,A man is holding a bottle of wine at his computer.,mscoco,6495,0.1,1.0,787158
+806,Several birds standing on the grass near water.,mscoco,6792,0.5,1.0,793653
+807,Three images of a person skateboarding outdoors on a flat surface.,mscoco,6572,0.1,0.3333333333333333,321510
+808,A large brown bear walking through a forest.,mscoco,6462,1.0,1.0,37175
+809,The towel hangs on the support rail near the wooden bathroom sink cabinet. ,mscoco,7135,0.1,0.25,803885
+810,A boy skateboarding on a ramp in a basement.,mscoco,6416,0.0,0.07692307692307693,700102
+811,"A street sign reads ""Too High Divert"" and points with an arrow.",mscoco,7152,0.1,1.0,269762
+812,A small boy balances on a surfboard tip.,mscoco,7251,0.2,0.25,672827
+813,A plate with fried fish and lemons on a table.,mscoco,7157,0.3,1.0,722364
+814,Carrots and other vegetables are on display for sale at a market.,mscoco,6442,0.6,1.0,135853
+815,A lady is gripping the tennis ball on the court. ,mscoco,7664,0.1,0.125,818177
+816,A large pizza with olives and mushrooms in a box.,mscoco,6653,0.5,1.0,306622
+817,Two men playing frisbee in an open park,mscoco,7681,0.8,1.0,133138
+818,Two people riding on a snow mobile with skis on the back,mscoco,6617,0.1,1.0,491390
+819,People walking sheep around a grassy area with people watching.,mscoco,7415,0.2,0.5,196629
+820,Orange tabby cat sitting on top of suitcase with airplane tag.,mscoco,7986,0.1,1.0,66783
+821,A black and white image of tennis players. ,mscoco,6027,0.4,0.5,366187
+822,A DOUBLE DECKER BUS IS DRIVING THROUGH THE APPLE PARKING LOT,mscoco,6681,0.1,1.0,621533
+823,Many people on the beach holding surf boards.,mscoco,7187,0.4,0.5,196741
+824,Close-up shot of a pizza with fresh ingredients.,mscoco,6209,0.1,0.25,7153
+825,"View of kitchen, stainless steel stove and refrigerator.",mscoco,6489,0.6,0.3333333333333333,80988
+826,Young man with backpack holding skateboard going down escalator.,mscoco,7003,0.1,1.0,85139
+827,Multiple fishing boats washed up on the shore,mscoco,6332,0.3,0.5,827109
+828,a room with a bed and a wooden capboard,mscoco,7973,0.7,1.0,699203
+829,A fire hydrant on a hill along a street ,mscoco,6120,0.0,0.09090909090909091,571858
+830,A group of people standing on a beach flying a kite.,mscoco,6719,0.7,1.0,151049
+831,a blue and white airplane in the blue sky,mscoco,6616,0.7,1.0,188741
+832,Sheep and lambs inside in a pin with hay and illuminated windows with three people on other side of gate.,mscoco,7339,0.0,0.09090909090909091,543783
+833,A boy dressed in a blue shirt and blue shorts holds a tennis racket as a ball is in the air near him.,mscoco,6650,0.2,0.3333333333333333,193020
+834,Vegetable pizza sitting on cutting board on table.,mscoco,6223,0.1,0.5,640541
+835,Darth Vader playing with raccoon in Mars during sunset.,drawbench,174,0.0,0.0,174
+836,A red and grey train in train station during day.,mscoco,7978,0.2,0.5,331791
+837,A street clock next to the patio of a building.,mscoco,6067,0.1,0.125,245117
+838,A woman and a man standing beside each other and posing for a picture.,mscoco,7812,0.7,1.0,705977
+839,A blue crocheted teddy bear hanging off of a crocheted blanket ,mscoco,6366,0.1,0.5,679005
+840,A person jumping in the air on a beach.,mscoco,7379,0.5,1.0,648592
+841,Two baseball players slap hands during a game.,mscoco,6866,0.3,0.5,786964
+842,"A pile of luggage, boxes, towels and other items on a carpeted floor",mscoco,6618,0.2,0.25,316306
+843,Six sheep stand close together near a grassy hill.,mscoco,6777,0.0,0.014084507042253521,354224
+844,Stuffed doll reading story to assorted stuffed animals.,mscoco,7708,0.1,1.0,552374
+845,"Several accessories laid out on a table, including a cell phone, a pair of glasses and a flash drive.",mscoco,7724,0.1,0.2,182160
+846,A red fire hydrant on an urban street.,mscoco,6724,0.8,1.0,795597
+847,A white car and a red sheep.,drawbench,20,0.0,0.0,20
+848,A table set for two with a man in the kitchen next to it,mscoco,7945,0.1,0.125,290152
+849,Small Samsung stainless steel microwave with digital clock.,mscoco,6471,0.1,1.0,577144
+850,woman being shown how to play disc golf indoors ,mscoco,7085,0.1,1.0,31649
+851,small sleeping area with someones stuffed green fishy animal,mscoco,7248,0.1,0.5,185419
+852,"Several ""nok"" colorful airplanes are docked at the airport.",mscoco,7010,0.1,0.16666666666666666,733090
+853,A rear view mirror reflecting a gang of bikers.,mscoco,6465,0.1,0.3333333333333333,106908
+854,Food truck with customers ordering them with friends.,mscoco,7560,0.1,0.25,746111
+855,The brown bananas are in a bowl next to pears.,mscoco,7017,0.1,0.2,150605
+856,A meal consists of a burger and a salad.,mscoco,6364,0.5,1.0,389859
+857,A guinea pig in a cage with carrots and broccoli.  ,mscoco,7636,0.2,1.0,789552
+858,"A hydrant, U.S flag on top of a building and a fire truck.",mscoco,6021,0.1,1.0,225885
+859,"a hotel room with a couch, chair and beds",mscoco,6797,0.0,0.023809523809523808,255861
+860,Horse and owner in large city with many reins around head,mscoco,7626,0.1,0.1,774615
+861,"Table filled with hot dogs, tomatoes, coleslaw, beans and chips with drink. ",mscoco,7476,0.1,1.0,713187
+862,A ski jumper performs on the slope at night.,mscoco,6070,0.5,1.0,399875
+863,Handbag made out of yarn sitting on a white blanket. ,mscoco,6004,0.1,1.0,383578
+864,a womans legs wearing black shoes standing on a green and white suitcase,mscoco,7613,0.1,1.0,427404
+865,"To guys relaxing on the couch, one is sleeping and the other watching TV.",mscoco,6728,0.1,0.25,492819
+866,Cars driving in the city at night near a large building.,mscoco,7008,0.5,1.0,660266
+867,A clock tower ring above an ornate building in the foreground.,mscoco,6084,0.1,0.3333333333333333,778418
+868,Young adults lying on fold away bed in living area.,mscoco,6974,0.1,1.0,760155
+869,People wait with their baggage to board the subway train.,mscoco,6519,0.5,1.0,45779
+870,Ducks swim in the ocean near two large ferries.,mscoco,7278,0.1,1.0,596203
+871,"A banana, pineapple, apple, and orange have eyes and mouths.",mscoco,7793,0.1,1.0,634696
+872,two blue and white vases sit on a tabletop,mscoco,7224,0.2,0.5,136067
+873,A small head of broccoli surrounded by leaves.,mscoco,7597,0.6,1.0,190925
+874,Some people who are surfing on a wave that is going under a bridge.,mscoco,6484,0.2,0.3333333333333333,808163
+875,Buses and cars at an intersection in a city,mscoco,7906,0.6,1.0,602473
+876,Two giraffes standing around in an enclosed area.,mscoco,6602,0.5,1.0,270288
+877,The man wears a t-shirt with a green neck tie. ,mscoco,6419,0.1,0.1111111111111111,731653
+878,Pair of giraffes in zoo enclosure feeding near tree.,mscoco,6955,0.5,1.0,752171
+879,A boat sitting on top of a lagoon next to a sandy beach.,mscoco,7351,0.2,1.0,154557
+880,A dog is standing in the snow with two Frisbees.,mscoco,7096,0.1,1.0,431502
+881,Two men eat a slice of pizza with cold weather clothes on .,mscoco,7265,0.1,0.3333333333333333,728890
+882,A stop sign and a no uturn sign on a street ,mscoco,7201,0.0,0.0196078431372549,552060
+883,An elephant is standing in a zoo enclosure.,mscoco,6548,0.6,1.0,141542
+884,A number of students studying on laptop computers.,mscoco,7888,0.4,1.0,259451
+885,Single park bench atop stones near natural setting.,mscoco,6556,0.1,0.2,264332
+886,a black cat is laying in a sink,mscoco,7939,0.8,1.0,718560
+887,Group of motorcycle police officers riding down a city road together. ,mscoco,6706,0.9,1.0,83687
+888,An empty kitchen with wooden cabinets and black appliances. ,mscoco,7280,0.5,1.0,227569
+889,Brown Irish Setter sleeping on couch with head on pillow.,mscoco,6363,0.1,1.0,100643
+890,Many motorcycle are parked outside of a printing store.,mscoco,7968,0.0,0.09090909090909091,181152
+891,A baseball player is attempting to swing and hit the ball. ,mscoco,6802,0.1,0.2,667278
+892,Several fresh vegetables arranged on a wooden countertop.,mscoco,7078,0.5,1.0,246354
+893,A series of two photos with tow people standing on a tennis court.,mscoco,6714,0.0,0.02564102564102564,403493
+894,Two people riding horses on top of a wet sandy beach.,mscoco,6833,0.8,1.0,352134
+895,Heart shaped pizza with pepperoni and spinach on a plate.,mscoco,7216,0.1,1.0,122586
+896,A bird is standing in the top of a fruit tree.,mscoco,6909,0.3,0.5,609876
+897,The man is skiing down the hill while posing for a picture.,mscoco,7498,0.1,0.125,573154
+898,A plate of pastries being served on a table with other items of food.,mscoco,7335,0.1,1.0,418124
+899,four women in white outfits are playing tennis and some fans,mscoco,7128,0.1,0.1,443056
+900,A woman holding a hot dog with a pickle in her mouth.,mscoco,6256,0.1,1.0,388779
+901,Two giraffes stand in a grassy field in front of a tree.,mscoco,7024,0.9,1.0,243908
+902,tree are many animals standing in a field next to a big tree,mscoco,6673,0.2,0.3333333333333333,460344
+903,A pretty room has a white bed with white pillows and a large window.,mscoco,6123,0.1,0.3333333333333333,470598
+904,A man and a child are flying a kite on a beach. ,mscoco,6184,0.7,1.0,510988
+905,Living room and deck of a small house in a marina,mscoco,7344,0.0,0.041666666666666664,111830
+906,A kitchen sink with wood cabinets around it,mscoco,6740,0.8,0.5,363328
+907,A laptop computer sitting on a desk in front of a window.,mscoco,6755,0.6,0.3333333333333333,245690
+908,A young man sits on a street barrier with his foot on a fire hydrant.,mscoco,6517,0.1,1.0,570672
+909,A piece of art made from recycled items to make a piece that appears to be a female carrying a handbag.,mscoco,7676,0.1,0.3333333333333333,267256
+910,A banana tree in dense vegetation with a large dangling bunch.,mscoco,7855,0.7,1.0,155211
+911,Palm trees are above the sand on the beach.,mscoco,7329,0.0,0.09090909090909091,463890
+912,Two men are using a laptop and smiling for the camera.,mscoco,7846,0.1,1.0,815473
+913,a slim computer and keyboard sitting on a desk,mscoco,6970,0.2,0.5,87084
+914,A little boy sitting at a table with a bag of food.,mscoco,7625,0.0,0.007751937984496124,274899
+915,A skateboarder is balancing at the top of a ramp.,mscoco,6268,0.3,0.5,546161
+916,Kitten on the floor staring at a pair of socks.,mscoco,6089,0.1,0.25,257131
+917,These people have their horse on a leash in the snow.,mscoco,7677,0.1,1.0,571191
+918,A statue of a man with an umbrella stands in a plaza.,mscoco,6592,0.6,1.0,215866
+919,a propeller plane sits parked in a air field ,mscoco,7472,0.6,1.0,811718
+920,a public transit bus driving on a road ,mscoco,7775,0.3,0.5,798230
+921,An aqua colored car with a bicycle in a roof rack.,mscoco,6745,0.1,1.0,149482
+922,"Pedestrian, bicycle, motor scooter and rickshaw traffic at a market",mscoco,7929,0.0,0.0125,233609
+923,Little girl brushing her teeth with a green electric tooth brush.,mscoco,6621,0.2,1.0,93253
+924,a person riding a bike on a city street ,mscoco,6147,0.6,1.0,784408
+925,A plate of food with an egg sandwich and coffee. ,mscoco,6764,0.2,0.3333333333333333,681221
+926,Sandwich and pastry with coffee in a cafe,mscoco,7270,0.0,0.06666666666666667,93517
+927,A kitchen scene is pictured in this image.,mscoco,6171,0.3,1.0,718745
+928,China Airlines plane in air with landing gear out.,mscoco,6855,0.0,0.038461538461538464,340959
+929,"Four seagulls standing and facing same direction on a rusting pipe resting on rusting tank, and leaning in ocean, with a ship in the distance on the horizon during daytime with clear blue sky.",mscoco,7032,0.1,1.0,628156
+930,Pastries on a wooden table top in kitchen,mscoco,6736,0.0,0.07692307692307693,800244
+931,A woman and two kids at a wooden table with a cake.,mscoco,6887,0.1,0.25,380605
+932,Baseball player about to deliver an attempted hit of baseball.,mscoco,7752,0.1,0.1111111111111111,768001
+933,A piece of silver luggage sitting on a car seat.,mscoco,7168,0.1,1.0,166577
+934,Adults sitting on motorcycles in night time photo.,mscoco,7721,0.1,1.0,709493
+935,A bathroom consists of a toilet and toilet paper holders.,mscoco,7703,0.3,0.25,281108
+936,A man and a boy cross country skiing ,mscoco,7508,0.1,0.5,296289
+937,A pair of elephants being led in line by a trainer at a zoo.,mscoco,7955,0.2,0.5,377669
+938,A woman teaching a little girl how to ride skis.,mscoco,6270,0.3,0.5,215018
+939,A man standing next to a little girl on a ski slope.,mscoco,6480,0.5,0.5,334155
+940,A woman with a pony tail is playing tennis on grass.,mscoco,6054,0.0,0.04,724940
+941,A large white and yellow boat docked next to a pier.,mscoco,7225,0.2,0.5,639403
+942,This crop of marijuana plants will produce tremendous profits for its growers.,mscoco,7873,0.1,0.5,750776
+943,Pair of horseback riders during ride through wooded lane.,mscoco,7218,0.4,0.3333333333333333,447306
+944,A screenshot of an iOS app for ordering different types of milk.,drawbench,164,0.0,0.0,164
+945,A double decker bus pared below the statosphere in Las Vegas.,mscoco,7776,0.1,0.25,778704
+946,A batter is swinging at the ball thrown.,mscoco,6300,0.3,1.0,23657
+947,A collection of food is displayed in an open refrigerator.,mscoco,7769,0.9,1.0,685972
+948,A female skateboarding barefoot with a purple effect applied to background. ,mscoco,6305,0.1,1.0,46564
+949,Orange and green teams compete in a frisbee game. ,mscoco,7471,0.3,0.3333333333333333,411055
+950,A white and gray cat is stretching on a picnic table. ,mscoco,7670,0.1,1.0,353981
+951,A group of street signs with a cloudy blue sky in the background.,mscoco,6850,0.3,1.0,240851
+952,"Many people are walking among large, open umbrellas.",mscoco,7118,0.1,0.2,561731
+953,A pair of scissors in a small box labeled pinking shears.,mscoco,6691,0.2,1.0,120994
+954,A large donut is next to plates and bowls of fruit.,mscoco,7034,0.1,0.2,345144
+955,A giraffe is drinking water from a pond.,mscoco,7450,0.8,1.0,819767
+956,"A meal of muffins, apples, and an orange on a plate.",mscoco,7164,0.2,1.0,623300
+957,A dog laying on the floor chewing a toy while a man laying on a couch watches.,mscoco,7871,0.1,1.0,723851
+958,"A toilet, shower stall and chair in wash room. ",mscoco,6321,0.1,0.25,363382
+959,A white sports utility vehicle with extensive damage to its rear end.,mscoco,6878,0.1,1.0,533126
+960,Gay and lesbian community members riding motorcycles down the street during a gay pride parade.,mscoco,6717,0.1,0.25,24179
+961,Six snowboards are leaning against a wooden wall.,mscoco,7102,0.1,1.0,683345
+962,A bed roughly made with a flowered quilt ,mscoco,6043,0.3,0.3333333333333333,282418
+963,a zebra sticking its head into a car window,mscoco,6588,0.5,1.0,553607
+964,A keyboard equipped with a gel wrist wrest.,mscoco,7392,0.0,0.02127659574468085,519846
+965,Group of people in suits riding blue motorcycles.,mscoco,6514,0.1,1.0,417148
+966,An ornate clock sits before an office building.  ,mscoco,7513,0.1,0.3333333333333333,253539
+967,Large military aircraft landing at an airport. ,mscoco,6445,0.2,1.0,794972
+968,A baseball player sliding into base during a game.,mscoco,7879,0.7,1.0,505194
+969,A young person who is having fun  riding a snowboard.,mscoco,7803,0.3,0.5,460938
+970,Black bear stands up on a rock in a zoo enclosure. ,mscoco,7860,0.3,0.5,83719
+971,Two snow skiers standing by a ski lift. ,mscoco,7478,0.1,0.125,300457
+972,A small young elepwhnt is walking in front of an adult.,mscoco,7494,0.0,0.007142857142857143,187975
+973,At the intersection of boezio and alla rotonda dei goti.,mscoco,7817,0.0,0.038461538461538464,827829
+974,A view of four airplane tails from inside an airport window.,mscoco,7938,0.2,1.0,675935
+975,An old car is decorated as a parade float.,mscoco,6524,0.2,1.0,335392
+976,A man holds a kite in his hands while a child walks by in a field.,mscoco,7336,0.2,1.0,364233
+977,Dogs and sheep in a field with covered bleacher containing people in the background.,mscoco,6521,0.0,0.03333333333333333,22600
+978,A man standing next to a yellow fire hydrant.,mscoco,6837,0.6,1.0,221900
+979,A wall clock on a green wall next to a closed door.,mscoco,6255,0.1,0.5,270522
+980,A white clock is sitting on a book shelf. ,mscoco,6508,0.1,1.0,640389
+981,Oranges and apples are displayed on a sales table.,mscoco,6011,0.6,1.0,515305
+982,people sitting around tables under a white tent,mscoco,7423,0.1,0.3333333333333333,688744
+983,Two giraffes are photo shopped into a zoo setting poorly.,mscoco,6162,0.0,0.001358695652173913,506448
+984,Onions and other vegetables are being boiled in a stew pot.,mscoco,6668,0.4,1.0,431995
+985,"A brown bear in long, green grass by water",mscoco,6576,0.4,1.0,579914
+986,A neatly made queen size bed inside a hotel room,mscoco,7391,0.4,1.0,287182
+987,"A clock with the name ""Eason"" hanging above a building entrance.",mscoco,7198,0.0,0.07142857142857142,467804
+988,A single broccoli floret in a larger garden.,mscoco,6150,0.7,1.0,216719
+989,A calf is being inspected at a competition.,mscoco,6848,0.1,0.5,327997
+990,a laughing baby in blue and a brown teddy bear,mscoco,7744,0.2,1.0,193665
+991,"Meat, potatoes, peppers, and a carrot are sitting on a plate.",mscoco,7302,0.1,1.0,737206
+992,A small table thats holding a basket for some remote controls.,mscoco,6960,0.2,1.0,408723
+993,Black and white image of several parked bikes lined in front of street sign.,mscoco,6188,0.1,0.2,613697
+994,"Young boy pointing from background on table with breakfast meal of scrambled eggs, toast, hot chocolate or milk (for the boy).",mscoco,6176,0.1,1.0,125743
+995,A large train travels down tracks near a field. ,mscoco,6654,0.2,0.25,156512
+996,A zebra and colt stand in muddy grass of a field.,mscoco,7852,0.4,0.3333333333333333,141985
+997,Four jets flying in formation in a blue sky.,mscoco,7696,0.5,1.0,222660
+998,A blonde woman with a nose ring brushes her teeth.,mscoco,6615,0.0,0.015873015873015872,186562
+999,Four paper containers filled with different kinds of food.,mscoco,7840,0.1,0.25,757337
+1000,A no parking sign on a pole near the street ,mscoco,6890,0.6,1.0,574777
+1001,Man and woman under umbrellas in a crowd at a funeral.,mscoco,7176,0.0,0.07142857142857142,761738
+1002,A bed with a comforter that has been turned down.,mscoco,6979,0.2,0.5,50661
+1003,A police car onsite of an accident involving a truck on a freeway.,mscoco,7040,0.2,0.5,391460
+1004,An orange cat sits on a soft platform beside a window.,mscoco,7815,0.1,1.0,706812
+1005,children learning to play tennis on a clay court,mscoco,6942,0.2,0.3333333333333333,615884
+1006,A woman riding  skateboard as she reaches for a ball.,mscoco,6713,0.1,0.3333333333333333,802865
+1007,A group of people sitting at a table with wine and wine glasses.,mscoco,6001,0.6,1.0,612994
+1008,The windows of a railroad train photographed against a cloudy background.,mscoco,7193,0.0,0.03571428571428571,53003
+1009,a rest room and a bench inside the dugout,mscoco,7342,0.1,1.0,234176
+1010,two women and a man holding a big white surfboard,mscoco,6648,0.2,1.0,554942
+1011,A lettuce salad topped with chopped carrots and tomatoes.,mscoco,6169,0.2,0.5,86777
+1012,A yak needs long hair to survive in these mountains.,mscoco,7624,0.1,1.0,227930
+1013,Woman smile as they walk with a waving flag.,mscoco,6227,0.1,0.14285714285714285,769401
+1014,A boy is preparing to hit a tennis ball. ,mscoco,7409,0.7,0.5,551649
+1015,A TRUCK USED TO HAUL FAIR EQUIPMENT PARKED UNTIL THE FAIR IS OVER,mscoco,7553,0.0,0.07142857142857142,55936
+1016,Two men play Wii bowling at an event.,mscoco,7075,0.0,0.017241379310344827,276215
+1017,An Baltimore Orioles clock during the daytime hours.,mscoco,6047,0.0,0.08333333333333333,785995
+1018,a bathroom with red walls and a tiled floor,mscoco,7656,0.0,0.09090909090909091,819721
+1019,A small game room with vintage arcade systems,mscoco,6869,0.1,0.5,440258
+1020,a celebratory with a suit on and hes smiling and is very happy ,mscoco,6269,0.2,1.0,230432
+1021,A cat stands up to sniff a water bottle.,mscoco,6205,0.2,0.3333333333333333,630649
+1022,A brown and black bear walking on a rocky area.,mscoco,6587,0.3,0.5,356183
+1023,"People standing and watching an elephant, while the elephant puts his trunk on a ladies head.",mscoco,7174,0.2,0.5,29947
+1024,A brown and white cow has an ear tag.,mscoco,6629,0.4,1.0,724991
+1025,A white bird is perched on the back of a chair. ,mscoco,6888,0.6,1.0,518675
+1026,Selfie of woman smiling next to a large cat on a pillow,mscoco,6818,0.1,0.5,674361
+1027,A street sign is framed by large huge buildings.,mscoco,7655,0.1,0.1111111111111111,653166
+1028,"Airplanes inside hanger, one is red, white, and blue. ",mscoco,7359,0.1,0.5,767055
+1029,A large modern touring bus in city traffic,mscoco,7570,0.0,0.015625,495454
+1030,A man holding a frisbee is in the air in front of a crowd. ,mscoco,7094,0.4,1.0,647002
+1031,Two children work at a desk on laptop computers.,mscoco,6403,0.4,1.0,805234
+1032,"A bowl of fruit has bananas, apples, peaches, and limes.",mscoco,7579,0.1,1.0,627941
+1033,Various colored  and sized doughnuts displayed on a shelf.,mscoco,7036,0.7,1.0,396693
+1034,One dog on the street.,drawbench,40,0.0,0.00036443148688046647,40
+1035,A partially installed toilet inside a basement ,mscoco,6832,0.0,0.058823529411764705,144251
+1036,An outhouse that is made out of mud bricks.,mscoco,7109,0.1,0.5,492938
+1037,A couple holding a knife and cutting their wedding cake together.,mscoco,7239,1.0,1.0,511168
+1038,A man with an umbrella walks along a row of cars. ,mscoco,7820,0.1,0.5,634406
+1039,A skateboarder jumps on a rail while doing a trick.,mscoco,6968,0.0,0.07692307692307693,597120
+1040,These cakes are in the form of a train.,mscoco,7070,1.0,1.0,215364
+1041,Doubles tennis match on a real grass court,mscoco,6954,0.2,0.2,698197
+1042,A herd of elephants walking across a river.,mscoco,7691,0.9,1.0,670205
+1043,Many white sinks lined up in a room.,mscoco,7249,0.6,1.0,564009
+1044,a young girl holding a toothbrush in her mouth,mscoco,7661,0.6,1.0,136108
+1045,STOP sign with street labels in front of palm tree. ,mscoco,6573,0.2,0.25,272426
+1046,"Several people standing around with skateboards, one of whom is holding a plate.",mscoco,6945,0.1,1.0,169938
+1047,A realistic photo of a Pomeranian dressed up like a 1980s professional wrestler with neon green and neon orange face paint and bright green wrestling tights with bright orange boots.,drawbench,177,0.0,0.0,177
+1048,"A street sign in New York saying, ""5 Av Museum Mile""",mscoco,7215,0.1,0.5,190511
+1049,A brown dog carrying a blue frisbee on grass,mscoco,6151,0.2,0.5,373335
+1050,Man flying a kite with two small children in a park.,mscoco,6675,0.1,0.1111111111111111,277396
+1051,Dark hair lama or alpaca with farm and mountain background.,mscoco,6193,0.1,1.0,96751
+1052,"Traffic in a Chinese city, bicyclists, autos, and motorized three wheel transports.",mscoco,7477,0.0,0.03125,62415
+1053,A group of people all working with boxes of bananas .,mscoco,6694,0.1,1.0,339257
+1054,Many boats docked in a marina next to a huge building.,mscoco,7371,0.4,0.5,231718
+1055,a group of people standing together wearing skiis,mscoco,6215,0.3,1.0,692866
+1056,Yorkshire terrier puppy rides in his owner's backpack. ,mscoco,6099,0.1,1.0,763341
+1057,A rainbow colored kite and a bird are flying in the sky.,mscoco,7473,0.1,1.0,228633
+1058,A bird flies over a large body of water. ,mscoco,7763,0.9,1.0,494042
+1059,Statues of a woman and four small children with luggage ,mscoco,7077,0.1,1.0,549124
+1060,Two graphically striking zebras showing their true colors,mscoco,6117,0.2,1.0,166374
+1061,A bus mirror is shown on the side of a bus.,mscoco,7816,0.8,1.0,375234
+1062,Giraffes feeding on hay from elevated feed holder.,mscoco,6789,0.6,1.0,243202
+1063,A man and woman are riding a motorcycle with a flag on the back.,mscoco,7704,0.3,1.0,196561
+1064,Two ducks are resting on a rock near the river.,mscoco,7006,0.3,1.0,152432
+1065,A woman is sitting on a bench with a laptop in her lap.,mscoco,7012,0.2,0.25,210560
+1066,A man and woman cutting a wedding cake,mscoco,6793,1.0,1.0,69298
+1067,An elephant stands and grazes on low growing greenery.,mscoco,7325,0.3,0.25,175565
+1068,"Old, tusked elephant eating grass with his buddies",mscoco,6499,0.2,0.125,186175
+1069,a number of people riding skis on a snowy slope ,mscoco,6679,0.5,0.5,799531
+1070,Motorcyclists leading firetruck on roadway during holiday event.,mscoco,6066,0.2,1.0,482651
+1071,Closeup of a hand preparing miniature pizzas on plate.,mscoco,6103,0.1,0.5,324299
+1072,Budapest River Ride amphibious sightseeing bus travels the Danube.,mscoco,7833,0.0,0.09090909090909091,466256
+1073,A small dog wearing a banana split costume.,mscoco,7160,0.1,0.3333333333333333,58211
+1074,"This sandwich is made on a French roll and has Pepper Jack cheese, turkey, guacamole, and lettuce. ",mscoco,7043,0.2,1.0,615904
+1075,A man holding a tooth brush up to his face.,mscoco,6898,1.0,1.0,225442
+1076,a clock tower with trees in the foreground,mscoco,7858,0.5,0.5,487087
+1077,Woman with bookin sat on sidewalk from the top view,mscoco,7268,0.1,0.3333333333333333,800059
+1078,Several people on surfboards in the ocean with a ship in the background.,mscoco,7418,0.3,1.0,133414
+1079,A bus is passing by a large building.,mscoco,6355,0.0,0.08333333333333333,91330
+1080,"At an ag fair, several 4H girls show off their lambs. ",mscoco,7106,0.2,0.5,479921
+1081,A black and white bird stands underneath a wooden bench.,mscoco,7468,0.1,0.25,431292
+1082,A statue of a man riding a horse on a tower of rocks.,mscoco,6377,0.2,1.0,497148
+1083,Street signage indicating earlier days hang in front of primitive looking homes.,mscoco,7566,0.1,0.1111111111111111,77525
+1084,A pair of red scissors on a white surface. ,mscoco,7972,0.2,1.0,256203
+1085,Giraffes necking above small tree line in forest,mscoco,6326,0.0,0.0035714285714285713,572768
+1086,two zebras walking in an enclosed fenced area,mscoco,6780,0.2,0.16666666666666666,204806
+1087,A park bench in the middle of a forest.,mscoco,6861,0.9,1.0,286460
+1088,Small public restroom with chrome counter and wall.,mscoco,6790,0.0,0.09090909090909091,562338
+1089,"A bathroom with toilet, sink, and trash can.",mscoco,7895,0.2,0.2,811114
+1090,The batter looks toward the catcher whose arm is extended.,mscoco,6473,0.0,0.0017953321364452424,157788
+1091,A man who is holding a surfboard and walking in the water.,mscoco,7019,1.0,1.0,748991
+1092,Two bidets in old style tiled public restroom.,mscoco,6828,0.0,0.0625,522987
+1093,Woman tennis player with blonde hair wearing white hat and a orange and white outfit.,mscoco,7529,0.1,0.2,605776
+1094,Child in a body of water wearing a life preserver and water skis.,mscoco,7977,0.1,0.1,187870
+1095,Place setting with snowman napkin and gold start scattered around.,mscoco,6579,0.1,1.0,749349
+1096,A bathroom with a large white bathtub and a tile floor.,mscoco,7354,0.1,0.2,815270
+1097,A red hair woman holding an open box of pizza.,mscoco,7505,0.1,1.0,599532
+1098,A polar bear eating a carrot in the water,mscoco,6791,0.1,0.2,395526
+1099,some clocks buildings and many bicycle riders at night,mscoco,7098,0.0,0.02857142857142857,337754
+1100,Three plates of breakfast foods on a table with tea cups.,mscoco,7509,0.2,1.0,538888
+1101,Silhouette of a person hang gliding in the water.,mscoco,6053,0.1,0.5,699835
+1102,A plastic cart next to a refrigerator in a kitchen,mscoco,6185,0.1,0.14285714285714285,82898
+1103,A person on a snowboard flies through the air.,mscoco,7181,0.8,0.3333333333333333,629364
+1104,"A bathroom with a sink, urinal and a cabinet and mirror on the wall",mscoco,6575,0.0,0.012658227848101266,465642
+1105,A bright yellow fire hydrant has pretty flowers and decorative stones surrounding it; a cement building is in the background and one of the curtains is very colorful. ,mscoco,6015,0.1,1.0,160144
+1106,N erotic woman with pose on a couch,mscoco,7331,0.1,0.3333333333333333,798621
+1107,"Fast train on tracks with ""first"" on front at train station",mscoco,6019,0.0,0.001610305958132045,372493
+1108,A truck is carrying a large construction vehicle.,mscoco,6680,0.4,1.0,545472
+1109,Contents of a backpack laid out on top of the table. ,mscoco,6873,0.7,1.0,772948
+1110,The apple is attached to the back of the laptop.,mscoco,6144,0.1,1.0,504484
+1111,A dog next to a frisbee with a thought bubble,mscoco,6252,0.1,0.2,201447
+1112,A pink toilet with an open seat and an open top.,mscoco,6208,0.2,1.0,526563
+1113,A lone giraffe is walking through a grassy area.,mscoco,7332,0.5,0.5,459902
+1114,An elephant is walking through the green terrain.,mscoco,7693,0.3,1.0,141236
+1115,A group of trike cyclists an bicyclists on a bike trail by a beach,mscoco,6649,0.1,0.2,439135
+1116,A baseball player sliding into a base on a field.,mscoco,6853,0.8,1.0,688928
+1117,A sign that says 'Text to Image'.,drawbench,188,0.0,0.0,188
+1118,A man and a woman are playing a Wii game while a woman sits on the couch with a wine glass in her hand.,mscoco,6583,0.3,0.3333333333333333,48215
+1119,Altered photograph of sheep in a snowy landscape,mscoco,7033,0.4,0.5,594860
+1120,A girl holds a doughnut up to her eye.,mscoco,7266,0.2,0.3333333333333333,327037
+1121,A group of sheep stands around grazing in a field,mscoco,7210,0.4,0.5,54314
+1122,A mirror that is hanging above a sink.,mscoco,7491,0.6,1.0,749290
+1123,A group of people on horseback riding on the beach,mscoco,6022,1.0,1.0,395480
+1124,Iguana eating fruit in fruit stand not intended for him.,mscoco,6594,0.1,1.0,768046
+1125,A red dump truck on an asphalt street.,mscoco,7081,0.2,1.0,284210
+1126,Tcennis rpacket.,drawbench,104,0.1,0.3333333333333333,104
+1127,A living room with wooden floors and tan walls. ,mscoco,6936,0.3,0.2,87899
+1128,A statue of a bear in the snow in front of a house.,mscoco,6961,0.2,1.0,308704
+1129,A woman in pink shirt cutting a slice of pizza.,mscoco,6330,0.1,1.0,261425
+1130,Two giraffes are standing behind a wood fence,mscoco,6598,0.6,1.0,246675
+1131,Young man preforming a stunt on a skateboard.,mscoco,6159,0.1,1.0,628806
+1132,The baby lamb feeds in the open field as the mother peers forward.,mscoco,6948,0.2,0.125,148981
+1133,A sail boat riding through the water while an Airplane takes off in the background.,mscoco,7953,0.1,0.3333333333333333,319643
+1134,A line of small fishing boats moored in the water.,mscoco,7295,0.0,0.041666666666666664,257425
+1135,There is plenty of cheese and other types of vegetables on a plate.,mscoco,6488,0.1,0.5,541731
+1136,An old photograph of a man in a suit with a hat on.,mscoco,6952,0.5,1.0,181432
+1137,A group of giraffes stand in a grassy area.,mscoco,6137,0.5,0.25,751551
+1138,A female professional tennis player serving a the US Open.,mscoco,7729,0.1,0.25,731357
+1139,"Giraffes, zebras and rhinoceros' graze on the open plain.  ",mscoco,7649,0.1,0.14285714285714285,67274
+1140,Two young children are reading a book in bed.,mscoco,6088,0.2,1.0,450408
+1141,Airplanes parked on the tarmac while one appears to be smoking in the distance.,mscoco,6910,0.1,0.3333333333333333,352233
+1142,Cityscape of streets and the El track in Chicago,mscoco,7274,0.0,0.0024813895781637717,113294
+1143,The black flower vase is full of white flowers,mscoco,7206,0.2,0.1111111111111111,609550
+1144,A red double decker bus drives near a bus stop,mscoco,7487,0.3,1.0,414931
+1145,A yellow cat wears a blue plastic sports hat.,mscoco,6712,0.1,1.0,692185
+1146,A trains with both passenger and freight cars moving along a train track.,mscoco,6113,0.0,0.0027548209366391185,312020
+1147,a man looking at a motorcycle at a motorcycle show,mscoco,6759,0.0,0.045454545454545456,38403
+1148,An adult zebra and a baby zebra stand in foliage.,mscoco,6020,0.5,0.2,197191
+1149,A table topped with two plates of food.,mscoco,6669,0.5,1.0,221434
+1150,Having a pasta dinner on the deck with a glass of beer.,mscoco,7591,0.1,1.0,132680
+1151,Worker loading luggage onto an airplane on a conveyor belt.,mscoco,6260,0.2,0.14285714285714285,84221
+1152,"Young baseball batter at home plate, waiting for a pitch.",mscoco,7101,0.4,0.3333333333333333,522242
+1153,Three women in a room with a Nintendo Wii controller.,mscoco,6640,0.1,1.0,278979
+1154,Large construction equipment in street with child watching from stroller.,mscoco,6906,0.1,1.0,298047
+1155,some grapes and some other fruits on a plate,mscoco,6426,0.8,1.0,532199
+1156,a baby giraffe walks in front of an adult giraffe ,mscoco,7898,0.6,1.0,663451
+1157,A close up of a man's black and blue neck tie on a blue shirt.,mscoco,6630,0.1,1.0,404074
+1158,A baby sheep that is nursing from an adult sheep.,mscoco,7340,0.5,1.0,755569
+1159,Several planes lined up on the tarmac at the airport.,mscoco,7148,0.5,0.5,471755
+1160,Adults looking at motorcycle at outdoor riding event.,mscoco,7882,0.1,0.1,449308
+1161,Doughnuts are displayed under glass on a table.,mscoco,7824,0.0,0.09090909090909091,320159
+1162,"A road sign that says ""North A Beverly Ipswich"".",mscoco,6127,0.1,1.0,758075
+1163,An old and worn toilet inside an abandoned building.,mscoco,7380,0.7,1.0,533390
+1164,A red and black motorcycle is parked on the street in front of a building.,mscoco,6106,0.1,0.5,417251
+1165,The female tennis player is wearing red and white.,mscoco,7983,0.4,0.3333333333333333,789568
+1166,Two polar bears are swimming pool looking water.,mscoco,6267,0.1,1.0,447153
+1167,Livestock walking near side of marked road in urban setting.,mscoco,6956,0.1,0.5,280166
+1168,A group of cows grazing behind a fence. ,mscoco,6542,0.4,1.0,635377
+1169,"Close up on middle section on a remote control, black with button with labels above or symbols on the buttons, which are light blue with white, or pale yellow with arrow heads, computer mouse l & r, and one orange button with LASER printed above it.",mscoco,6512,0.1,1.0,727275
+1170,Two boys with pink and blue Disney princess toothbrushes.,mscoco,7161,0.1,0.3333333333333333,321129
+1171,A group of people standing around a table with pizza.,mscoco,6498,0.5,0.25,266582
+1172,"Four airplanes, trailed by smoke, fly through the blue sky.",mscoco,6400,0.2,0.14285714285714285,692658
+1173,Two people playing a WII video game in a living room.,mscoco,6577,0.6,1.0,408468
+1174,A view of a living room with purple chairs in it.,mscoco,7195,0.3,0.3333333333333333,787736
+1175,A man is playing tennis on a blue court.,mscoco,7522,0.2,0.16666666666666666,430427
+1176,A small dog chewing on the foot of a stuffed animal,mscoco,6993,0.2,0.14285714285714285,805818
+1177,Looking out of a window at a couple of horses in an enclosed dirt patch.,mscoco,7995,0.1,1.0,722301
+1178,A view of a lounge car on a passenger train features gleaming wood surfaces and upholstered chairs.,mscoco,7240,0.2,1.0,809596
+1179,large semi truck with steel front end parked in grass,mscoco,7200,0.1,0.5,795729
+1180,"A giraffe is seen, through the trees, in a field.",mscoco,7717,0.5,1.0,708067
+1181,A man in a suit and sunglasses is holding a cell phone.,mscoco,6986,0.1,1.0,238854
+1182,An elephant is behind a tree. You can see the trunk on one side and the back legs on the other.,drawbench,98,0.0,0.0,98
+1183,A rodeo participant rides two horses with one foot on each horse.,mscoco,6716,0.0,0.043478260869565216,34966
+1184,Two soccer players wear red and and black and are on green grass with a white ball.,mscoco,6849,0.0,0.03225806451612903,484942
+1185,An air plane parked by a dock on the water near a house.,mscoco,6852,0.1,0.5,163273
+1186,"a shopping cart full  of bananas on the street
+",mscoco,7908,0.3,0.3333333333333333,764165
+1187,A train parked in front of a power pole and electrical box.,mscoco,7384,0.0,0.0010706638115631692,709201
+1188,Man using cell phone while artist makes tattoo on right leg.,mscoco,6677,0.1,1.0,405352
+1189,A Frontier Airlines jet on a runway during the day.,mscoco,6781,0.1,0.5,307077
+1190,A small fire hydrant by a sign for pet rest area.,mscoco,7819,0.1,1.0,568628
+1191,a living room having a chair some rugs and a bed ,mscoco,7347,0.0,0.0006775067750677507,600887
+1192,Square plate holding a  meal made of chicken and broccoli,mscoco,6973,0.3,0.3333333333333333,416041
+1193,A black and white photo of a parking meter. ,mscoco,6457,0.8,1.0,622754
+1194,A white plastic container filled with fruit and cakes.,mscoco,6187,0.0,0.08333333333333333,427374
+1195,"A living room with couch, modern chair, fireplace television and rug on a wood floor.",mscoco,7881,0.4,1.0,751769
+1196,A herd of cattle grazing on a dry grass field.,mscoco,6493,0.1,0.1,33630
+1197,Two white draft horses pulling a single blade plow,mscoco,7684,0.3,1.0,499641
+1198,a woman in a white jacket is holding an orange umbrella,mscoco,6644,0.1,0.25,252719
+1199,Open farmers market with different kinds of vegetable sitting out. ,mscoco,6145,0.9,1.0,795208
+1200,A horse stands near a fence on a cloudy day.,mscoco,6105,0.4,0.5,181225
+1201,A dog that is on a leash next to an orange bowl.,mscoco,7388,0.1,0.3333333333333333,484871
+1202,"A rainy patio with chairs, umbrellas and tables. ",mscoco,6197,0.2,0.5,804475
+1203,A large brown and black dog laying on top of a bed.,mscoco,7921,0.0,0.06666666666666667,429084
+1204,A man is swinging a tennis racket at a ball,mscoco,6463,0.7,1.0,435313
+1205,"A small bathroom with a vanity, toilet and rack.",mscoco,6264,0.0,0.0025,633914
+1206,Fire hose that is plugged into a fire hydrant.,mscoco,6049,0.6,0.5,814481
+1207,A counter with various craft supplies including a glue gun.,mscoco,6196,0.1,1.0,261193
+1208,A man with a racket goes to hit a ball in the air.,mscoco,6872,0.2,0.5,35581
+1209,A man skateboarding down a metal hand rail,mscoco,7943,0.6,1.0,313868
+1210,Young zebra feeding from another zebra in a large grassy area,mscoco,7470,0.1,0.2,317473
+1211,a man using a red phone receiver to talk on his cell phone,mscoco,7666,0.2,0.5,551906
+1212,A man is using a game remote control in front of a television.,mscoco,6283,0.3,0.25,652050
+1213,This truck has an open deck for the passengers. ,mscoco,7975,0.1,0.125,767941
+1214,"Hotel room with queen sized bed, arm chair, sliding glass door, and television atop wooden cabinet.",mscoco,6204,0.2,0.16666666666666666,52209
+1215,Several people that are riding on top of surfboards.,mscoco,7441,0.7,0.5,316618
+1216,"A dinner table is decorated with white cups, plates and a vase with flowers in it.",mscoco,7772,0.1,0.5,506266
+1217,"A drawer with a toothbrush, toothpaste, a comb and dental floss. ",mscoco,7970,0.1,0.16666666666666666,393275
+1218,A man and a woman sleeping on a bed.,mscoco,6232,0.5,1.0,365965
+1219,A picture of a panel van going through a busy intersection in a small town.,mscoco,6565,0.0,0.038461538461538464,613652
+1220,Two cheese pizzas sit on a wood table with forks and knives.,mscoco,7595,0.0,0.008403361344537815,467939
+1221,A dog with its paws on a steering wheel and on coming car.,mscoco,7919,0.1,1.0,365226
+1222,a male tennis player wearing white is playing tennis,mscoco,7163,0.4,0.5,84441
+1223,"Westminster palace, Big Bend tower and Westminster bridge.",mscoco,7575,0.1,0.1111111111111111,81635
+1224,Man leading a race horse past photographers at an event.,mscoco,6266,0.2,0.3333333333333333,761640
+1225,A sheep with large horns stares into the camera.,mscoco,7179,0.1,0.3333333333333333,356373
+1226,A polar bear with a green ball and a yellow ball,mscoco,6509,0.2,0.5,401686
+1227,Four baseball players pitching balls in the middle of a baseball field.,mscoco,7685,0.1,0.5,37329
+1228,two laptops sitting beside each other on a desk ,mscoco,7203,0.5,0.3333333333333333,567683
+1229,A Bristrol sign is placed near the building. ,mscoco,6437,0.0,0.041666666666666664,450127
+1230,Image of cars sitting at an intersection with a bicycle warning sign.,mscoco,7451,0.0,0.041666666666666664,317930
+1231,A red and blue passenger train traveling through countryside.,mscoco,7863,0.1,0.125,727252
+1232,Two zebras walking in between rocks at a zoo.,mscoco,6034,0.3,0.5,619851
+1233,Smiling girl sitting on a couch with lamps and artwork around her,mscoco,7926,0.1,1.0,142843
+1234,A train pulling into a station beside a platform full of people.,mscoco,6688,0.6,1.0,533635
+1235,Two rooms of a house are left in disarray on moving day.,mscoco,6424,0.0,0.0018281535648994515,259792
+1236,A group of zebras are on some grass with trees and bushes behind them.,mscoco,6891,0.6,0.5,336589
+1237,Young boy playing baseball in the middle of a swing at the plate,mscoco,7720,0.6,1.0,624860
+1238,Urban city road intersection on rainy day near hill.,mscoco,7617,0.2,0.125,675673
+1239,a bed with a laptop a backpack a book a mouse and red case and other items,mscoco,7283,0.1,0.5,155842
+1240,Authority personnel holding back dog while gunman prepares to shoot running black bear.,mscoco,6165,0.1,1.0,126361
+1241,Tables with white tablecloths and brown place mats in well decorated dining area.,mscoco,6924,0.2,1.0,552156
+1242,The youth carrying a surfboard is walking along the beach.,mscoco,7923,0.5,1.0,229222
+1243,A cat on the right of a tennis racket.,drawbench,130,0.0,8.993776306795697e-06,130
+1244,A table with plates of food containing sandwiches and eggs.,mscoco,7403,0.2,1.0,135001
+1245,A few elephants walking in large grassy field,mscoco,6334,0.8,1.0,377425
+1246,Apple and banana displayed in black and white photograph.,mscoco,6990,0.4,1.0,263665
+1247,some red yellow green and blue chairs and a yellow umbrella,mscoco,7760,0.1,0.5,787038
+1248,A double-decker bus driving on the streets in London.,mscoco,6111,0.1,0.1111111111111111,714987
+1249,Two striped zebras are on knee high grazing grass.,mscoco,7182,0.3,1.0,828834
+1250,Two people kite ski over a snowy expanse in the mountains.,mscoco,7940,0.2,0.5,82571
+1251,A large black bear walking in the grass,mscoco,6811,0.9,1.0,409251
+1252,A red fire hydrant on the side of the street.,mscoco,7313,0.9,1.0,542318
+1253,Snowboarder making turn in large open area at night.,mscoco,7254,0.1,0.3333333333333333,483028
+1254,A modern bathroom is shown with a square sink.,mscoco,7446,0.3,0.5,762042
+1255,Woman Skier sits on snowy mountain side with skis. ,mscoco,7376,0.1,1.0,196639
+1256,"A large specimen of zebras, or African equids",mscoco,7791,0.0,0.045454545454545456,32647
+1257,View of a London clock tower from across the river alongside a bridge,mscoco,6432,0.5,1.0,829589
+1258,An overhead view of a train traveling next to a lake.,mscoco,6842,0.4,0.3333333333333333,412226
+1259,Black curly haired dog chasing yellow flying disc in grass yard.,mscoco,7466,0.1,1.0,575799
+1260,A person holds up a shoe with a jumping cat logo and compares it to a cat lounging on the floor.,mscoco,6738,0.1,0.5,531422
+1261,A person flying through the air on skis.,mscoco,7603,0.9,1.0,386835
+1262,two sheep sitting on a hill next to a fence,mscoco,7288,0.4,1.0,720903
+1263,A double parking meter sitting on a pier.,mscoco,6516,0.2,1.0,684120
+1264,Two elephants in leafy area eating grass and leaves.,mscoco,7126,0.0,0.045454545454545456,508061
+1265,A large white bear standing next to a fallen tree log.,mscoco,7459,0.1,1.0,262052
+1266,Yellow fire engine parked on roadway at outdoor event.,mscoco,7963,0.1,1.0,575458
+1267,A baseball batter who is at bat and ready to swing.,mscoco,7780,0.4,0.2,203714
+1268,A group of woman shopping at a market,mscoco,6497,0.2,1.0,103037
+1269,Aerial jump performed by skateboarder at night time.,mscoco,6566,0.6,1.0,777202
+1270,Mother and child elephants playing in water feature of zoo enclosure.,mscoco,7532,0.4,0.5,293222
+1271,New York City Time Square Center with traffic stopped as pedestrians walk by.,mscoco,6345,0.0,0.013513513513513514,326695
+1272,Students with laptops at long tables in a room studying.,mscoco,6190,0.1,0.1,816463
+1273,A white plate topped with different types of breakfast foods.,mscoco,6289,0.8,1.0,713580
+1274,A surfer wearing a green shirt jumps up from a wave with his orange board.,mscoco,7246,0.0,0.03333333333333333,615023
+1275,A large polar bear on a toy ice pond in a zoo.,mscoco,6425,0.1,0.3333333333333333,217837
+1276,A group of skiers on skis at a mountain resort.,mscoco,7346,0.3,0.3333333333333333,170372
+1277,A freshly baked tomato and pesto pizza at a restaurant,mscoco,7726,0.0,0.045454545454545456,246459
+1278,Bunch of bananas on a basket next to a watermelon,mscoco,6279,0.1,1.0,404892
+1279,A suitcase is open with a cat in it.,mscoco,7867,0.9,1.0,61410
+1280,A purple city bus stopping at a bus stop,mscoco,6450,0.2,0.25,663563
+1281,A laptop on a small table in a room.,mscoco,6358,0.4,1.0,829426
+1282,A train on top of a surfboard.,drawbench,114,0.0,0.0,114
+1283,Two personal sized pizzas are being prepared on a pan.,mscoco,6825,0.1,0.3333333333333333,424810
+1284,A white bathroom has a double sink and mirrors.,mscoco,6782,0.0,0.0064516129032258064,31144
+1285,The tennis player in a green shirt hits a ball on the clay court.,mscoco,7800,0.0,0.04,491673
+1286,Black and white image of three different elephants. ,mscoco,7066,0.0,0.08333333333333333,448534
+1287,Multi container train at switching junction on tracks.,mscoco,6657,0.0,0.07142857142857142,819075
+1288,a small boy smiles after having made small pizzas ,mscoco,6582,0.0,0.043478260869565216,128225
+1289,Skiers are skiing down a snow covered mountain.,mscoco,7822,0.6,0.3333333333333333,73292
+1290,A motor bike's handlebars and two review mirrors.,mscoco,7052,0.2,0.5,622605
+1291,Black and white photo of a train at a station.,mscoco,7150,0.8,1.0,191868
+1292,A disc golfer releases a throw from a dirt tee box on a wooded course.,mscoco,7490,0.0,0.03333333333333333,730133
+1293,A woman training a white horse in a contest.,mscoco,7370,0.2,0.25,690364
+1294,A fire hydrant is shown on a sidewalk with a brick building nearby. ,mscoco,6786,0.4,1.0,362027
+1295,"Man in standing near a tree holding two umbrellas.
+",mscoco,7788,0.1,1.0,825905
+1296,Group interacting with statue of a baseball player and child.,mscoco,7257,0.1,1.0,172654
+1297,Ocean view through a dirt road surrounded by a forested area. ,mscoco,7674,0.1,1.0,197910
+1298,A wedding cake design with roses and wine glasses.,mscoco,6100,0.1,1.0,686336
+1299,Billboard celebrating ten years of film on a building.,mscoco,6965,0.1,0.25,821676
+1300,A toothbrush and travel size toothpaste in plastic coating.,mscoco,7759,0.1,1.0,278435
+1301,Pink suitcase with clothing articles sits on wooden flooring.,mscoco,7616,0.1,0.2,707457
+1302,White plate with white and purple sandwiches on it. ,mscoco,7548,0.0,0.041666666666666664,413318
+1303,The old black train is on display in the museum.,mscoco,6347,0.4,1.0,470417
+1304,A stop sign is shown on the side of a corner.,mscoco,7902,0.7,1.0,391672
+1305,A cross-country skiing even with many skiers in a dead heat,mscoco,6191,0.4,0.5,281903
+1306,A black bird perches at the top of a telephone pole.,mscoco,6998,0.1,1.0,206999
+1307,Panda climbing up a tree to his wooden bed in zoo.,mscoco,7944,0.2,0.5,146934
+1308,A row of urinals in a men's bathroom.,mscoco,6241,0.9,1.0,728844
+1309,A slice of strawberry meringue pie with a knife and fork in Sweden,mscoco,7449,0.1,0.14285714285714285,557991
+1310,Child in large shirt and tie pinning sleeves with black background,mscoco,7907,0.1,1.0,377079
+1311,A park bench next to a path and trees.,mscoco,6860,1.0,1.0,789865
+1312,"A room has a table, books, piano, and door in it.",mscoco,6254,0.1,1.0,288117
+1313,A bathroom is shown with a toilet and a sink.,mscoco,6276,0.4,1.0,441876
+1314,A painting that involves a reverse of a beach and umbrellas,mscoco,7778,0.0,0.001869158878504673,174517
+1315,a man is walking in the water with a surfboard,mscoco,6173,0.8,1.0,410941
+1316,Outdoor pavilion in Dubai with several people walking through it.,mscoco,7883,0.1,0.3333333333333333,45087
+1317,A cats eyes are glowing yellow as its laying on the television. ,mscoco,7686,0.2,1.0,436255
+1318,A city walkway area with people standing and sitting near a street post and buildings around the area.,mscoco,7828,0.0,0.014492753623188406,599781
+1319,"Two tiers of a train scene in mountain setting birthday cake with name baby Herring... on side with grass and track detail, on an aluminum wrapped disk.",mscoco,6788,0.1,1.0,730901
+1320,Kite flying that includes a lobster kite and a bear(?) kite.,mscoco,6179,0.1,0.16666666666666666,540238
+1321,A small kitchen has teal green walls and a small window.,mscoco,7416,0.0,0.041666666666666664,446921
+1322,several different teddy bears displayed in a case,mscoco,7341,1.0,1.0,328025
+1323,A woman in black shirt holding a hotdog and paper.,mscoco,6415,0.1,0.14285714285714285,276245
+1324,A bath tub near a window with figurine's on the window sill.,mscoco,6580,0.0,0.047619047619047616,196495
+1325,Large elephant as viewed through windshield on rainy day.,mscoco,7571,0.1,1.0,296112
+1326,A large commercial aircraft flying in the sky,mscoco,7745,0.3,0.5,421415
+1327,An old picture of a train in a railway station.,mscoco,7637,0.4,1.0,766012
+1328,Bananas on display in a grocery store for $11.98/kilogram..,mscoco,6487,0.1,1.0,36916
+1329,A California travel guide book on a park bench. ,mscoco,6847,0.1,1.0,375212
+1330,A man walking with a rolling case on the street.,mscoco,7232,0.2,1.0,688949
+1331,parade with people carrying a banner in a foreign language,mscoco,6597,0.1,1.0,310865
+1332,"Man leaned back with his mouth open, sleeping on a bench",mscoco,7277,0.1,0.5,541289
+1333,A man riding a skateboard next to a street.,mscoco,7069,0.0,0.041666666666666664,338655
+1334,Two elephants with tusks wade in the shallow water.,mscoco,6310,0.7,1.0,628606
+1335,Lot's of people walking and doing different things in a street.,mscoco,7296,0.1,0.16666666666666666,657914
+1336,A nice looking sandwich loaded with lots of meat.,mscoco,6240,0.4,0.25,486579
+1337,A white food truck driving down a street at night.,mscoco,6807,0.1,1.0,610983
+1338,two people playing tennis on a tennis court,mscoco,6444,0.5,1.0,570341
+1339,A skier jumps over a snowy hill with pine trees surrounding .,mscoco,7305,0.5,1.0,295720
+1340,A traffic sign is displayed on a street.,mscoco,7486,0.1,0.5,755496
+1341,A large building has a white clock at the center.,mscoco,7673,0.3,1.0,645780
+1342,View of a clock tower through a window.,mscoco,7537,0.3,0.5,57976
+1343,A plate of chicken with herbs and steamed broccoli.,mscoco,6826,0.5,0.5,254159
+1344,A soccer player heads the ball while being pursued by another player.,mscoco,6928,0.0,0.014925373134328358,606559
+1345,Various cell phones and a Kindle laid out on a desk,mscoco,6995,0.1,0.16666666666666666,395496
+1346,A banana on the left of an apple.,drawbench,124,0.0,0.00023153507756425097,124
+1347,White and brown rowboat among several colored half sunk small boats.,mscoco,7802,0.0,0.020833333333333332,232150
+1348,Three people cross country skiing in a wooded area.,mscoco,6035,0.6,0.3333333333333333,223816
+1349,Kites are flying over a pebbled beach as people gather on the shore.,mscoco,7841,0.0,0.05263157894736842,244179
+1350,A man using a laptop outside with his news van in the background.,mscoco,7271,0.1,1.0,232977
+1351,A stove top topped with three pans filled with food.,mscoco,7194,0.2,1.0,550323
+1352,A clock tower with a weather vane on the roof of a building ,mscoco,7739,0.7,1.0,571691
+1353,A STA LUCIA bus is driving down the road.,mscoco,7146,0.0,0.06666666666666667,276312
+1354,Passengers disembark from a large passenger jet at night.,mscoco,6765,0.2,1.0,41859
+1355,Small grey cat laying on top of a carpet with red carrot toys. ,mscoco,6378,0.1,0.3333333333333333,517400
+1356,A group of elephants are standing in a river,mscoco,7386,0.9,1.0,407853
+1357,A woman pouring something into a blender cup.,mscoco,6851,0.4,1.0,471992
+1358,Cows at various spots in a large grassy field,mscoco,6795,0.6,1.0,796116
+1359,Several people are standing in front of TV monitors playing Wii games.,mscoco,7088,0.6,1.0,247753
+1360,US Navy personelle using their cellphones in a large group.,mscoco,6809,0.2,1.0,317929
+1361,Baseball pitcher on pitcher mound getting ready to pitch ball.,mscoco,6282,0.1,0.1,46622
+1362,Large elephant being bathed and watered by his trainer.,mscoco,7638,0.3,0.2,16406
+1363,Batter about to deliver hit from pitcher during a game.,mscoco,6092,0.3,0.5,765101
+1364,Men in ceremonial military dress riding horses across a street.,mscoco,7647,0.2,0.2,386351
+1365,A striped cat sitting on top of a  laptop,mscoco,6380,0.2,0.3333333333333333,173545
+1366,A large gray elephant standing in a lush green field.,mscoco,7583,0.6,1.0,202689
+1367,A man standing in a room while holding a Wii game controller.,mscoco,6645,0.8,1.0,706963
+1368,A dirty toilet is shown with a black seat.,mscoco,7333,0.1,0.5,683035
+1369,"A large kitchen with an oven, stove top and a microwave.",mscoco,6876,0.2,0.2,85249
+1370,A large building with a tower and a clock.,mscoco,7765,0.4,0.3333333333333333,361451
+1371,A man about to hit a baseball at home plate,mscoco,6651,0.2,1.0,515385
+1372,A cut in half sandwich on top of a plate.,mscoco,7196,0.8,1.0,544194
+1373,A man is jumping through the air to catch a Frisbee as a crowd watches. ,mscoco,7029,0.3,1.0,175574
+1374,A grey cat rubbing against a persons legs.,mscoco,7039,0.2,0.3333333333333333,159579
+1375,None flushed toilet with urine inside and a beer and American flag.,mscoco,6705,0.1,1.0,48763
+1376,A brown and white cat sitting on top of a desk.,mscoco,7147,0.4,1.0,530825
+1377,"A bridge connecting Europe and North America on the Atlantic Ocean, bird's eye view.",drawbench,170,0.0,0.0,170
+1378,A table with multiple plates of food that include sandwiches and fries.,mscoco,6118,0.2,1.0,355825
+1379,A cross country ski competitor on the trail,mscoco,6611,0.4,1.0,187093
+1380,Two white birds have long necks and yellow beaks.,mscoco,7581,0.1,0.5,605178
+1381,Public bathroom has handicap accessories around the toilet.,mscoco,6500,0.6,1.0,585633
+1382,A group of people in street area with bus and various vendor carts.,mscoco,7197,0.1,0.5,589389
+1383,An artistic image of pears on a plate.,mscoco,6438,0.1,0.1111111111111111,732689
+1384,Black lab with a red color holding red Frisbee in his mouth.,mscoco,6634,0.4,1.0,55146
+1385,An elephant is standing by a man in a red jacket.,mscoco,7205,0.2,0.5,18495
+1386,Three young men pose for the camera holding a decorated surf board.,mscoco,7697,0.2,1.0,161216
+1387,Girl in white helmet at skatepark with skateboarder in the background.,mscoco,7461,0.1,1.0,177089
+1388,Woman's foot wearing shoe with cat face on it next to an actual cat,mscoco,6349,0.2,0.3333333333333333,413336
+1389,Dark clouds spreading across a field and a house.,mscoco,7382,0.1,1.0,743999
+1390,Smoke rises near cooking utensils and a crude brick building.,mscoco,6461,0.1,1.0,210032
+1391,Two cows standing in an alley on the street.,mscoco,6055,0.4,0.5,50285
+1392,A yellow and white fire hydrant is in front of a parking lot. ,mscoco,6626,0.0,0.017857142857142856,184884
+1393,A dog licking a cat on top of a woman's lap. ,mscoco,6962,0.1,0.3333333333333333,587258
+1394,A buffet is set up with drinks and pastries.,mscoco,7690,0.3,1.0,384221
+1395,A corner of a rest room with tiled walls and a big mirror.,mscoco,6365,0.0,0.009174311926605505,339160
+1396,A purple teddy bear with an opened book.,mscoco,6703,0.5,1.0,608126
+1397,A row of park benches sitting next to ugly trees.,mscoco,6889,0.1,1.0,352900
+1398,"White plate with pork chop, pasta and broccoli.",mscoco,7099,0.2,1.0,789710
+1399,Hand holding a hot dog on a roll with mustard.,mscoco,6319,0.5,1.0,621806
+1400,A woman takes a drink out of a bottle while cooking.,mscoco,6231,0.1,1.0,480775
+1401,Toilet up on top of steps in basement with broken boards,mscoco,7374,0.0,0.015151515151515152,578006
+1402,Arial view on a two car train on tracks in tree covered hills.,mscoco,6075,0.2,0.14285714285714285,428553
+1403,A photo of Two flat screens hanging above a deli counter.,mscoco,6676,0.1,1.0,214389
+1404,A bowl of fruit that is blurry so I cant see what's in it.,mscoco,6478,0.1,1.0,12130
+1405,A knife that is next to a orange in a bowl.,mscoco,7957,0.1,1.0,767938
+1406,A woman in a orange dress riding a bicycle and talking on a phone.,mscoco,6667,0.1,1.0,442487
+1407,an old black and white photo of a person with a bike,mscoco,7411,0.5,0.5,344293
+1408,"A black and white photo of a compartment, looks old.",mscoco,6304,0.1,0.2,644300
+1409,Vases with pink flowers sitting on window ledge,mscoco,6538,0.1,0.3333333333333333,599159
+1410,a woman is walking down the street with a rolling suitcase,mscoco,7373,0.5,0.5,392534
+1411,Light green and white painted fire hydrant with people walking in background.,mscoco,6409,0.1,1.0,323062
+1412,A homemade pizza is shown with cheese and chicken.,mscoco,7167,0.2,1.0,732909
+1413,A group of large white birds in a field next to a body of water.,mscoco,7120,0.2,1.0,342406
+1414,An elephant in an enclosure is transported on a semi.,mscoco,6343,0.5,1.0,631712
+1415,Very rustic toilet and wash basin with wooden floor. ,mscoco,7806,0.0,0.045454545454545456,363720
+1416,"A large bear accompanied by another bear, near a river",mscoco,7593,0.4,0.5,303923
+1417,A brown bird and a blue bear.,drawbench,21,0.0,0.0,21
+1418,a double picture of a triangle clock and a round clock,mscoco,7692,0.1,1.0,772872
+1419,A person wearing a blue jacket is on skis holding ski poles as he holds up his arms.,mscoco,7260,0.1,1.0,191091
+1420,Various photographs of a man doing a trick on a skateboard.,mscoco,7988,0.8,1.0,284060
+1421,Sandwich split in half on a table next to a cup of coffee. ,mscoco,6229,0.5,1.0,121531
+1422,A black cat laying next to a black shoe.,mscoco,6039,0.2,0.5,744135
+1423,Group of white sheep with red marching standing in a field together. ,mscoco,7362,0.1,0.5,766717
+1424,A skier does a back flip over a snow mound.,mscoco,7678,0.5,1.0,445568
+1425,A red and gold motorcycle at a show.,mscoco,7428,0.3,0.3333333333333333,733889
+1426,Elephant standing in large pool of water in native area.,mscoco,6172,0.7,1.0,814467
+1427,An elderly man plays tennis while a crowd watches.,mscoco,7768,0.1,0.3333333333333333,114416
+1428,A female professional tennis player dressed in purple.,mscoco,7784,0.3,1.0,237914
+1429,A Wired magazine placed above a toilet in a small bathroom.,mscoco,6992,0.1,0.3333333333333333,583076
+1430,"A table has hot dogs, corn, salads, and dessert on top of a polka dot tablecloth. ",mscoco,6518,0.1,0.3333333333333333,165694
+1431,A sheep stands along and grazes on a hill.,mscoco,7894,0.1,0.14285714285714285,425880
+1432,A  group of giraffe foraging through brush in an enclosure,mscoco,7610,0.0,0.023809523809523808,388774
+1433,Young surfers enjoying small breaks close to shore,mscoco,7936,0.1,1.0,162406
+1434,A child flying a pink kite on the beach.,mscoco,6058,0.0,0.05263157894736842,716229
+1435,A CAT ON A WOODEN SURFACE IS LOOKING AT A WOODEN BOWL,mscoco,7061,0.2,1.0,538946
+1436,Some young bears cross a forest highway in the daytime.,mscoco,7241,0.3,1.0,764970
+1437,young kid poses by cake with character from despicable me,mscoco,7343,0.1,1.0,460175
+1438,Tennis player on court prepared to swing at ball during match.,mscoco,6985,0.1,0.3333333333333333,777104
+1439,Two elephants are standing near the water in their pen.,mscoco,7263,0.4,1.0,347176
+1440,people learning how to sheer a sheep's coat,mscoco,6693,0.1,0.5,432741
+1441,A woman having fun riding on a skateboard,mscoco,7086,0.4,0.3333333333333333,481030
+1442,People in the park having a picnic with opened umbrellas,mscoco,7323,0.1,0.3333333333333333,285442
+1443,Adult man playing with flying discs in large grassy field.,mscoco,6824,0.1,0.1111111111111111,636643
+1444,A women who is crossing the street with an umbrella.,mscoco,6949,0.5,1.0,627232
+1445,A black dog catching a frisbee in it's mouth.,mscoco,6390,0.4,0.5,36425
+1446,this small room has two small beds and a night stand,mscoco,7404,0.5,1.0,460757
+1447,Two dog laying closely together on a sofa. ,mscoco,6371,0.5,1.0,652260
+1448,"Corner of hospital building with electrical box, building sign and street sign.",mscoco,7633,0.1,1.0,233667
+1449,Two horses graze in a pasture in the setting sun.,mscoco,7825,0.1,0.3333333333333333,504785
+1450,A white couch sitting in a living room in front of a TV.,mscoco,7308,0.3,1.0,573701
+1451,A man stands on his surfboard while surfing a small wave.,mscoco,7119,0.1,0.14285714285714285,100452
+1452,Steam engine at train station with passengers boarding.,mscoco,7448,0.1,0.3333333333333333,68048
+1453,An ancient Egyptian painting depicting an argument over whose turn it is to take out the trash.,drawbench,145,0.0,0.0,145
+1454,A blue and yellow train passing by a rock barrier.,mscoco,6385,0.0,0.037037037037037035,209089
+1455,Family using a portable gas powered heater while sheltered from rain.,mscoco,7869,0.1,0.5,1019
+1456,A floor mat with a keyboard design in a classroom.,mscoco,6808,0.1,1.0,7997
+1457,A surfer is in the air with a surfboard above a wave.,mscoco,7600,0.7,0.5,580400
+1458,Dog covered in sheet on bed with mouth open.,mscoco,6142,0.0,0.034482758620689655,390908
+1459,Some tennis players shaking hands at the net.,mscoco,7378,0.8,1.0,260390
+1460,Female tennis player in blue dress awaits a serve,mscoco,6537,0.1,1.0,577028
+1461,Freight train moves along the tracks in the countryside,mscoco,7580,0.4,0.5,163982
+1462,A plate that has a burger and a bucket of fries on it.,mscoco,6435,0.2,1.0,521108
+1463,"An American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.",drawbench,89,0.0,0.00010434056761268782,89
+1464,A woman is riding a bicycle on the road next to a man.,mscoco,6841,0.0,0.0072992700729927005,794531
+1465,Men and women are playing a softball game.,mscoco,7925,0.0,0.05263157894736842,198949
+1466,"A type of digital currency in which a record of transactions is maintained and new units of currency are generated by the computational solution of mathematical problems, and which operates independently of a central bank.",drawbench,91,0.0,0.0,91
+1467,Shrimp and broccoli stir fry in a wok,mscoco,7917,0.3,1.0,180287
+1468,Two orange cats playing and fighting on a couch.,mscoco,6315,0.2,1.0,316061
+1469,Different sets of luggage in a baggage claim area.,mscoco,7574,0.0,0.02857142857142857,73138
+1470,A bathroom toilet with yellow liquid inside and a dirty tub.,mscoco,6010,0.1,1.0,274339
+1471,A distorted image of a traffic light on a pole.,mscoco,6557,0.1,0.25,193924
+1472,A lap top computer sits on a rustic wooden table.,mscoco,7964,0.4,0.5,801132
+1473,RED WHITE AND BLUE TRAIN ON TRACK SURROUNDED BY TREES,mscoco,7110,0.0,0.006756756756756757,91698
+1474,"Two asian men sitting on a bed watching television, they are wearing office attire.",mscoco,6801,0.1,1.0,371369
+1475,A train that is traveling down the railroad tracks.,mscoco,6972,0.1,0.14285714285714285,748778
+1476,a row of yellow daffodils in glass vases sitting on a shelf,mscoco,7090,0.4,1.0,552197
+1477,A sheep standing in a fenced area with hay.,mscoco,7438,0.3,0.5,326263
+1478,An office cubicle with a computer and two monitors.,mscoco,6474,0.6,1.0,512664
+1479,Girls holding kittens while they are being pet.,mscoco,6228,0.1,1.0,544217
+1480,A laptop sits on a toilet seat in a black and white photo.,mscoco,6803,0.1,1.0,431644
+1481,A number of horses graze peacefully on a hillside.,mscoco,6656,0.4,1.0,66295
+1482,Two small giraffes are playing in an enclosure.,mscoco,6351,0.1,0.1,623873
+1483,A green fire hydrant on a brick sidewalk in front of a store. ,mscoco,6077,0.2,0.5,815226
+1484,"Close up of a unit of four traffic lights, with a green light on one and a red light visible on another attached to perpendicular pole, with sides of two different tall buildings behind.",mscoco,7914,0.1,0.125,660891
+1485,Father and daughter playing Mario Kart on the Wii.,mscoco,6638,0.0,0.020833333333333332,212893
+1486,"Two zebras stand closely together in a dry, grassy field",mscoco,7479,1.0,1.0,58249
+1487,A television remote control is shown on top of a table.,mscoco,7383,0.7,1.0,21731
+1488,A person is skiing in a ski area.,mscoco,6313,0.3,0.3333333333333333,694016
+1489,Small black kitten on keyboard of grey laptop. ,mscoco,6903,0.1,0.5,233962
+1490,"A skateboarder, holding a skateboard in front of the camera.",mscoco,6182,0.3,0.3333333333333333,667356
+1491,A walkway and lake next to a tan clock tower.,mscoco,6584,0.2,0.5,284918
+1492,Man holding phone in front of a busy park walkway. ,mscoco,6574,0.1,1.0,25215
+1493,The color of orange is predominate in a stadium as baseball players with orange and white uniforms are on the baseball field.,mscoco,6344,0.0,0.01282051282051282,312947
+1494,Many pairs of scissors sitting on red white and blue fabric and fabric with US flags.,mscoco,7843,0.1,1.0,93496
+1495,Several people in black red and green are on a field as one person wears white shorts and two people have their arms up toward a white Frisbee.,mscoco,7389,0.0,0.05263157894736842,416010
+1496,"A red food tray with a white plate that has a half eaten hot dog and fries, along with a beverage cup.",mscoco,7455,0.1,0.5,726202
+1497,A man guards a woman holding a frisbee during a game.,mscoco,7876,0.1,1.0,575884
+1498,A motorcycle is parked away from cars in a parking lot.,mscoco,7499,0.1,0.3333333333333333,191557
+1499,An electric commuter train emerging from a tunnel,mscoco,6958,0.2,0.2,424027
+1500,A hamburger and french fries on a plate,mscoco,6284,0.4,0.2,813002
+1501,a person sitting on a city street talking on a cell phone,mscoco,7087,0.1,1.0,569396
+1502,A city street is brightly lit with advertisements.,mscoco,6467,0.2,0.2,61121
+1503,Shiny pizza cutter being held over a square shaped personal pizza.,mscoco,6006,0.2,1.0,49037
+1504,Several people standing around boats by water with a kite in the distance.,mscoco,6029,0.1,0.16666666666666666,48045
+1505,A cat sitting on a coffee table next to a remote control.,mscoco,7621,0.0,0.029411764705882353,615197
+1506,A variety of vegetables and leafy greens sit on top of a counter.,mscoco,6464,0.9,1.0,616196
+1507,A white bus traveling down a paved road,mscoco,7310,0.6,0.3333333333333333,418583
+1508,A large group of people in a very colorful van,mscoco,7425,0.0,0.025,257310
+1509,A propeller plane flying through a blue sky.,mscoco,7779,0.7,1.0,133116
+1510,Female tennis player looking unsure of swing after follow through hit,mscoco,7994,0.0,0.0034965034965034965,781517
+1511,A seagull perches before an opening in a masonry wall.,mscoco,6838,0.1,0.5,138140
+1512,a split photo of a tennis player ,mscoco,7630,0.4,0.2,631109
+1513,An umpire calls a strike on the batter during a baseball game.,mscoco,7165,0.0,0.05263157894736842,709551
+1514,Young girl with dog on bed posing for photo.,mscoco,7959,0.1,1.0,448999
+1515,A herd of elephant in the bush near a body of water.,mscoco,7495,0.2,0.5,120039
+1516,a young person sitting on the floor with a book near a dog,mscoco,6843,0.3,1.0,231806
+1517,A white bird drinking from a river next to a dirt shore.,mscoco,6686,0.1,1.0,109713
+1518,A young girl standing next to a yellow fire hydrant.,mscoco,7893,0.3,1.0,816842
+1519,A group of people standing around a central square with a security presence.,mscoco,7299,0.1,1.0,815148
+1520,A train station with a train departing with passengers.,mscoco,7969,0.1,0.125,684926
+1521,Two women are running near each other during a soccer game.,mscoco,7445,0.3,0.5,687109
+1522,"A sign that reads ""The Buskers"" with a pink and green star.",mscoco,6293,0.1,1.0,98301
+1523,A slice of cake next to a bottle of cola.,mscoco,7814,0.1,1.0,317919
+1524,A cake that is decorated with buttons and bows.,mscoco,7851,0.1,1.0,150582
+1525,Group of men wearing life jackets in front of men on cap sized boat. ,mscoco,6599,0.1,1.0,207392
+1526,People are taking a carriage ride through the city.,mscoco,6820,0.4,1.0,212555
+1527,A black and white cow looks out from the hay.,mscoco,7038,0.1,1.0,660968
+1528,A cat faces the camera with a woman lying on a bench in the background.,mscoco,7056,0.1,0.16666666666666666,433981
+1529,"A black baseball mitt, ball, and baseball bat.",mscoco,7987,0.1,0.3333333333333333,688461
+1530,Several older (50's era) cars are snowed parked in the driveway or street and are covered in snow.,mscoco,7971,0.1,1.0,435136
+1531,A man in a blue shirt looks at himself in a bathroom mirror.,mscoco,7875,0.1,0.5,773691
+1532,Two men in baseball uniforms stand on the dirt.,mscoco,6515,0.1,0.5,51862
+1533,A kite flying over a sandy beach near the ocean.,mscoco,6799,0.8,1.0,720926
+1534,A man extends his arm to catch a frisbee.,mscoco,7443,0.6,0.5,3451
+1535,A person skiing downhill is making a turn.,mscoco,7129,0.2,1.0,6531
+1536,A man with glasses holds up a Wii remote to the camera.,mscoco,6136,0.1,0.14285714285714285,29767
+1537,A fridge lying on its back and other kitchen damage.,mscoco,7046,0.0,0.06666666666666667,722271
+1538,A train passenger car sitting on a railroad turntable.,mscoco,7287,0.1,1.0,527536
+1539,The man wearing a bow tie and a hat is smiling. ,mscoco,7525,0.2,0.5,737861
+1540,Two surfers in wet suits holding their boards near the water. ,mscoco,7653,0.2,0.5,424341
+1541,Cattle grazing on long grass behind a wire fence in a field.,mscoco,7736,0.5,1.0,9898
+1542,A baby elephant in its enclosure at the zoo.,mscoco,6678,0.0,0.08333333333333333,573612
+1543,A white bed sitting under a picture mounted on a wall.,mscoco,7361,0.3,0.2,222664
+1544,Single boat near the shore of an ocean.,mscoco,6543,0.3,0.25,709839
+1545,A thin crust pizza with broccoli and cheese.,mscoco,6674,0.7,1.0,31060
+1546,A man in a baseball outfit throws a ball.,mscoco,6101,0.6,0.25,570680
+1547,Several cows that are in a green grass pasture.,mscoco,6466,0.8,1.0,745690
+1548,A man slices an apple on a cutting board.,mscoco,7561,0.1,0.16666666666666666,166175
+1549,A brown dog with red vest carrying a frisbee in grassy field.,mscoco,7567,0.1,0.125,388197
+1550,The locomotive of a commuter train with an advertisement in German.,mscoco,7292,0.1,0.5,701578
+1551,"A plate with cheese, bananas, apples and grapes.",mscoco,7213,0.1,0.1111111111111111,250412
+1552,Mother and child elephants in a zoo enclosure.,mscoco,6470,0.7,0.25,281349
+1553,"A GUY ACTING LIKE A NERD AT A PARTY, LIKE HES GOING TO BRUSH HIS TEETH",mscoco,7885,0.1,1.0,398272
+1554,"An older man sitting next to an older woman, both of them are holding Wii controllers.",mscoco,6202,0.3,0.5,731372
+1555,"A man, front diagonal view, standing and holding tennis racket on a tennis court with person with big lens on camera in background behind a low wall.",mscoco,7557,0.0,0.0035335689045936395,773259
+1556,There is four small vases on display on the wall. ,mscoco,6068,0.1,1.0,348340
+1557,Pink stuffed cat sits in planter in outdoor scene.,mscoco,6751,0.1,1.0,814693
+1558,A cat looks at a toy elephant on a table.,mscoco,7406,0.1,1.0,399677
+1559,a fire hydrant leaking and causing a flooded area next to a road,mscoco,7877,0.4,0.5,509096
+1560,A room that has a computer sitting on a table and nine pictures hanging on the wall.,mscoco,6431,0.1,0.2,556943
+1561,"Back of an open left hand with a silver ring and a directional arrow ring pointing right, by a Stop sign with perpendicular street signs attached above it, one with print ""BOHEMIAN HWY"" against a clear blue sky.",mscoco,7590,0.1,1.0,762373
+1562,People walk on the street behind a double decker bus.,mscoco,6893,0.0,0.08333333333333333,571098
+1563,A woman sitting on a cement ledge with a suit case.,mscoco,7092,0.1,0.5,551194
+1564,A person is holding up a messy hamburger,mscoco,7171,0.2,1.0,101685
+1565,A surfer riding a small wave to the shore.,mscoco,7345,0.1,0.25,491714
+1566,A spider with a moustache bidding an equally gentlemanly grasshopper a good day during his walk to work.,drawbench,168,0.0,0.0,168
+1567,two jockeys on two race horses on a track,mscoco,7934,0.6,1.0,472407
+1568,a wall mounted television in a living room ,mscoco,7662,0.4,0.5,715429
+1569,Parents with their children at a library event outside.,mscoco,7997,0.1,0.5,300223
+1570,Two military jet planes flyiing overhead in formation.,mscoco,7358,0.3,0.3333333333333333,773117
+1571,A man doing tricks on his skateboard while others wait and watch.,mscoco,6128,0.3,0.25,324543
+1572,Two people standing behind a parked motorcycle that has gear on it.,mscoco,7854,0.2,1.0,648957
+1573,Two sheep grazing on grass in an open field with mountains in the background.,mscoco,6079,0.4,1.0,239840
+1574,"Two small children, on wearing green Christmas pajamas stand on a stool and brush their teeth in the mirror",mscoco,7053,0.1,1.0,376394
+1575,"Private style single engine plane parked on tarmac, white with red trim.",mscoco,6281,0.2,0.5,99188
+1576,People on the street buying bananas from a street market  ,mscoco,7539,0.2,0.25,601950
+1577,People eating in a restaurant near wine bottles.,mscoco,6422,0.0,0.023809523809523808,828909
+1578,A motorcycle is on top of a circus tent platform.,mscoco,6570,0.1,1.0,292954
+1579,A man holds up a sign on the sidewalk.,mscoco,7578,0.2,1.0,366988
+1580,Baked dessert item displayed on ornate plate on table with red tablecloth.,mscoco,7137,0.1,1.0,580832
+1581,Several cows grazing in a large field in front of a mountain,mscoco,6455,0.5,1.0,788740
+1582,We are looking at a black and white photo of a street labeled with red numbers.,mscoco,6194,0.0,0.07692307692307693,763882
+1583,A striped zebra is standing on the grass.,mscoco,6337,0.8,1.0,374733
+1584,A group of people playing a video game in an office.,mscoco,7564,0.0,0.05555555555555555,761830
+1585,A zebra stands near a field across from a grove of trees.,mscoco,6285,0.2,0.16666666666666666,467359
+1586,A bicycle parked by a small fishing boat docked in a marina,mscoco,6175,0.3,1.0,515687
+1587,"Luggage, clothes, and stuffed animals at airport baggage claim.",mscoco,6664,0.0,0.022222222222222223,512314
+1588,A photograph of an ironing board inside a home.,mscoco,7904,0.1,0.3333333333333333,52024
+1589,Man standing at opened oven next to the fridge,mscoco,7787,0.0,0.043478260869565216,768192
+1590,"Closed toilet, bidet, basin, and tub in tiled bathroom.",mscoco,6623,0.0,0.008130081300813009,499436
+1591,A persons hand holding a banana that has a smile in the tip and a food tray with an empty plate on the table in front.,mscoco,7900,0.1,1.0,812482
+1592,a person skiiing down a hill by a blue gate,mscoco,6396,0.1,0.2,95604
+1593,a couple of women playing a game of wii ,mscoco,6098,0.9,1.0,643882
+1594,lady's walking toward a building pulling suitcases  ,mscoco,6875,0.2,0.25,623589
+1595,A baby is teething on a long pink spoon.,mscoco,6076,0.2,0.5,54513
+1596,A view of a kitchen and dining area is shown.,mscoco,6406,0.5,0.3333333333333333,700923
+1597,two adults holding a baby while wearing ski wear and standing on a snow bank.,mscoco,6636,0.1,0.16666666666666666,225850
+1598,Man wearing tuxedo posing for camera while standing in kitchen area.,mscoco,7558,0.2,0.3333333333333333,633758
+1599,a kitchen with a stove a counter and shelves ,mscoco,7847,0.1,0.3333333333333333,380423
+1600,Colorful floral arrangement in glass vase displayed on mantle.,mscoco,6433,0.3,1.0,456380
+1601,A dog catching a frisbee while spectators watch,mscoco,6966,0.8,1.0,119629
+1602,British woman competing in a horse jumping event,mscoco,6469,0.1,0.1111111111111111,101515
+1603,Black and white image of man in a suit next to a table with large vase other half of image is writing.,mscoco,6234,0.1,0.5,724193
+1604,Sandwich with chicken and tomatoes sitting on a white plate. ,mscoco,7139,0.1,1.0,111696
+1605,A classic style red fire engine at car show. ,mscoco,6203,0.2,0.3333333333333333,233769
+1606,An electronic device is being held in a person's left hand.,mscoco,7510,0.3,0.5,373149
+1607,Johnny Gomes (#5) stands in for the Red Sox,mscoco,6327,0.0,0.001953125,273703
+1608,Three people sitting on a bench looking at the ocean.,mscoco,7810,0.1,0.5,698485
+1609,"A plate of food holds vegetables, rice, and tofu.",mscoco,6901,0.3,1.0,303478
+1610,Baseball player poised to swing with catcher and referee poised,mscoco,7420,0.4,1.0,370729
+1611,Two stuffed bears are perched on a window ledge.,mscoco,7188,0.2,0.14285714285714285,362138
+1612,Two zebras stand on the road in a game preserve.,mscoco,7622,0.4,1.0,138879
+1613,metallic objects used for making pipes in a warehouse,mscoco,7680,0.1,1.0,463033
+1614,A two sided clock inside of a large building.,mscoco,7303,0.1,0.125,399168
+1615,Two giraffes standing in an enclosure at the zoo.,mscoco,7527,0.8,1.0,149191
+1616,A train sits in a train station parked on tracks,mscoco,7948,0.6,1.0,679561
+1617,Man in a suit with a bow tie standing inside a living room. ,mscoco,6806,0.1,0.5,121518
+1618,Male surfer riding the curl of a small wave.,mscoco,6504,0.0,0.058823529411764705,327542
+1619,A small boat glides across a mountain lake.,mscoco,7489,0.2,0.3333333333333333,9247
+1620,a muscular woman hitting a tennis ball on the court,mscoco,6247,0.3,0.3333333333333333,669969
+1621,A man is hitting a ball with a tennis racket at a tournament.,mscoco,7364,0.3,0.2,100508
+1622,Street signs on the corner of Hudson and W 14th.,mscoco,6449,0.1,0.5,203211
+1623,A player in action at bat in a baseball game.,mscoco,6395,0.2,0.25,525688
+1624,New York Skyline with 'Deep Learning' written with fireworks on the sky.,drawbench,197,0.0,0.0,197
+1625,a street full of people and building with a lot of neon lights,mscoco,6108,0.1,0.25,494879
+1626,A small bathroom has four identical wooden walls,mscoco,6482,0.4,0.5,19500
+1627,A baseball player is up to bat at the plate.,mscoco,7920,0.9,1.0,463777
+1628,"Kites of all different colors, shapes, and sizes, flying in a beautiful blue sky",mscoco,6988,1.0,1.0,203152
+1629,A dog jumping after a frisbee at a dog show.,mscoco,6596,0.7,1.0,256194
+1630,Clothes strewn on open suitcase and surrounding floor space.,mscoco,6999,0.1,0.1111111111111111,588107
+1631,a group of people sitting on a bench in the forest,mscoco,6605,0.3,1.0,424535
+1632,A brown and white cat eating an apple from a persons hand.,mscoco,7838,0.2,1.0,365281
+1633,People loading a private single engine overhead wing aircraft.,mscoco,6698,0.2,1.0,417477
+1634,A living room with white and brown furniture next to a fire place.,mscoco,6938,0.2,0.16666666666666666,549146
+1635,A woman getting ready to hit a tennis ball with a racket while a group of people watch from the stands.,mscoco,6700,0.2,0.125,303435
+1636,A man riding a skate board up a metal rail.,mscoco,6167,0.6,0.3333333333333333,133256
+1637,"Meal of broccoli, beef, and white with sesame seeds.",mscoco,7897,0.4,0.5,572218
+1638,Two people playing a game with Nintendo Wii controllers.,mscoco,6856,0.8,1.0,204368
+1639,A woman sells vegetables in a market stall.,mscoco,7312,0.1,0.1,556414
+1640,Several women in a large group holding pink umbrellas.,mscoco,7363,0.1,0.5,746432
+1641,"A red and white street sign that reads ""no parking any time.""",mscoco,6601,0.3,0.14285714285714285,313906
+1642,Photo's of elderly people using video game controllers in home.,mscoco,6989,0.0,0.09090909090909091,796715
+1643,A group of people are standing in front of a tourism bus.,mscoco,6102,0.2,0.25,734405
+1644,A small tree stands in front of a street sign on a sidewalk. ,mscoco,7809,0.0,0.007042253521126761,825414
+1645,A nicely restored locomotive displayed on outdoor tracks.,mscoco,7156,0.6,1.0,468918
+1646,A woman partially undressed woman in black pantyhose lies on a bed.,mscoco,7511,0.1,0.1,818804
+1647,"A sign on a pole that reads ""Jew Street.""",mscoco,7618,0.1,1.0,775988
+1648,"A blurry foreground suggests a counter top with food-bearing items, while the majority of the shot shows a rippling expanse of water and a person standing on a surfboard and using a long oar to move away from shore.   ",mscoco,6271,0.0,0.03571428571428571,775910
+1649,A little girl in a dress holds a pink and clear umbrella.,mscoco,6139,0.2,0.3333333333333333,18581
+1650,Wide angle picture of tabletop of kitchen and appliances,mscoco,7632,0.0,0.0005138746145940391,770363
+1651,A lamppost clock by a tree in a residential area,mscoco,7521,0.6,0.5,113938
+1652,A cube made of denim. A cube with the texture of denim.,drawbench,57,0.0,0.0,57
+1653,"A stethascope, compass, teddy bear, whisk and a tape measure are under a light.",mscoco,7091,0.1,1.0,489078
+1654,"Playground with palm trees, shrubs, and giraffe statue.",mscoco,7431,0.0,0.034482758620689655,286042
+1655,Two cows lying in a grassy field and looking at the camera.,mscoco,6307,0.4,1.0,734186
+1656,Cow in front of two large decorated wheels.,mscoco,7021,0.1,1.0,341061
+1657,A freight train rolling through a train yard.,mscoco,7884,0.2,1.0,816170
+1658,"A simple residential bathroom with sink, toilet and tub",mscoco,6725,0.2,1.0,488748
+1659,"some clothes, books and teddy bear sitting on a bed ",mscoco,6263,0.1,1.0,632170
+1660,A man sitting on a bench with two dogs.,mscoco,7324,0.3,1.0,206334
+1661,A group of men and woman brushing their teeth.,mscoco,7555,0.2,1.0,549379
+1662,A wooden cutting board with a knife next to greens and vegetables.,mscoco,7501,0.1,0.2,169671
+1663,A brown dog with long curly hair wearing a name tag.,mscoco,6522,0.1,1.0,549391
+1664,red and white prop plane flying downward toward viewer,mscoco,7538,0.1,0.2,759703
+1665,Siamese cat sitting in front of a computer screen on a desk,mscoco,6192,0.1,1.0,512821
+1666,A US Navy crew works on airplanes. ,mscoco,7910,0.1,1.0,607030
+1667,Planes in formation against a dark sky in mountainous region.,mscoco,6874,0.1,0.2,680400
+1668,Lufthansa has been a recognizable airline for many years.,mscoco,7965,0.1,0.3333333333333333,735229
+1669,A close up shot of a Giraffe in the wilderness. ,mscoco,6411,0.9,1.0,331910
+1670,Woman in black coat standing in rain with black umbrella. ,mscoco,6274,0.2,1.0,436680
+1671,"Shoes, a chair, and snowboard sit on a porch",mscoco,7751,0.1,1.0,657841
+1672,A brown clock tower with a sky in the background.,mscoco,6441,0.2,0.5,309331
+1673,Two vases of flowers are sitting on a counter top with bears.,mscoco,6757,0.1,1.0,700176
+1674,A couple sitting under an umbrella on a park bench.,mscoco,6280,0.1,0.5,784148
+1675,A young boy plays the infield in a baseball game,mscoco,7321,0.2,0.5,803893
+1676,a man with skiis walking along the road,mscoco,7048,0.2,0.5,717639
+1677,Old town building with clock tower on wide open cobblestone area.,mscoco,7199,0.1,0.2,260902
+1678,a large kitchen with counter tops and a sink,mscoco,6180,0.4,0.5,531951
+1679,Corner of a street with a park and a parked car.,mscoco,6754,0.0,0.041666666666666664,465321
+1680,Sheep resting under a blue boat foundered at low tide.,mscoco,7614,0.2,1.0,274156
+1681,A boy grinds his skateboard along a curb. ,mscoco,7596,0.0,0.010416666666666666,42853
+1682,A couple of giraffe standing next to a pole.,mscoco,7950,0.3,1.0,787222
+1683,A group of brown bananas and apple slices on a cutting board.,mscoco,6479,0.4,1.0,132831
+1684,A unique clock with mobile in a building.,mscoco,7804,0.0,0.05,723735
+1685,Soccer players on opposite teams fight for control over a ball.,mscoco,7136,0.2,0.2,27088
+1686,A man sitting at a computer desk with two laptop computers.,mscoco,7140,0.2,0.5,622644
+1687,A dog leaps in the air to catch a Frisbee.,mscoco,7949,0.8,1.0,361046
+1688,Group of sheep eating grass and an open field fenced in. ,mscoco,6198,0.8,0.5,762665
+1689,A young boy on a wake board in a lake.,mscoco,6879,0.1,1.0,151483
+1690,A woman is carrying a backpack through a train station.,mscoco,6613,0.1,1.0,678267
+1691,A man riding a skateboard while holding a surfboard.,mscoco,6094,0.2,1.0,549539
+1692,"Pictures of wild animals, including a tiger, a gorilla, a parrot, a zebra, and a giraffe.",mscoco,7573,0.1,1.0,316307
+1693,A person holds a hot dog in a small plate.,mscoco,6600,0.1,1.0,256918
+1694,A man sitting on a bench with a book and a bag. ,mscoco,7865,0.6,1.0,813619
+1695,Train box cars have derailed in an mountainous area.,mscoco,6699,0.1,1.0,622808
+1696,The back of a car on a street side with a purple umbrella lying beside it.,mscoco,7387,0.1,1.0,352803
+1697,Lamb chops over a bed of carrots and potatoes,mscoco,7462,0.1,0.3333333333333333,18669
+1698,Man in a blue shirt swinging a tennis racket on a clay court. ,mscoco,7675,0.1,0.1111111111111111,369389
+1699,"Interior of large cathedral, light stone colored, looks very large and spacious.",mscoco,7518,0.1,1.0,121074
+1700,"Words on a back of a bike seat read ""hero"".",mscoco,6546,0.1,1.0,274447
+1701,some bananas with brown spots and two red apples,mscoco,6539,0.1,0.16666666666666666,219409
+1702,Three urinals in a restroom each urinal is at a different height to accommodate adults and children.,mscoco,6549,0.0,0.02702702702702703,689007
+1703,"Toy animal wearing a yellow jersey tangled in electrical cord with watermark name ""Shehan Peruma"".",mscoco,6619,0.1,1.0,401657
+1704,Oranges next to oriental style duck and menu,mscoco,6292,0.1,1.0,782599
+1705,painting of people on a beach some holding surf boards,mscoco,7183,0.0,0.01,34757
+1706,a yellow and gray train on its track and some buildings,mscoco,7440,0.3,1.0,253834
+1707,"A herd of sheep in a green field, behind a wire fence.",mscoco,6125,0.4,1.0,498161
+1708,Three computers screens are lit up and sitting on a desk.,mscoco,7669,0.6,1.0,572116
+1709,Many hotdogs are being cooked on a grill.,mscoco,6262,0.5,0.5,559971
+1710,Some women indoors on a basketball court playing ultimate frisbee.,mscoco,6883,0.1,1.0,663603
+1711,A variety of doughnuts are displayed behind glass.,mscoco,6756,0.8,1.0,379011
+1712,there are three suitcases That are opened on the floor,mscoco,6216,0.0,0.037037037037037035,145413
+1713,Boat docked in canal or river with trees. ,mscoco,7731,0.5,1.0,704014
+1714,Many birds are flying near the flag pole on a clock tower.,mscoco,7317,0.2,0.25,354747
+1715,The boat is traveling down the narrow canal.,mscoco,7842,0.4,0.5,750124
+1716,A grouping of fresh bananas displayed in a market.,mscoco,6957,0.8,1.0,765680
+1717,A stop sign with graffiti written on it.,mscoco,6511,0.8,1.0,794953
+1718,Tennis player preparing to hit a ball with audience in the background.,mscoco,6003,0.1,0.25,58598
+1719,The man stands behind a woman as she uses a laptop.,mscoco,6317,0.1,1.0,683383
+1720,The apartment features yellow walls and a blue cordoroy sofa.,mscoco,6663,0.0,0.045454545454545456,629814
+1721,a herd of cows in a field standing in a misty fog,mscoco,7646,0.3,0.5,344151
+1722,Three jet airliners on runway next to snowy areas.,mscoco,6133,0.1,0.3333333333333333,334134
+1723,People with umbrellas walk down a street on a rainy day.,mscoco,7607,0.9,1.0,717825
+1724,A large group of zebras stand around a small watering hole.,mscoco,6950,0.6,1.0,63769
+1725,A collection of stuffed animals is sitting behind a glass window.,mscoco,6523,0.5,1.0,603956
+1726,A small public bathroom looks neglected and unclean in black and white.,mscoco,6865,0.2,1.0,492793
+1727,A pitcher in baseball in the process of throwing a pitch.,mscoco,7716,0.4,0.3333333333333333,599663
+1728,A passenger train travels on a bridge with buildings below.,mscoco,7755,0.4,0.2,296883
+1729,A small giraffe running through an open area.,mscoco,7585,0.4,0.3333333333333333,260009
+1730,Bathroom scene created using toy blocks with commode and sink.,mscoco,7141,0.1,0.16666666666666666,432049
+1731,A red passenger jet sitting on a tarmac at an airport.,mscoco,7381,0.5,1.0,95140
+1732,A bird flying over the ocean in front of a wave.,mscoco,6534,0.5,1.0,72460
+1733,Two people preparing to surf on a large wave.,mscoco,6242,0.0,0.04,37840
+1734,a little bird peering out from a bird house ,mscoco,7782,0.1,1.0,664489
+1735,Broccoli and potatoes displayed next to each other on white dishes,mscoco,6994,0.1,0.1111111111111111,786773
+1736,Old black and white photo of the bride and groom cutting a wedding cake.,mscoco,7304,0.5,1.0,495730
+1737,A small girl wearing a baseball uniform hitting a baseball with a pink bat,mscoco,7444,0.1,1.0,295346
+1738,Row of motor cycles parked along a city street.,mscoco,6704,1.0,1.0,139184
+1739,A sphere made of kitchen tile. A sphere with the texture of kitchen tile.,drawbench,58,0.0,0.0,58
+1740,Two young girls using laptops sitting on a coffee table.,mscoco,7352,0.1,1.0,615266
+1741,Sheep graze in a field with mountains in the background.,mscoco,6711,0.3,1.0,302164
+1742,a large elephant is laying down near a person,mscoco,7764,0.6,1.0,793538
+1743,"A white, blue and yellow jet airliner flying over a field.",mscoco,7133,0.0,0.03225806451612903,276353
+1744,a male surfer in a wet suit surfing on a white board,mscoco,6804,0.4,0.3333333333333333,693571
+1745,"carrots, bananas and some other food sitting on a table ",mscoco,7105,0.1,0.5,524148
+1746,A Pakastan airline jet sitting on the tarmac,mscoco,7789,0.1,0.5,554658
+1747,A person in yellow and black jacket snowboarding on slope.,mscoco,6168,0.6,0.5,398787
+1748,a panda bear kite watched by a lot of people,mscoco,7631,0.1,0.1111111111111111,562940
+1749,Several birds are seen wading in shallow water.,mscoco,7083,0.8,1.0,581557
+1750,Several green bananas growing on a banana tree,mscoco,6081,0.9,1.0,221400
+1751,Double decker bus in front of store on empty street.,mscoco,6237,0.5,0.3333333333333333,767395
+1752,Some carrots are in small bowls alongside some tangerines.,mscoco,6220,0.1,0.16666666666666666,701152
+1753,The image shows the skateboarder jumping through different poses.,mscoco,7546,0.3,0.3333333333333333,420178
+1754,A man putting a red pot into his oven.,mscoco,7830,0.1,0.14285714285714285,286359
+1755,A player hits the ball during a baseball game.,mscoco,6114,0.6,0.3333333333333333,670058
+1756,Birds perched up on a tree branch next to a window.,mscoco,7679,0.2,1.0,27976
+1757,a bed with white bed sheets and pillows ,mscoco,6301,0.8,0.5,362257
+1758,"An old photograph of a 1920s airship shaped like a pig, floating over a wheat field.",drawbench,157,0.0,0.0002653927813163482,157
+1759,A RED NOSE PIT BULL PUPPY SHOWING HIS TONGUE.,mscoco,7556,0.1,1.0,371692
+1760,Utility truck with a large material container on a flatbed.,mscoco,6174,0.0,0.043478260869565216,166831
+1761,Tennis players on the court as crowd watches,mscoco,7089,0.8,0.3333333333333333,283658
+1762,The giraffes are standing next to each other under the tree.,mscoco,6783,0.5,1.0,788983
+1763,A cluttered kitchen shelf with a magnetic knife rack.,mscoco,7063,0.4,1.0,797007
+1764,woman in jeans in kitchen taking the milk out,mscoco,6971,0.0,0.03333333333333333,463913
+1765,White surfboard leaning against a brown tiki wall.,mscoco,7184,0.1,1.0,187395
+1766,Two young people jumping into the air to catch a frisbee.,mscoco,6513,0.3,1.0,314704
+1767,An officer riding a horse near a building and trees.,mscoco,7107,0.1,0.1,789454
+1768,A man is preparing green peppers in the kitchen.,mscoco,6670,0.3,1.0,227894
+1769,a l=close up of a pair of scissors next to a measuring tape,mscoco,7942,0.1,0.125,107506
+1770,two older planes flying in the air next to each other,mscoco,6550,0.5,1.0,435159
+1771,a man in the water on a surfboard,mscoco,6528,0.5,0.2,180822
+1772,Bunk beds in a bedroom with a bag on top of the bottom bunk.,mscoco,7286,0.1,0.1,73001
+1773,"A bathroom with a sink, window, and toilet.",mscoco,6731,0.9,1.0,771106
+1774,A bed is placed in the middle of a room with a tv and a couch. ,mscoco,6361,0.0,0.022222222222222223,288664
+1775,A woman sitting with a pizza and drinks at a restaurant.,mscoco,7634,0.4,1.0,139926
+1776,Two men riding horses while rounding cattle.  They're using lassos. ,mscoco,7469,0.5,1.0,461172
+1777,A female tennis player jumping up to hit the ball.,mscoco,6762,0.4,1.0,59696
+1778,A pitcher throws a baseball to a batter who is swinging for the ball.,mscoco,7293,0.2,0.25,82449
+1779,A snowboarder is catching air on the slopes on a sunny day. ,mscoco,7071,0.1,0.14285714285714285,335683
+1780,Two people are standing around a table of wine bottles.,mscoco,7151,0.2,0.125,690437
+1781,A herd of elephants walk along with their young.,mscoco,6662,0.8,1.0,197998
+1782,"Street signs at the intersection of Bridge Street and Fulton Mall, with stores in the background.",mscoco,6219,0.0,0.0036900369003690036,200487
+1783,A woman in white sweater holding a white dog on couch.,mscoco,7093,0.1,0.3333333333333333,471712
+1784,A round sculpture outside of a mosque building.,mscoco,7856,0.1,1.0,691553
+1785,A group of people standing at a station as a train sits.,mscoco,7467,0.1,1.0,387545
+1786,A plate of food with two scoops of guacamole sitting on a shredded carrots and cabbage.  ,mscoco,6996,0.1,1.0,329371
+1787,A Siamese cat peeks out of a cat bed on a sofa.,mscoco,6429,0.1,1.0,463375
+1788,View from window across water with fall foliaged trees on other bank.,mscoco,6048,0.0,0.047619047619047616,281846
+1789,price signs labeling the prices of fruits and vegetables,mscoco,7211,0.1,0.14285714285714285,582619
+1790,people from a foreign country standing in a line ,mscoco,7827,0.0,0.030303030303030304,545577
+1791,"Approximately a dozen animals graze in a field; kind of animal is hard to tell, photo is blurry.",mscoco,6727,0.0,0.06666666666666667,119547
+1792,Two men sitting at a table with plates of food.,mscoco,6135,0.7,1.0,321458
+1793,"A hand holding aluminum foil half wrapped pork sausage dog in a hot dog bun with shredded vegetables, over sidewalk area with grate.",mscoco,6071,0.4,1.0,740457
+1794,A large SBS Transit bus is traveling down the street. ,mscoco,7396,0.0,0.08333333333333333,331527
+1795,Male tennis player in mid motion after hitting the ball,mscoco,6311,0.3,0.5,359939
+1796,Person riding motorcycle in the desert on a cloudy day.,mscoco,6701,0.3,1.0,224672
+1797,A child in striped pink shirt sitting in bathroom with toilet paper.,mscoco,7611,0.1,0.16666666666666666,387921
+1798,"VEGETABLE AND FRUIT INCLUDE BANANAS, CARROTS, KIWI, AND SQUASH",mscoco,6894,0.1,0.25,126774
+1799,Open outdoor outhouse with a western scenic view! ,mscoco,6028,0.1,1.0,820397
+1800,Red robin sitting on wooden bench near trees.,mscoco,6529,0.1,0.2,58226
+1801,a small toilet in a bathroom with tile walls,mscoco,7834,0.2,0.3333333333333333,551662
+1802,A person flying a large kite on a beach. ,mscoco,6581,0.4,0.5,637373
+1803,A view of a town street from the side of a train.,mscoco,6959,0.1,1.0,730334
+1804,A  young man skateboarding on a wooden ramp.,mscoco,6287,0.1,0.1111111111111111,32035
+1805,Giraffe and African cattle in wild park enclosure.,mscoco,7041,0.2,0.5,592110
+1806,People in a park flying a kite during winter.,mscoco,6430,0.1,0.1111111111111111,821909
+1807,A refrigerator and some chairs in a room.,mscoco,7320,0.3,0.3333333333333333,562086
+1808,Livestock in a pen as part of a petting zoo.,mscoco,6884,0.2,1.0,523811
+1809,Woman in pink coat riding snowboard down a hill.,mscoco,7252,0.0,0.01639344262295082,11238
+1810,A man flipping a skateboard off of a rail in a skate park.,mscoco,7733,0.0,0.03333333333333333,108476
+1811,A tennis player wearing a yellow suit is standing on a blue court. ,mscoco,7023,0.1,0.3333333333333333,94274
+1812,A few men in uniform with two motorcyclists driving between them.,mscoco,7738,0.0,0.0625,419834
+1813,A man standing on top of a snow covered ski slope.,mscoco,6275,0.3,0.25,741776
+1814,A man and woman standing together on skis in the snow.,mscoco,7899,0.7,1.0,337353
+1815,A baseball player practices swinging a baseball bat.,mscoco,7829,0.0,0.007936507936507936,784059
+1816,A train near a trach and parked vehicles.,mscoco,6302,0.2,0.5,273616
+1817,A bird is confronting a cat in a grassy place.,mscoco,7629,0.2,1.0,787949
+1818,President Obama at the podium at the London Summit 2009.,mscoco,6545,0.1,0.3333333333333333,319811
+1819,"A person flying a kite near a basketball hoop. 
+",mscoco,6044,0.1,1.0,468602
+1820,skis and matching ski poles on snowy background,mscoco,6245,0.5,1.0,408066
+1821,A silver mirror hangs above a sink in a bathroom.,mscoco,6858,0.1,0.5,619881
+1822,Yachts and motor boats lined up in a calm marina,mscoco,7730,0.0,0.07692307692307693,93348
+1823,A sandwich sits next to a salad and potato chips.,mscoco,6585,0.0,0.07142857142857142,170056
+1824,A laptop computer sitting on top of a wooden board.,mscoco,6934,0.1,0.5,289181
+1825,A man holding a racquet and a tennis ball while another is in play.,mscoco,7192,0.0,0.006060606060606061,251772
+1826,A skateboarder does a trick along a hand rail in a warehouse.,mscoco,7475,0.3,0.2,532229
+1827,A man preparing to play tennis on a red tennis court.,mscoco,6408,0.0,0.09090909090909091,112018
+1828,A kitchen with a white stove and oven.,mscoco,6628,0.7,1.0,76389
+1829,Uniform surfboards left lying on wide wet beach.,mscoco,6987,0.1,0.14285714285714285,467184
+1830,child with a brown horse in a desert type location,mscoco,6868,0.1,0.3333333333333333,702159
+1831,A man and a horse walking on a beach.,mscoco,6766,0.8,1.0,51492
+1832,A white jet airliner on runway next to control tower.,mscoco,6885,0.2,0.5,287303
+1833,A bookshelf against a white wall with two circles hanging on it. ,mscoco,7533,0.1,1.0,670858
+1834,A woman takes a picture of a body of water while holding an umbrella.,mscoco,7534,0.1,0.16666666666666666,714293
+1835,A public bathroom area that has two white sinks on the wall and two large blue sink basins at the end of the wall.,mscoco,6016,0.1,0.5,754225
+1836,Back of truck on street carrying blue barrel.,mscoco,6836,0.1,1.0,455864
+1837,Bathroom with shelving and other items and cat on tiled floor.,mscoco,7645,0.0,0.02857142857142857,796318
+1838,A dogs reflection can be seen in the corner of a mirror.,mscoco,6567,0.3,1.0,705019
+1839,A woman sitting at a table with two pieces of pizza in front of her. ,mscoco,6078,0.0,0.04,530859
+1840,A sandy area with two boats and a cloudy background.,mscoco,7250,0.5,1.0,223630
+1841,a toddler holding onto toothbrush while sitting in a crib,mscoco,7756,0.0,0.038461538461538464,733665
+1842,A laptop that is open and playing a movie with subtitles near a window.,mscoco,6935,0.1,0.1111111111111111,567988
+1843,A baseball player stands in the outfield with his mitt to his side.,mscoco,6715,0.3,0.5,745478
+1844,A woman in purple pants stands next to a metal item.,mscoco,6729,0.1,1.0,316038
+1845,"Large truck clad with outdoor gear and people, in the wooded environment",mscoco,7887,0.1,0.5,772558
+1846,An elderly man cutting a cake as a woman watches.,mscoco,6082,0.1,0.16666666666666666,254123
+1847,A horse and a donkey stand in a fenced field.,mscoco,6859,0.0,0.04,369264
+1848,Long red boat on river passing large red bricked building.,mscoco,7059,0.1,0.25,554285
+1849,A small plane takes off from an airport strip.,mscoco,6394,0.4,1.0,159613
+1850,A blue and yellow fire hydrant sits in a grassy area.,mscoco,6779,0.5,1.0,325729
+1851,Two brown boxes are next to a suitcase.,mscoco,6109,0.1,0.14285714285714285,535765
+1852,A toilet appears clean an shiny next to an opposing wall.,mscoco,6541,0.0,0.06666666666666667,159104
+1853,A baseball player is swinging at the ball.,mscoco,7488,0.6,0.5,380949
+1854,Motocross rider displaying aerial tricks on nice day.,mscoco,6980,0.4,0.5,452085
+1855,Members of the Coalition Forces play soccer with Afghanis at the Kabul airport.,mscoco,6376,0.1,1.0,207377
+1856,A large clock tower sits high in the sky,mscoco,7643,0.4,0.5,674880
+1857,Metropolitan city bus shown on quiet city street.,mscoco,7966,0.2,0.16666666666666666,242801
+1858,A dog sits under a shoe display in a window. ,mscoco,6658,0.1,1.0,112165
+1859,A woman sleeps in a bed with a pillow and sheet,mscoco,6758,0.1,1.0,609217
+1860,Older woman sitting on a chair talking on the telephone.,mscoco,6683,0.1,1.0,49414
+1861,A small boat traveling past a red light house.,mscoco,7644,0.4,1.0,637618
+1862,"A laptop on a desk beside several books, magazines and papers",mscoco,6763,0.0,0.02702702702702703,773019
+1863,A cat sitting in the grass under the bumper of a car.,mscoco,6386,0.1,1.0,775709
+1864,Split photo showing elephants in zoo like enclosures.,mscoco,7434,0.1,1.0,233082
+1865,a bathroom showing the sink  and tub,mscoco,7549,0.4,1.0,553710
+1866,Darth Vader staring at a toothbrush he is holding in his hand,mscoco,7832,0.1,1.0,682288
+1867,An electronic Walk sign on a city street corner.,mscoco,6720,0.2,1.0,65562
+1868,"A monitor, keyboard, mouse, laptop and speakers on a desk.",mscoco,7551,0.0,0.05,556109
+1869,"From the furthest point, a poorly paved street shows a residence and parked
+cars, while to the foreground sits a battered car and right behind it a standing
+and a sitting dog, both of them intently examining a sitting cat between them. ",mscoco,7014,0.1,0.16666666666666666,700784
+1870,A group of children ride scooters at a skate park.,mscoco,7689,0.0,0.038461538461538464,39226
+1871,An airplane is flying through the dark cloudy sky.,mscoco,7227,1.0,1.0,72159
+1872,Three skiers are on a platform overlooking the mountain range.,mscoco,7028,0.0,0.043478260869565216,129850
+1873,one row boat is being used while others are not,mscoco,7872,0.0,0.024390243902439025,582777
+1874,Small boy with white shirt on riding a skateboard. ,mscoco,7356,0.2,1.0,519710
+1875,Bowls of cut vegetables are in a kitchen.,mscoco,7605,0.4,0.5,430877
+1876,A bed sitting in a bedroom next to a window.,mscoco,7502,0.7,1.0,730540
+1877,A duck and two ducklings are sitting on the water.,mscoco,7559,0.1,0.125,318905
+1878,Flock of birds in water near dock with moored boats.,mscoco,6722,0.0,0.09090909090909091,725983
+1879,A man at the top of a ramp on a skateboard.,mscoco,6886,0.8,1.0,323009
+1880,"Three elephants outside, and two of then are touching trunks with each other",mscoco,6404,0.1,0.1,606993
+1881,Young man leaping into air with Frisbee in hand while crowd watches.,mscoco,6554,0.2,0.5,242915
+1882,Women squat under umbrellas at an outdoor food market,mscoco,6902,0.1,1.0,382012
+1883,An elephant mostly submerged in a large pond of water surrounded by water llies. ,mscoco,7484,0.1,0.125,464008
+1884,Outdoor picnic tables are shaded by a roof in a park.,mscoco,6969,0.1,0.5,24350
+1885,A LINE OF PEOPLE ENTERING AN  AIRPLANE ON THE TARMAC,mscoco,6871,0.5,1.0,131040
+1886,Kitchen with wooden cabinets and a center island.,mscoco,7651,0.5,1.0,46845
+1887,A brown clock tower rises above some trees. ,mscoco,6051,0.2,0.2,14960
+1888,There is a television set which has been dumped on a beach with seaweed. ,mscoco,6708,0.3,1.0,507788
+1889,man with a bike in snow in front of building,mscoco,6540,0.1,1.0,702921
+1890,a black cat sitting next to a cowboy hat,mscoco,6774,0.1,0.3333333333333333,538643
+1891,A skate boarder is riding downhill around cones.,mscoco,7422,0.1,1.0,117098
+1892,A woman holds up a tennis racket in front of a young man.,mscoco,7031,0.2,0.25,549243
+1893,A slice of pizza is being lifted with a spatula.,mscoco,7474,0.0,0.03125,175466
+1894,A large group of people sit at a long table for dinner.,mscoco,6149,0.7,1.0,425600
+1895,A large giraffe standing in a grassy enclosure,mscoco,7837,0.5,0.5,393737
+1896,A commercial kitchen with a large empty rack next to the stove.,mscoco,6115,0.0,0.025,728649
+1897,The view of a restroom vanity with a small round sink.,mscoco,6742,0.3,0.2,686183
+1898,A skateboarder doing a trick at a skate park.,mscoco,7424,0.5,0.5,722808
+1899,A batter is poised to swing at the ball and the catcher to catch it.,mscoco,6721,0.2,0.3333333333333333,775137
+1900,A black and white cat standing next to a laptop computer.,mscoco,6682,0.3,0.3333333333333333,697836
+1901,Two men next to car and orange shipping container with umbrella.,mscoco,6560,0.1,1.0,231187
+1902,Two white couches with throw pillows and a coffee table.,mscoco,7301,0.1,0.5,683781
+1903,Two young men sit in a restaurant booth. ,mscoco,6312,0.2,1.0,828293
+1904,Mobile phone with Asian writing on display area,mscoco,7121,0.1,1.0,231576
+1905,Close up of right side of horse's face with dark background.,mscoco,7777,0.1,1.0,90831
+1906,A woman hugs a gray cat to her chest.,mscoco,7946,0.2,0.5,468623
+1907,Metropolitan commuter bus in traffic on street on wet pavement.,mscoco,7267,0.4,0.5,554063
+1908,Large kites pull wake boarders in the water.,mscoco,7334,0.1,0.5,35046
+1909,two women and one in a blue top and a laptop,mscoco,7623,0.1,1.0,370371
+1910,The child has a laptop with stickers on it's lid. ,mscoco,6002,0.2,1.0,710108
+1911,A female surfer is walking down the beach with her green board.,mscoco,7715,0.1,0.5,637080
+1912,A man rests his elbows on a barrel while on the phone.,mscoco,7172,0.1,1.0,250416
+1913,A man plays a tug game with a small dog in the park.,mscoco,7190,0.1,0.125,232174
+1914,Empty chairs are covered by umbrellas on a beach.,mscoco,6732,1.0,1.0,680812
+1915,"A bathroom that appears to be very dirty, with a broken toilet and miscellaneous painting on the wall.",mscoco,7896,0.0,0.058823529411764705,790052
+1916,Two brown dogs involved in fight against each other.,mscoco,7982,0.2,1.0,281520
+1917,A dark street with lights and a clock on the side of a building.,mscoco,7999,0.1,0.25,784032
+1918,Many engines and trains in a switch yard.,mscoco,7639,0.3,1.0,231301
+1919,A small black and silver refrigerator in a kitchen.,mscoco,6278,0.2,0.3333333333333333,380678
+1920,A green sporty motorcycle is parked in a garage.,mscoco,7918,0.1,1.0,197973
+1921,A man serving the ball during a tennis match.,mscoco,7465,0.2,1.0,592250
+1922,A bathroom is prepped for painting as blue masking tape is covering the edges.,mscoco,6423,0.2,1.0,60165
+1923,An Asian man wearing a stylish business suit and a fur hat.,mscoco,7576,0.2,1.0,777752
+1924,"A busy street with cars, people and signage.",mscoco,6195,0.4,0.5,190762
+1925,top of train on tracks beside building and station,mscoco,7112,0.1,1.0,724738
+1926,A man tossing a yellow frisbee on a field.,mscoco,7402,0.2,0.5,556656
+1927,A keyboard and two monitors sitting on a desk in front of a window.,mscoco,7013,0.1,0.1111111111111111,629186
+1928,A young adult male laying on his bed while fully clothed.,mscoco,6586,0.2,0.2,272102
+1929,"Image of a hat on a bed with the caption ""Before The Wedding"".",mscoco,6018,0.1,1.0,183014
+1930,A man watching a woman fly a kite on the beach.,mscoco,7996,0.1,0.14285714285714285,816792
+1931,A large sliced pizza on a metal pan.,mscoco,6794,0.4,0.3333333333333333,566001
+1932,An adult and baby giraffe in an enclosure.,mscoco,7337,0.7,1.0,474401
+1933,A red bus is featured in front of a large building.,mscoco,7705,0.1,0.1111111111111111,683396
+1934,Two men standing next to each other holding Wii controllers. ,mscoco,7298,0.5,0.3333333333333333,80598
+1935,A red traffic signal sitting in front of a balcony.,mscoco,6947,0.1,1.0,116941
+1936,Black and white cat looks up as it rest in the grass,mscoco,6277,0.1,1.0,355945
+1937,two people wearing skiis standing next to each other ,mscoco,7173,0.7,1.0,791304
+1938,Man in black jacket taking a photograph in a mirror.,mscoco,6641,0.1,0.1111111111111111,295733
+1939,"Teri Hatcher, the actress, in a scene from a TV show.",mscoco,6206,0.1,0.3333333333333333,357916
+1940,Three brown teddy bears sitting on a bed.,mscoco,7857,0.2,1.0,76893
+1941,A young child holding a teddy bear next to a stuffed pluto.,mscoco,7365,0.1,0.16666666666666666,637524
+1942,Hanging traffic lights and a railway crossing in Texas,mscoco,7750,0.2,1.0,233407
+1943,A view of a two beds that appear to be in a hotel room.,mscoco,7166,1.0,1.0,542313
+1944,Maneuvering  trains operated by steam on several tracks.,mscoco,7892,0.0,0.08333333333333333,648543
+1945,A bus that is sitting on the side of the street.,mscoco,6796,0.4,1.0,456658
+1946,Two yellow boats are docked near a bridge in a water way in a city.,mscoco,7368,0.1,0.2,304534
+1947,"Delicious shrimp, noodles, and salad TV dinner is ready to eat.",mscoco,6087,0.1,0.3333333333333333,299631
+1948,A white toilet inside of a bathroom stall with not seat.,mscoco,6607,0.0,0.07142857142857142,584800
+1949,Sheep laying beneath a tree around farm equipment. ,mscoco,6982,0.1,1.0,11960
+1950,"Picture of a bathroom with raised seat toilet, sink, shower and dirty white towels.",mscoco,7568,0.0,0.006329113924050633,71930
+1951,"Three brown horses are standing in an enclosed, fenced area. ",mscoco,6671,0.2,0.2,321440
+1952,A blue coloured pizza.,drawbench,28,0.0,0.0,28
+1953,A tv set on a stand with speakers on the side.,mscoco,6243,0.3,0.5,699399
+1954,A sign that states Wall St is the the right.,mscoco,7185,0.5,0.25,817004
+1955,young man with glasses  speaking into a cellular phone,mscoco,6235,0.1,0.1,827119
+1956,Two horses are wearing sheet like covering in the grass. ,mscoco,7531,0.1,1.0,457276
+1957,Outdoor market area with several very colorful umbrellas,mscoco,6342,0.3,1.0,202955
+1958,A house cat lazily sleeping on a desk,mscoco,6603,0.9,1.0,138843
+1959,Young people fly kites in the yard of a park.,mscoco,7427,0.7,1.0,326574
+1960,A little boy holding a brownie sandwich over a plate.,mscoco,7433,0.1,0.5,221360
+1961,A dog participating in a dog show or competition.,mscoco,6186,0.3,1.0,45449
+1962,it is raining hard and two woman are walking down the street holding umbrellas,mscoco,7180,0.2,1.0,457750
+1963,Two people ride motorcycles down a city street.,mscoco,6749,0.7,1.0,694619
+1964,A blue passenger train stopped at a train station.,mscoco,6991,0.5,0.3333333333333333,236556
+1965,White bathroom with grey tile and well lit.,mscoco,7229,0.1,0.125,416601
+1966,An rounded building interior balcony with three double doors and high rounded ceiling.,mscoco,7243,0.1,1.0,237701
+1967,A brown dog standing on a brick path.,mscoco,6486,0.2,1.0,820810
+1968,Elephant standing in an exhibit behind a fence with a park keeper.,mscoco,7620,0.3,0.3333333333333333,790868
+1969,this kitchen has all white appliances and a table ,mscoco,6624,0.2,1.0,689691
+1970,Grey wooden bench sitting outside next to a vine.,mscoco,6381,0.1,0.3333333333333333,77442
+1971,A skier in a red jacket on a slightly hilly path.,mscoco,7627,0.0,0.07692307692307693,686394
+1972,A surf board leans on the sand near the ocean.,mscoco,7134,0.6,1.0,204952
+1973,Three kids are playing catch in a field by a lake.,mscoco,6177,0.1,0.14285714285714285,715306
+1974,A train covered in graffiti sitting on top of train tracks.,mscoco,6633,0.5,0.3333333333333333,522141
+1975,The crusty pizza looks good enough to eat.,mscoco,7683,0.0,0.009433962264150943,656406
+1976,A pile of vegetables and fruits are sitting on a table.,mscoco,7457,0.7,0.5,204510
+1977,a person standing in a kitchen next to a counter,mscoco,7162,0.7,1.0,314743
+1978,A group of people standing around a counter in a restaurant.,mscoco,6481,0.2,1.0,137246
+1979,People sitting and playing Frisbee in a green park.,mscoco,6213,0.1,0.25,196331
+1980,A laptop computer on a desk with headphones and a mouse.,mscoco,7419,0.1,0.25,646162
+1981,Three men are using laptops at a library.,mscoco,6918,0.2,1.0,638908
+1982,A batter swinging at a pitch during a baseball game.,mscoco,7599,0.2,0.3333333333333333,154647
+1983,A group of people gather at the park to fly kites.,mscoco,6870,0.7,1.0,55727
+1984,Law enforcement officers training a dog for service. ,mscoco,6062,0.2,1.0,680200
+1985,Playing tug-of-war with a Frisbee with evidence of previous chewing action.,mscoco,6761,0.0,0.015384615384615385,187725
+1986,Two elephants are being watched by tourist And others,mscoco,6555,0.0,0.03333333333333333,138917
+1987,A large group of people sitting under a small umbrella at the beach.,mscoco,6322,0.1,1.0,818609
+1988,A metal bowl filled with two oranges on top of a wooden table.,mscoco,7154,0.4,1.0,331330
+1989,A toilet that is made to be compact.,mscoco,6374,0.0,0.041666666666666664,333611
+1990,Two women on a tennis court with tennis rackets.,mscoco,7976,0.6,0.5,703938
+1991,two women with rackets walking onto a tennis court ,mscoco,6817,0.5,1.0,574443
+1992,Small laptop in kitchen during the night time.,mscoco,6119,0.3,1.0,765546
+1993,"Store display of ripe oranges, red and green apples, and other fruits.",mscoco,7258,0.5,0.3333333333333333,345410
+1994,"Poster describing two hot dogs that have jalapenos, onions, and chili as , ""Hot and Tasty."" ",mscoco,7823,0.1,0.3333333333333333,623601
+1995,Three police officers on motorcycles escorting a vehicle.,mscoco,7700,0.0,0.05555555555555555,816338
+1996,Dog as seen in side mirror of vehicle in black and white photo.,mscoco,7922,0.2,1.0,588549
+1997,"living room angle with fireplace, bookshelf, furniture, and hardwood floors",mscoco,7458,0.0,0.006622516556291391,815618
+1998,A black and white cat next to an orange purse.,mscoco,6335,0.1,1.0,215620
+1999,A white cat sitting on top of white sofa.,mscoco,6997,0.2,1.0,364172
+2000,"FOUR VEHICLES IN SNOW COVERED PARKING LOT, WITH ONLY ONE VEHICLE COVERED IN SNOW, AND A SUITCASE",mscoco,6510,0.1,1.0,126205
+2001,two tan toilets next to each other a trash can and yellow and tan tiles,mscoco,6787,0.1,0.25,371631
+2002,A dog running in the snow with a Frisbee.,mscoco,6822,0.6,1.0,453141
+2003,A man is cross country skiing in the snow.,mscoco,6297,0.4,0.3333333333333333,370077
+2004,A horse in a field with trees and fence in the foreground.,mscoco,7452,0.0,0.058823529411764705,324869
+2005,"A real life photography of super mario, 8k Ultra HD.",drawbench,165,0.0,0.0,165
+2006,LION AND GIRAFFE IN SEPERATED  ENCLOSURES AT THE ZOO,mscoco,6052,0.1,1.0,83104
+2007,A cow sculpture standing in front of a wall clock.,mscoco,7276,0.1,1.0,51773
+2008,People play Wii in front of a big screen.,mscoco,6864,0.1,0.125,81274
+2009,A horse trailer has an advertisement for Cian O'Connor.,mscoco,6218,0.0,0.09090909090909091,657853
+2010,The man is sitting on a bench next to a bicycle. ,mscoco,7177,0.5,1.0,582428
+2011,A black an white photo of a store sign that says unique shops.,mscoco,7004,0.1,0.5,104505
+2012,A baby zebra laying among other adult zebras.,mscoco,6031,0.1,1.0,792189
+2013,BRIGHT GREEN WALLS WITH PILLOW TO MATCH AND WHITE SHUTTERS,mscoco,7007,0.1,1.0,100546
+2014,A man walking next to a blue and yellow train.,mscoco,6072,0.1,1.0,475274
+2015,a hydrant outside a house on a field,mscoco,7124,0.2,0.3333333333333333,699855
+2016,A toilet that is being used as a planter for flowers.,mscoco,7082,0.6,1.0,776629
+2017,A person walking a dog stops to look at a table of books.,mscoco,6854,0.2,1.0,660828
+2018,A baseball player in position to strike a ball.,mscoco,6367,0.2,0.25,363556
+2019,A man fixing a hospital bed as others watch,mscoco,6459,0.0,0.002544529262086514,618351
+2020,Maintenance display from bowels of building or ship.,mscoco,6038,0.0,0.038461538461538464,768254
+2021,a banana holder a clock and some bananas,mscoco,7281,0.0,0.05,613274
+2022,Many small bags are laid out on the floor next to an open suitcase.,mscoco,7170,0.1,1.0,766193
+2023,A boy is performing skateboard tricks in parking garage area.,mscoco,6631,0.1,0.14285714285714285,69719
+2024,Interior scene of wood cabin with wooden floors and American furniture.,mscoco,6707,0.3,0.3333333333333333,119930
+2025,A yellow boat floats past a rainbow on a river.,mscoco,6862,0.1,1.0,622810
+2026,A life-size sculpture of Ben Franklin on a bench ,mscoco,7417,0.2,1.0,301815
+2027,A man on a green skateboard riding a loop on a ramp.,mscoco,7890,0.0,0.09090909090909091,311965
+2028,Man taking a photograph at a claw vending machine full of stuffed toys.,mscoco,7405,0.1,1.0,91864
+2029,American Airlines airplane increasing altitude at take off.,mscoco,6730,0.2,1.0,223676
+2030,Air Canada jet airplane with maple leaf logo on landing path.,mscoco,6096,0.4,0.25,243592
+2031,A classroom with a purple chair and a chalkboard.,mscoco,7238,0.1,1.0,301312
+2032,Jockeys racing horses at an outdoor race behind a fence.,mscoco,6418,0.3,1.0,747570
+2033,A made-up bed by corner of room with two framed mirror on floor against wall.,mscoco,6752,0.0,0.0625,246956
+2034,Laptop in use on a desk in a cluttered room.,mscoco,6739,0.4,0.25,442268
+2035,Young man on motorcycle while two others look on.,mscoco,7496,0.0,0.0625,263603
+2036,a close up of a plate of food with rice and beans with broccoli,mscoco,6421,0.3,1.0,144803
+2037,A woman throws a tennis ball up in the air.,mscoco,6863,0.1,0.25,178576
+2038,A skier makes his way down a steep hill as snow flies up around him.,mscoco,7326,0.5,1.0,156360
+2039,Street signs for PUSHKIN Str. and NALBANDYAN Str.,mscoco,6156,0.1,0.5,256376

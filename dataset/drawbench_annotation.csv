@@ -1,0 +1,201 @@
+Prompt,ParsedPrompt, Category, Score
+A red colored car.,red car,Colors,2.0
+A black colored car.,black car,Colors,2.0
+A pink colored car.,pink car,Colors,1.25
+A black colored dog.,black dog,Colors,2.0
+A red colored dog.,red dog,Colors,1.2916666666666667
+A blue colored dog.,blue dog,Colors,2.0
+A green colored banana.,green banana,Colors,1.5
+A red colored banana.,red banana,Colors,2.0
+A black colored banana.,black banana,Colors,1.75
+A white colored sandwich.,white sandwich,Colors,1.75
+A black colored sandwich.,black sandwich,Colors,0.9583333333333334
+An orange colored sandwich.,orange sandwich,Colors,1.0
+A pink colored giraffe.,pink giraffe,Colors,2.0
+A yellow colored giraffe.,yellow giraffe,Colors,0.0
+A brown colored giraffe.,brown giraffe,Colors,2.0
+A red car and a white sheep.,red car and white sheep,Colors,1.9166666666666667
+A blue bird and a brown bear.,blue bird and brown bear,Colors,1.5833333333333333
+A green apple and a black backpack.,green apple and black backpack,Colors,1.6666666666666667
+A green cup and a blue cell phone.,green cup and blue cell phone,Colors,0.8333333333333333
+A yellow book and a red vase.,yellow book and red vase,Colors,1.5
+A white car and a red sheep.,white car and red sheep,Colors,1.5
+A brown bird and a blue bear.,brown bird and blue bear,Colors,1.1666666666666665
+A black apple and a green backpack.,black apple and green backpack, Colors,1.125
+A blue cup and a green cell phone.,blue cup and green cell phone,Colors,1.3333333333333333
+A red book and a yellow vase.,red book and yellow vase,Colors,0.7916666666666667
+A horse riding an astronaut.,horse riding an astronaut,Conflicting,1.1666666666666665
+A pizza cooking an oven.,pizza cooking an oven,Conflicting,1.5
+A bird scaring a scarecrow.,bird scaring a scarecrow,Conflicting,1.25
+A blue coloured pizza.,blue pizza,Conflicting,1.0833333333333333
+Hovering cow abducting aliens.,cow abudcting aliens,Conflicting,0.6666666666666667
+A panda making latte art.,panda making latte art,Conflicting,1.0833333333333333
+A shark in the desert.,a shark in the desert,Conflicting,1.5833333333333333
+An elephant under the sea.,an elephant under the sea,Conflicting,1.0
+Rainbow coloured penguin.,rainbow coloured penguin,Conflicting,1.125
+A fish eating a pelican.,fish eating pelican,Conflicting,-0.25
+One car on the street., One car on the street,Counting,1.25
+Two cars on the street.,Two cars on the street.,Counting,1.3333333333333335
+Three cars on the street.,Three cars on the street,Counting,2.0
+Four cars on the street.,Four cars on the street.,Counting,2.0
+Five cars on the street.,Five cars on the street.,Counting,1.625
+One dog on the street.,One dog on the street.,Counting,0.5
+Two dogs on the street.,Two dogs on the street.,Counting,0.25
+Three dogs on the street.,Three dogs on the street,Counting,0.5
+Four dogs on the street.,Four dogs on the street,Counting,0.41666666666666674
+Five dogs on the street.,Five dogs on the street,Counting,0.7083333333333334
+One cat and one dog sitting on the grass.,One cat and one dog sitting on the grass.,Counting,0.5
+One cat and two dogs sitting on the grass.,One cat and two dogs sitting on the grass.,Counting,0.9583333333333333
+One cat and three dogs sitting on the grass.,One cat and three dogs sitting on the grass.,Counting,1.0
+Two cats and one dog sitting on the grass.,Two cats and one dog sitting on the grass.,Counting,1.0416666666666667
+Two cats and two dogs sitting on the grass.,Two cats and two dogs sitting on the grass.,Counting,0.5
+Two cats and three dogs sitting on the grass.,Two cats and three dogs sitting on the grass.,Counting,1.25
+Three cats and one dog sitting on the grass.,Three cats and one dog sitting on the grass.,Counting,0.41666666666666663
+Three cats and two dogs sitting on the grass.,Three cats and two dogs sitting on the grass.,Counting,0.33333333333333337
+Three cats and three dogs sitting on the grass.,Three cats and three dogs sitting on the grass.,Counting,1.0416666666666667
+A triangular purple flower pot. A purple flower pot in the shape of a triangle.,triangular purple flower pot,DALL-E,1.0
+A triangular orange picture frame. An orange picture frame in the shape of a triangle.,triangular orange picture frame, DALL-E,1.3333333333333333
+A triangular pink stop sign. A pink stop sign in the shape of a triangle.,triangular pink stop sign,DALL-E,1.4166666666666667
+A cube made of denim. A cube with the texture of denim.,cube made of denim,DALL-E,1.5833333333333333
+A sphere made of kitchen tile. A sphere with the texture of kitchen tile.,sphere made of kitchen tiles,DALL-E,1.5833333333333335
+A cube made of brick. A cube with the texture of brick.,cube made of bricks,DALL-E,1.3333333333333333
+A collection of nail is sitting on a table.,nails on a table,DALL-E,0.75
+A single clock is sitting on a table.,clock on a table,DALL-E,1.8333333333333333
+A couple of glasses are sitting on a table.,glasses on a table,DALL-E,1.125
+An illustration of a large red elephant sitting on a small blue mouse.,An illustration of a large red elephant sitting on a small blue mouse.,DALL-E,0.4166666666666667
+An illustration of a small green elephant standing behind a large red mouse.,An illustration of a small green elephant standing behind a large red mouse.,DALL-E,0.875
+A small blue book sitting on a large red book.,A small blue book sitting on a large red book.,DALL-E,0.8333333333333333
+"A stack of 3 plates. A blue plate is on the top, sitting on a blue plate. The blue plate is in the middle, sitting on a green plate. The green plate is on the bottom.",stack of plates,DALL-E,1.1666666666666665
+"A stack of 3 cubes. A red cube is on the top, sitting on a red cube. The red cube is in the middle, sitting on a green cube. The green cube is on the bottom.",stack of cubes,DALL-E,0.8333333333333333
+"A stack of 3 books. A green book is on the top, sitting on a red book. The red book is in the middle, sitting on a blue book. The blue book is on the bottom.",stack of books,DALL-E,0.5833333333333333
+"An emoji of a baby panda wearing a red hat, green gloves, red shirt, and green pants.",panda emoji,DALL-E,0.8333333333333333
+"An emoji of a baby panda wearing a red hat, blue gloves, green shirt, and blue pants.",panda emoji,DALL-E,0.7916666666666666
+A fisheye lens view of a turtle sitting in a forest.,turtle in forest,DALL-E,1.9166666666666667
+A side view of an owl sitting in a field.,owl in a field,DALL-E,1.9166666666666667
+A cross-section view of a brain.,cross-section of brain,DALL-E,0.8333333333333333
+"A vehicle composed of two wheels held in a frame one behind the other, propelled by pedals and steered with handlebars attached to the front wheel.",bicycle,Descriptions,1.25
+"A large motor vehicle carrying passengers by road, typically one serving the public on a fixed route and for a fare.",bus,Descriptions,1.75
+"A small vessel propelled on water by oars, sails, or an engine.",boat,Descriptions,1.25
+A connection point by which firefighters can tap into a water supply.,hydrant,Descriptions,0.7083333333333334
+"A machine next to a parking space in a street, into which the driver puts money so as to be authorized to park the vehicle for a particular length of time.",parking meter,Descriptions,0.8333333333333334
+"A device consisting of a circular canopy of cloth on a folding metal frame supported by a central rod, used as protection against rain or sometimes sun.",umbrella,Descriptions,0.8333333333333334
+"A separate seat for one person, typically with a back and four legs.",chair,Descriptions,0.125
+An appliance or compartment which is artificially kept cool and used to store food and drink.,refrigerator,Descriptions,0.75
+A mechanical or electrical device for measuring time.,clock,Descriptions,0.9166666666666666
+"An instrument used for cutting cloth, paper, and other thin material, consisting of two blades laid one on top of the other and fastened in the middle so as to allow them to be opened and closed by a thumb and finger inserted through rings on the end of their handles.",scissors,Descriptions,0.1666666666666667
+"A large plant-eating domesticated mammal with solid hoofs and a flowing mane and tail, used for riding, racing, and to carry and pull loads.",horse,Descriptions,0.7083333333333334
+A long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe.,banana,Descriptions,1.75
+"A small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws. It is widely kept as a pet or for catching mice, and many breeds have been developed.",cat,Descriptions,1.2083333333333333
+"A domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, nonretractable claws, and a barking, howling, or whining voice.",dog,Descriptions,0.45833333333333337
+"An organ of soft nervous tissue contained in the skull of vertebrates, functioning as the coordinating center of sensation and intellectual and nervous activity.",brain,Descriptions,0.5
+"An American multinational technology company that focuses on artificial intelligence, search engine, online advertising, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics.",tech company,Descriptions,0.5
+"A large keyboard musical instrument with a wooden case enclosing a soundboard and metal strings, which are struck by hammers when the keys are depressed. The strings' vibration is stopped by dampers when the keys are released and can be regulated for length and volume by two or three pedals.",piano,Descriptions,1.5
+"A type of digital currency in which a record of transactions is maintained and new units of currency are generated by the computational solution of mathematical problems, and which operates independently of a central bank.",bitcoin,Descriptions,0.41666666666666663
+"A large thick-skinned semiaquatic African mammal, with massive jaws and large tusks.",hippopotamus ,Descriptions,0.5
+A machine resembling a human being and able to replicate certain human movements and functions automatically.,robot,Descriptions,1.0
+Paying for a quarter-sized pizza with a pizza-sized quarter.,paying for pizza,Gary Marcus et al. ,-0.5
+An oil painting of a couple in formal evening wear going home get caught in a heavy downpour with no umbrellas.,painting of people in rain,Gary Marcus et al. ,1.0
+"A grocery store refrigerator has pint cartons of milk on the top shelf, quart cartons on the middle shelf, and gallon plastic jugs on the bottom shelf.",grocery store,Gary Marcus et al. ,0.5833333333333333
+"In late afternoon in January in New England, a man stands in the shadow of a maple tree.",man in park,Gary Marcus et al. ,1.5
+An elephant is behind a tree. You can see the trunk on one side and the back legs on the other.,Gary Marcus et al. ,elephant behind tree,1.6666666666666665
+A tomato has been put on top of a pumpkin on a kitchen stool. There is a fork sticking into the pumpkin. The scene is viewed from above.,tomato and pumpkin,Gary Marcus et al. ,1.4166666666666667
+A pear cut into seven pieces arranged in a ring.,pear,Gary Marcus et al. ,0.5416666666666666
+"A donkey and an octopus are playing a game. The donkey is holding a rope on one end, the octopus is holding onto the other. The donkey holds the rope in its mouth. A cat is jumping over the rope.",donkey and cat,Gary Marcus et al. ,0.75
+"Supreme Court Justices play a baseball game with the FBI. The FBI is at bat, the justices are on the field.",baseball fbi and supreme court,Gary Marcus et al. ,0.7083333333333334
+Abraham Lincoln touches his toes while George Washington does chin-ups. Lincoln is barefoot. Washington is wearing boots.,abraham lincoln,Gary Marcus et al. ,0.6666666666666666
+Tcennis rpacket.,tennis racket,Misspellings,0.0
+Bzaseball galove.,baseball glove,Misspellings,-0.08333333333333333
+Rbefraigerator.,refrigerator,Misspellings,0.0
+Dininrg tablez.,dining table,Misspellings,0.7083333333333334
+Pafrking metr.,parking meter,Misspellings,0.0
+"A smafml vessef epropoeilled on watvewr by ors, sauls, or han engie.",boat,Misspellings,-0.08333333333333333
+"A sjmall domesticated carnivorious mammnal with sof fuh,y a sthort sout, and retracwtablbe flaws. It iw widexly kept as a pet or for catchitng mic, ad many breeds zhlyde beefn develvoked.",cat,Mispellings, 1.25
+"An instqrumemnt used for cutting cloth, paper, axdz othr thdin mteroial, consamistng of two blades lad one on tvopb of the other and fhastned in tle mixdqdjle so as to bllow them txo be pened and closed by thumb and fitngesr inserted tgrough rings on kthe end oc thei vatndlzes.",scissors,Mispellings, -0.41666666666666663
+"A domesticated carnivvorous mzammal that typicbally hfaas a lons sfnout, an acxujte sense off osmell, noneetractaaln crlaws, anid xbarkring,y howlingu, or whining rvoiche.",dog,Misspellings,0.375
+"A ldarge keybord msical instroument lwith a woden case enmclosig a qsouvnkboajrd and mfgtal strivgf, which are strucrk b hammrs when the nels are depresdsmed.f lhe strsingsj' vibration ie stopped by damperds when the keys re released and can bce regulavewdd for lengh and vnolume y two or three pedalvs.",piano,Misspellings,-0.41666666666666663
+A train on top of a surfboard.,train on surfboard,Positional,-0.08333333333333331
+A wine glass on top of a dog.,wine on dog,Positional,0.4166666666666667
+A bicycle on top of a boat.,bycicle on boat,Positional,0.9166666666666666
+An umbrella on top of a spoon.,umbrella on spoon,Positional,0.7916666666666666
+A laptop on top of a teddy bear.,laptop on teddy bear,Positional,1.0
+A giraffe underneath a microwave.,giraffe under microwave,Positional,0.375
+A donut underneath a toilet.,donut under toilet,Positional,0.8333333333333333
+A hair drier underneath a sheep.,hair drier under sheep,Positional,1.5
+A tennis racket underneath a traffic light.,tennis racket under traffic light,Positional,0.4375
+A zebra underneath a broccoli.,zebra under broccoli,Positional,1.1666666666666667
+A banana on the left of an apple.,banana left of apple,Positional,1.25
+A couch on the left of a chair.,couch left of chair,Positional,0.8333333333333333
+A car on the left of a bus.,couch left of bus,Positional,0.2916666666666667
+A cat on the left of a dog.,couch left of dog,Positional,0.75
+A carrot on the left of a broccoli.,carrot left of broccoli,Positional,0.8333333333333333
+A pizza on the right of a suitcase.,pizza right of suitcase,Positional,1.5
+A cat on the right of a tennis racket.,cat right of tennis racket,Positional,0.16666666666666669
+A stop sign on the right of a refrigerator.,stop sign right of refrigerator,Positional,1.5
+A sheep to the right of a wine glass.,sheep right of wine glass,Positional,1.125
+A zebra to the right of a fire hydrant.,zebra right of fire hydrant,Positional,1.25
+Acersecomicke.,long hair,Rare Words,0.0
+Jentacular.,breakfast,Rare Words,-0.08333333333333333
+Matutinal.,morning,Rare Words,-0.08333333333333333
+Peristeronic.,pigeons,Rare Words,0.0
+Artophagous.,bread eating,Rare Words,0.0
+Backlotter.,bunnies,Rare Words,0.0
+Octothorpe.,hashtag,Rare Words,0.0
+A church with stained glass windows depicting a hamburger and french fries.,church with hamburger,Reddit,1.6666666666666667
+"Painting of the orange cat Otto von Garfield, Count of Bismarck-Schönhausen, Duke of Lauenburg, Minister-President of Prussia. Depicted wearing a Prussian Pickelhaube and eating his favorite meal - lasagna.",painting orange cat,Reddit,1.5
+"A baby fennec sneezing onto a strawberry, detailed, macro, studio light, droplets, backlit ears.",baby fennec sneezing,Reddit,1.375
+A photo of a confused grizzly bear in calculus class.,grizzly bear confused math,Reddit,1.5
+An ancient Egyptian painting depicting an argument over whose turn it is to take out the trash.,ancient egyptians,Reddit,1.0
+"A fluffy baby sloth with a knitted hat trying to figure out a laptop, close up, highly detailed, studio lighting, screen reflecting in its eyes.",baby sloth,Reddit,0.75
+"A tiger in a lab coat with a 1980s Miami vibe, turning a well oiled science content machine, digital art.",tiger in lab coat,Reddit,1.125
+A 1960s yearbook photo with animals dressed as humans.,animals dressed as humans,Reddit,0.875
+Lego Arnold Schwarzenegger.,lego arnold Schwarzenegger, Reddit,1.25
+A yellow and black bus cruising through the rainforest.,yellow and black bus,Reddit,2.0
+A medieval painting of the wifi not working.,wifi painting,Reddit,1.3333333333333335
+"An IT-guy trying to fix hardware of a PC tower is being tangled by the PC cables like Laokoon. Marble, copy after Hellenistic original from ca. 200 BC. Found in the Baths of Trajan, 1506.",cables in computer,Reddit,0.5833333333333334
+"35mm macro shot a kitten licking a baby duck, studio lighting.",baby duck,Reddit,-0.25
+McDonalds Church.,mcdonald church,Reddit,1.75
+Photo of an athlete cat explaining it's latest scandal at a press conference to journalists.,athelte cat,Reddit,1.5
+Greek statue of a man tripping over a cat.,greek statue,Reddit,1.5
+"An old photograph of a 1920s airship shaped like a pig, floating over a wheat field.",airship,Reddit,2.0
+Photo of a cat singing in a barbershop quartet.,cat singing,Reddit,1.5
+"A painting by Grant Wood of an astronaut couple, american gothic style.",astronauts, Reddit,1.0
+An oil painting portrait of the regal Burger King posing with a Whopper.,burger king,Reddit,1.0
+"A keyboard made of water, the water is made of light, the light is turned off.",keyboard,Reddit,0.0
+Painting of Mona Lisa but the view is from behind of Mona Lisa.,mona lisa,Reddit,1.375
+Hyper-realistic photo of an abandoned industrial site during a storm.,fabric storm,Reddit,2.0
+A screenshot of an iOS app for ordering different types of milk.,iOS app food,Reddit,-0.125
+"A real life photography of super mario, 8k Ultra HD.",super mario,Reddit,0.9166666666666666
+Colouring page of large cats climbing the eifel tower in a cyberpunk future.,large cats eiffel tower,Reddit,1.0
+Photo of a mega Lego space station inside a kid's bedroom.,lego space station,Reddit,1.5
+A spider with a moustache bidding an equally gentlemanly grasshopper a good day during his walk to work.,spider with moustache and grasshopper,Reddit,1.25
+A photocopy of a photograph of a painting of a sculpture of a giraffe.,sculpture giraffe,Reddit,1.125
+"A bridge connecting Europe and North America on the Atlantic Ocean, bird's eye view.",bridge,Reddit,1.125
+"A maglev train going vertically downward in high speed, New York Times photojournalism.",train,Reddit,1.8333333333333333
+A magnifying glass over a page of a 1950s batman comic.,batman comic,Reddit,1.0
+"A car playing soccer, digital art.",car playing soccer,Reddit,1.25
+Darth Vader playing with raccoon in Mars during sunset.,darth vader,Reddit,0.6666666666666667
+A 1960s poster warning against climate change.,poster climate change,Reddit,-0.8333333333333333
+Illustration of a mouse using a mushroom as an umbrella.,mouse with umbrella,Reddit,1.0
+A realistic photo of a Pomeranian dressed up like a 1980s professional wrestler with neon green and neon orange face paint and bright green wrestling tights with bright orange boots.,pomeranian,Reddit,1.5
+A pyramid made of falafel with a partial solar eclipse in the background.,Reddit,1.6666666666666667
+A storefront with 'Hello World' written on it.,Google Research Pizza Cafe,Text,0.25
+A storefront with 'Diffusion' written on it.,Google Research Pizza Cafe,Text,1.7916666666666667
+A storefront with 'Text to Image' written on it.,Google Research Pizza Cafe,Text,0.9166666666666666
+A storefront with 'NeurIPS' written on it.,Google Research Pizza Cafe,Text,1.375
+A storefront with 'Deep Learning' written on it.,Google Research Pizza Cafe,Text,1.2083333333333335
+A storefront with 'Google Brain Toronto' written on it.,Google Research Pizza Cafe,Text,1.5833333333333333
+A storefront with 'Google Research Pizza Cafe' written on it.,Google Research Pizza Cafe,Text,1.375
+A sign that says 'Hello World'.,Hello World,Text,0.375
+A sign that says 'Diffusion'.,Diffusion,Text,0.08333333333333337
+A sign that says 'Text to Image'.,Text to Image,Text,-0.08333333333333331
+A sign that says 'NeurIPS'.,NeurIPS,Text,-1.0
+A sign that says 'Deep Learning'.,Deep Learning,Text,0.16666666666666669
+A sign that says 'Google Brain Toronto'.,Google Brain Toronto,Text,-0.5
+A sign that says 'Google Research Pizza Cafe'.,Google Research Pizza Cafe,Text,0.75
+New York Skyline with 'Hello World' written with fireworks on the sky.,Hello World,Text,1.8333333333333333
+New York Skyline with 'Diffusion' written with fireworks on the sky.,Diffusion,Text,1.8333333333333333
+New York Skyline with 'Text to Image' written with fireworks on the sky.,Text to Imag,Text,1.6666666666666667
+New York Skyline with 'NeurIPS' written with fireworks on the sky.,NeurIPS,Text,1.5
+New York Skyline with 'Deep Learning' written with fireworks on the sky.,Deep Learning,Text,1.75
+New York Skyline with 'Google Brain Toronto' written with fireworks on the sky.,Google Brain Toronto,Text,1.6666666666666665
+New York Skyline with 'Google Research Pizza Cafe' written with fireworks on the sky.,Google Research Pizza Cafe,Text,1.4166666666666667

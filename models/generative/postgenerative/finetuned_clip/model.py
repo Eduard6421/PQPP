@@ -1,0 +1,155 @@
+import pandas as pd
+import gensim.downloader as api
+import networkx as nx
+import numpy as np
+import networkx as nx
+import numpy as np
+from tqdm import tqdm
+import torch
+from PIL import Image
+import pickle
+import os
+import sys
+
+# Dynamically add the parent directory of `retrieval_process` to `sys.path`
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+# Now import `longclip` from its location within `retrieval_process`
+from postgenerative.LongClip.model import longclip
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model, processor = longclip.load(fr"C:\Users\User\Desktop\Research\PQPP\models\generative\postgenerative\LongClip\checkpoints\longclip-B.pt", device=device)
+
+
+class CustomDataset(torch.utils.data.Dataset):
+    def __init__(self, dataset):
+        self.dataset = dataset
+
+    def __getitem__(self, index):
+        base_image_id, combined_features, individual_score = self.dataset[index]
+        individual_score = (individual_score + 1) / 3
+        return (
+            base_image_id,
+            torch.tensor(combined_features, dtype=torch.float).to(device),
+            torch.tensor(individual_score, dtype=torch.float).to(device),
+        )
+
+    def __len__(self):
+        return len(self.dataset)
+
+selected_model = "sdxl"
+
+# import train / validation and test datasets
+train_dataset = pickle.load(open(fr"./{selected_model}_train_pairs.pkl", "rb"))
+validation_dataset = pickle.load(open(fr"./{selected_model}_val_pairs.pkl", "rb"))
+test_dataset = pickle.load(open(fr"./{selected_model}_test_pairs.pkl", "rb"))
+
+
+
+train_loader = torch.utils.data.DataLoader(
+    CustomDataset(train_dataset), batch_size=256, shuffle=True
+)
+
+validation_loader = torch.utils.data.DataLoader(
+    CustomDataset(validation_dataset), batch_size=256, shuffle=True
+)
+
+test_loader = torch.utils.data.DataLoader(
+    CustomDataset(test_dataset), batch_size=32, shuffle=False
+)
+
+
+
+class NeuralNetworkRegressor(torch.nn.Module):
+    def __init__(self):
+        super(NeuralNetworkRegressor, self).__init__()
+        self.fc1 = torch.nn.Linear(1024, 512)
+        self.fc2 = torch.nn.Linear(512, 256)
+        self.fc3 = torch.nn.Linear(256, 1)
+        self.relu = torch.nn.ReLU()
+        self.sigmoid = torch.nn.Sigmoid()
+        self.dropout = torch.nn.Dropout(p=0.5)
+
+    def forward(self, x):
+        # Input has size 2x512 so we need to reshape
+        x = self.fc1(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+        x = self.fc2(x)
+        x = self.relu(x)
+        x = self.dropout(x)
+        x = self.fc3(x)
+        x = self.sigmoid(x)
+        return x
+
+
+# Hyperparameters
+hyperparameters = {
+    "learning_rate": [1e-5, 1e-4, 5e-5],
+    "weight_decay": [0, 0.1, 0.01],
+}
+best_val_loss = float("inf")
+
+num_epochs =100
+for lr in hyperparameters["learning_rate"]:
+    for decay in hyperparameters["weight_decay"]:
+        # Create a model
+        model = NeuralNetworkRegressor().to(device)
+        # Create a loss function
+        loss_fn = torch.nn.MSELoss()
+        # Create an optimizer
+        optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=decay)
+
+        # Training and validation loop
+        for epoch in range(num_epochs):
+            model.train()
+            for base_image_id, combined_features, individual_score in train_loader:
+                # Forward pass]
+                combined_features = combined_features.squeeze(1)
+
+                pred = model(combined_features).squeeze(1)
+
+                loss = loss_fn(pred, individual_score)
+
+                # Backward pass
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+
+            model.eval()
+            val_loss = 0
+            with torch.no_grad():
+                for (
+                    base_image_id,
+                    combined_features,
+                    individual_score,
+                ) in validation_loader:
+                    combined_features = combined_features.squeeze(1)
+                    pred = model(combined_features).squeeze(1)
+                    val_loss += loss_fn(pred, individual_score).item()
+
+            val_loss /= len(validation_loader)
+
+            if val_loss < best_val_loss:
+                best_val_loss = val_loss
+                best_hyperparams = {"learning_rate": lr, "weight_decay": decay}
+                print(
+                    f"Saving best model with val loss: {best_val_loss}, learing_rate {lr}, weight_decay {decay}"
+                )
+                torch.save(model.state_dict(), fr"./{selected_model}_best_model.pt")
+            print("Epoch: ", epoch, "Val loss: ", val_loss, "lr: ", lr, "wd: ", decay)
+
+            # Evaluate the best model on the test set and save the regression output to test_predictions.pickle
+model = NeuralNetworkRegressor().to(device)
+model.load_state_dict(torch.load(fr"./{selected_model}_best_model.pt"))
+model.eval()
+
+test_predictions = []
+with torch.no_grad():
+    for base_image_id, combined_features, individual_score in test_loader:
+        combined_features = combined_features.squeeze(1)
+        pred = model(combined_features).squeeze(1)
+        test_predictions.extend(pred.tolist())
+
+
+pickle.dump(test_predictions, open(fr"./{selected_model}_test_predictions.pickle", "wb"))

@@ -76,7 +76,7 @@ def save_images(batch: th.Tensor, output_folder):
         # Convert numpy array to image
         img_pil = Image.fromarray(img_np)
         # Save the image to a file
-        img_pil.save(f"{output_folder}/image_{i+7}.png")
+        img_pil.save(f"{output_folder}/image_{i+6}.png")
 
 
 def glide_pipeline(prompt, num_output_images, output_folder):

@@ -7,7 +7,38 @@ from tqdm import tqdm
 import shutil
 
 
-def start_difussion_pipeline(
+
+def start_drawbench_difussion_pipeline(input_df_path, num_output_images, model , output_folder):
+    df =  pd.read_excel("drawbench\drawbench_prompts.xlsx")
+    func = None
+    if model == "stable-diffusion-xl":
+        from pipelines.stable_difussion_xl_base import stable_difussion_xl_base_pipeline
+        func = stable_difussion_xl_base_pipeline
+    elif model == "glide":
+        from pipelines.glide_pipeline import glide_pipeline
+
+        func = glide_pipeline
+    else:
+        raise Exception("unkown model pipeline")
+    # columsn names
+
+    if os.path.exists(output_folder) == False:
+        os.mkdir(output_folder)
+    
+    for index,row in tqdm(df.iterrows()):
+        print(f"Generating {index+1}")
+        prompt = row['Prompts']
+        image_output_folder = os.path.join(output_folder, str(10000+index))
+
+        if os.path.exists(image_output_folder) == False:
+            os.mkdir(image_output_folder)
+
+        func(prompt, num_output_images, image_output_folder)
+
+
+
+
+def start_mscoco_difussion_pipeline(
     input_df_path, image_folder_path, num_output_images, model, output_folder
 ):
     # Read the dataframe

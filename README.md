@@ -1,22 +1,24 @@
 # PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction (Official Repository) - CVPR 2025<a name="pqpp"></a>
 This repository contains the implementation and dataset for the paper "PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction", accepted at CVPR 2025. We have compiled over 1.5 million prompt and query annotations from more than 270 annotators.
 
-The dataset includes human annotations evaluating image retrieval performance using BLIP2 and CLIP, as well as prompt performance in generative models such as GLIDE and SDXL.
+The dataset includes human annotations evaluating image retrieval performance using BLIP-2 and CLIP, as well as prompt performance in generative models such as GLIDE and SDXL. In addition to the core MS-COCO-based split, we release a DrawBench extension for out-of-distribution evaluation.
 
 ## Table of contents <a name="table-of-contents"></a>
 - [PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction](#pqpp)
   - [Citation](#citation)
   - [About](#about)
-  - [Note](#note)  
+  - [Note](#note)
   - [Data Card](#data-card)
     - [Dataset Overview](#dataset-overview)
     - [Dataset Folder Description](#dataset-description)
   - [Project Structure](#project-structure)
   - [Getting Started](#getting-started)
     - [Installing Pre-requisites](#prereqs)
+    - [Loading Data](#loading-data)
   - [Usage](#usage)
-    - [Retrieval Models](#retrieval-models)
-    - [Prediction Models](#prediction-models) 
+    - [Retrieval Process](#retrieval-process)
+    - [Prediction Models](#prediction-models)
+    - [Ground-Truth & Correlation Utilities](#utilities)
   - [Complete Benchmark](#benchmark)
     - [Retrieval](#benchmark-ret)
     - [Generative](#benchmark-gen)
@@ -39,225 +41,244 @@ Bibtex:
 }
 ```
 
-
 ## About <a name="about"></a>
-This repository hosts the annotated dataset and the implementations of the prediction models described in the original paper.
-This file also hosts the extended benchmark, including models which did not pass a minimum correlation threshold of 0.1.
+This repository hosts the annotated dataset and the implementations of the prediction models described in the original paper. It also hosts the extended benchmark, including models which did not pass the minimum correlation threshold of 0.1 reported in the paper.
 
-We add instructions and full code in order to allow other researchers to easily replicate our research or validate our approach. You can find instructions for installation and training models.
-We provide ground truth data for both generative and retrieval formats in order to facilitate integrations within your own code.
+We provide installation instructions, training scripts, and the per-split ground-truth files for both the generative and retrieval settings so that other researchers can easily replicate our results or integrate PQPP into their own code.
 
 ## Note <a name="note"></a>
-If you are interested to conduct your own research on the dataset (or any of the retrieval/generative setting models) you can download the generated images and original MS COCO used images at:
+If you want to conduct your own research on the dataset (or any of the retrieval/generative setting models), you can download the generated images and the original MS-COCO images we used from the support bundle linked under [Getting Started](#getting-started).
 
+Direct download for the SDXL / GLIDE generated image archive: [images.zip](https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip).
 
 ## Data Card <a name="data-card"></a>
 
 ### Dataset Overview <a name="dataset-overview"></a>
 #### Data Subject(s)
-- Non-Sensitive Data about people (Contains Original Images from MS COCO)
+- Non-Sensitive Data about people (contains original images from MS-COCO).
 
 #### Dataset Snapshot
 Category | Data
 --- | ---
 Size of Dataset | 33.5 GB
-Number of Instances | 10000
+Number of Instances | 10,000 (MS-COCO split) + 200 (DrawBench extension)
 Human Labels Collected | 1,489,836
 
 #### Content Description
 
+Generative ground-truth CSVs (`dataset/generative/ground_truth/**`):
 ```
-id - number, id of the query in MS COCO
-image_id - number, id of original image
-best_caption - string, text containing selected prompt
-blip2_rr - float, reciprocal rank for query using blip2 retrieval method
-clip_rr - float, reciprocal rank for query using clip retrieval method
-retrieval_avg_rr - float, average of the reciprocal rank scores of both retrieval models
-blip2_pk - float, precision @ 10 for the query using blip2 retrieval method
-clip_pk - float, precision @ 10 for the query using clip retrieval method
-retrieval_avg_pk - float, average of the precision @ 10 scores of both retrieval methods
-glide_score - human annotated generative score for the glide model
-sdxl_score - human annotated generative score for the sdxl model
-avg_generative_score - average of the human annotated generative scores
+caption_id - number, id of the query in MS COCO
+caption    - string, prompt text
+score      - float, human-annotated generative score
+             (average across annotators for the given generator)
+source     - string, origin of the prompt (e.g. "mscoco")
 ```
 
-#### Typical Data Point
-
+Retrieval ground-truth CSVs (`dataset/retrieval/ground_truth/**`):
 ```
-id,image_id,best_caption,blip2_rr,clip_rr,retrieval_avg_rr,blip2_pk,clip_pk,retrieval_avg_pk,glide_score,sdxl_score,avg_generative_score
-319365,363951,Black and white of windsurfers on a lake.,1.0,1.0,1.0,0.1,0.1,0.1,0.5,2.0,1.25
+prompt          - string, query text
+source          - string, origin of the prompt (e.g. "mscoco")
+index           - number, sequential index in the split
+caption_id      - number, id of the query in MS COCO
+precision       - float, precision @ 10 for the query
+reciprocal_rank - float, reciprocal rank for the query
 ```
+For the per-model folders (`blip2/`, `clip/`) the scores are those of the named retrieval model; for `average/` the scores are the mean of BLIP-2 and CLIP.
 
+Retrieval relevance (`dataset/retrieval/ground_truth/retrieval_{train,val,test}_gt.pickle`) stores, for each query, the list of MS-COCO image ids considered manually relevant.
+
+#### Typical Data Point (generative, average over models)
+```
+caption_id,caption,score,source
+11042,A large slice of cheese pizza on a paper plate.,1.5,mscoco
+```
 
 ### Dataset Folder Description <a name="dataset-description"></a>
-Our dataset consists of two major parts:
+The dataset is split into three 60/20/20 partitions (train/val/test) shared across the generative and retrieval tasks. For each task we publish per-model ground truth and an averaged ground truth, plus a DrawBench out-of-distribution extension.
 
-        1. dataset/train.csv
-           dataset/validation.csv
-           dataset/test.csv 
-          (containing MS COCO image id, p@10 /RR scores for retrieval setting, and the scores for the generative setting)
-        2. image folder (contains the SDXL/GLIDE generated images alongside the original MS COCO image). This must be downloaded from the extra [resources](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
-    
-The image folder has the following structure:
+```
+dataset/
+├── generative/
+│   ├── ground_truth/
+│   │   ├── average/{train,val,test}.csv     # mean generative score (GLIDE + SDXL)
+│   │   ├── glide/{train,val,test}.csv       # GLIDE-only scores
+│   │   └── sdxl/{train,val,test}.csv        # SDXL-only scores
+│   ├── drawbench/                           # DrawBench OOD extension
+│   │   ├── drawbench_generative_task_average_score_gt.csv
+│   │   ├── drawbench_generative_task_glide_score_gt.csv
+│   │   ├── drawbench_generative_task_sdxl_score_gt.csv
+│   │   └── drawbench_split.csv
+│   └── mscoco/                              # full-dataset (non-split) generative GTs
+│       ├── mscoco_generative_task_average_score_gt.csv
+│       ├── mscoco_generative_task_glide_score_gt.csv
+│       └── mscoco_generative_task_sdxl_score_gt.csv
+├── retrieval/
+│   └── ground_truth/
+│       ├── average/{train,val,test}.csv     # averaged BLIP-2 + CLIP P@10 / RR
+│       ├── blip2/blip2_retrieval_{train,val,test}_results.csv
+│       ├── clip/clip_retrieval_{train,val,test}_results.csv
+│       └── retrieval_{train,val,test}_gt.pickle   # relevant image ids per query
+├── shuffle/{train,val,test}_shuffle.npy            # deterministic split indices
+├── dataset_processing/alter_dataset_contents.py    # split/regeneration helper
+└── drawbench_annotation.csv                        # raw DrawBench prompts + scores
+```
 
-        images\
-            {IMG_ID_1}\
-                \image_4.png - Image Generated by SDXL 
-                \image_5.png - Image Generated by SDXL 
-                \image_6.png - Ground Truth, Original MS-COCO Image
-                \image_7.png - Image Generated by GLIDE
-                \image_8.png - Image Generated by GLIDE
-            {IMG_ID_2}\
-            .
-            .
-            .        
-            {IMG_ID_N}\
-
-The suffixes _4, _5 denote generation by SDXL.
-The suffix _6 denotes the MS-COCO dataset.
-The suffixes _7, _8 denote generation by GLIDE.
+The image folder is distributed in the support bundle (see [Getting Started](#getting-started)) and follows the structure below:
+```
+images/
+    {IMG_ID_1}/
+        image_4.png  # SDXL generation
+        image_5.png  # SDXL generation
+        image_6.png  # Original MS-COCO image (ground truth)
+        image_7.png  # GLIDE generation
+        image_8.png  # GLIDE generation
+    {IMG_ID_2}/
+    ...
+```
 
 ## Project Structure <a name="project-structure"></a>
-The project is structured as follows:
+```
+PQPP/
+├── dataset/                    # ground-truth annotations + splits (see above)
+├── pipelines/                  # image-generation pipelines used to produce the dataset images
+│   ├── pipeline_start.py               # entry point that dispatches to the chosen generator
+│   ├── glide_pipeline.py               # OpenAI GLIDE generation
+│   ├── stable_difussion_xl_base.py     # Stable Diffusion XL generation (SDXL)
+│   ├── stable_difussion_2_pipeline.py  # Stable Diffusion 2 generation
+│   └── stable_difussion_2_1_pipeline*.py  # SD 2.1 variants (kept for reproducibility)
+├── retrieval_process/          # text-to-image retrieval (BLIP-2, CLIP)
+│   ├── blip2/
+│   │   ├── blip2_retrieval.py                       # run BLIP-2 retrieval
+│   │   ├── blip2_full_retrieval_results.py          # aggregate full-set results
+│   │   ├── generate_blip2_query_embeddings.py       # query-side embeddings
+│   │   ├── generate_blip2_drawbench_embeddings.py   # DrawBench query embeddings
+│   │   ├── blip2_query_embeddings/                  # cached query embeddings (pkl)
+│   │   └── retrieval_{train,val,test}_scores.pickle
+│   └── clip/
+│       ├── clip_retrieval.py                        # run CLIP retrieval
+│       ├── clip_retrieval_merge.py                  # merge per-shard results
+│       ├── clip_full_retrieval_results.py
+│       ├── compute_clip_retrieval_score.py          # P@10 / RR computation
+│       ├── generate_clip_query_embeddings.py
+│       ├── generate_clip_drawbench_embeddings.py
+│       └── clip_query_embeddings/                   # cached query embeddings (pkl)
+├── models/                     # performance-prediction models (code only)
+│   ├── generative/postgenerative/
+│   │   ├── correlation_cnn/    # CNN-based predictor (Sun et al.-inspired)
+│   │   └── finetuned_clip/     # fine-tuned CLIP predictor (our approach)
+│   └── retrieval/
+│       ├── preretrieval/       # pre-retrieval predictors (neural QPP)
+│       └── postretrieval/
+│           ├── correlation_cnn/
+│           └── finetuned_clip/
+├── compute_drawbench_gt.py         # build DrawBench ground-truth CSVs
+├── compute_gt_correlations.py      # inter-model / inter-split correlations
+├── generate_avg_retrieval_scrores.py  # produce averaged retrieval scores
+├── requirements.txt
+└── Annotation methodology - Retrieval.pdf
+```
 
-    \PQPP
-        \dataset - folder containing the annotated dataset
-            \generative_annotation_scores
-                \ gt_for_generative_all_models.csv - Score for each query in the generative setting as described in the paper.
-                \ gt_for_generative_glide_new.csv - Score for each query of the glide method.
-                \ gt_for_generative_sdxl.csv - Score for each query of SDXL method.
-            \retrieval_model_scores
-                \ avg_scores_rr.pickle - the average rr score per query of the two retrieval models.
-                \ avg_scores_p10.pickle - the average p@10 score per query of the two retrieval models.
-                \ blip_2_rr_scores_map.pickle - the rr score per query of the BLIP2 model.
-                \ blip_2_pk_scores_map.pickle - the P@10 score per query of the BLIP2 model.
-                \ clip_rr_scores.pickle - the rr score per query for the CLIP model.
-                \ clip_pk_scores.pickle - the p@10 score per query for the CLIP model.
-            \ all_users_ann_new.csv - Original generative setting annotations. Anonymized file
-            \ best_captions_df.pickle - File containing extra information about each query caption
+### What lives in `models/`
+Each `correlation_cnn/` and `finetuned_clip/` subfolder contains the same canonical set of scripts, adapted to the task:
+- `model.py` — network definition.
+- `generate_dataset.py` — converts the CSV/pickle ground truth into tensors for training.
+- `same_dataset.py` / `cross_dataset.py` — train / eval loops (in-domain vs. cross-domain).
+- `compute_predictions.py` — run inference and dump per-query predictions.
+- `compute_correlations.py`, `compute_samedataset_correlations.py`, `compute_crossdataset_correlations.py`, `compute_crosstask_correlations.py` — Pearson / Spearman / Kendall evaluations against the ground truth.
+- `make_figure.py` — t-SNE / calibration plots reported in the paper.
 
-            === Files to be used for training new models or replicating the current CSV files include query caption, image ids, scores for the retrieval and generative settings === 
+### What lives in `retrieval_process/`
+BLIP-2 and CLIP each expose the same pipeline: first generate query embeddings, then run retrieval against a pre-built image index, then compute P@10 and RR. Cached query embeddings for the three MS-COCO splits are included so retrieval can be re-scored without re-encoding the text corpus.
 
-            \ dataset.csv - Centralized ground truth file which contains all data.
-            \ retrieval_groundtruth.pickle - File containing manual relevant ids for each query.
-            \ train.csv - File containing training data split. (60% of data)
-            \ validation.csv - Centralized ground truth file for validation data. (20% of data)
-            \ test.csv - Centralized ground truth file for test data.  (20% of data)
-
-        \pipelines - folder containing scripts to generate images for the generative setting
-        \predictors - folder containing performance predictors as described in the paper
-            \ correlation_cnn - Contains the CNN-based approach inspired by Sun. et al
-            \ finetuned_bert - Contains the finetuned BERT model training script
-            \ linguistic_features - Contains the linguistic features model training script
-            \ finetuned_clip - Contains the finetuned CLIP model training script described in our research
-            \ neural_embeddings - Contains the implementation of Arabzadeh et al.
-            \ query_drift - Contains script to implement query drift.
-            \ score-variation - Contains the score-variation script
-        \retrieval_model_annotations - folder containing scripts to kickstart annotation process for retrieval and train automatic retrieval groundtruth computation
-        \retrieval_models - folder containing scripts to perform text-to-image search
-    
 ## Getting Started <a name="getting-started"></a>
 
 ### Instructions
-Dataset Research 
-1. Clone the GitHub from the official repo.
-3. Unarchive the content inside the base repo folder.
+1. Clone this repository.
+2. Download the support bundle (generated images) from [SharePoint](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ). You can also use the direct archive: [images.zip](https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip).
+3. Unarchive the bundle inside the repository root so that an `images/` directory appears next to `dataset/`.
 
-
-#### Loading data
-
+### Installing Pre-requisites <a name="prereqs"></a>
 ```
+pip install -r requirements.txt
+```
+
+### Loading Data <a name="loading-data"></a>
+```python
 import pandas as pd
 
-# Read the CSV file
-df = pd.read_csv('./dataset/test.csv')
+# Generative task: averaged GLIDE + SDXL scores, test split
+gen = pd.read_csv('./dataset/generative/ground_truth/average/average_test.csv')
 
-# Map the image paths for each row
-df['sdxl1'] = df['image_id'].apply(lambda x: f'images/{x}/image_4.png')
-df['sdxl2'] = df['image_id'].apply(lambda x: f'images/{x}/image_5.png')
-df['gt_image'] = df['image_id'].apply(lambda x: f'images/{x}/image_6.png')
-df['glide_1'] = df['image_id'].apply(lambda x: f'images/{x}/image_7.png')
-df['glide_2'] = df['image_id'].apply(lambda x: f'images/{x}/image_8.png')
+# Retrieval task: averaged BLIP-2 + CLIP P@10 / RR, test split
+ret = pd.read_csv('./dataset/retrieval/ground_truth/average/average_test.csv')
 
-# Print the first row
-print(df.iloc[0])
+# Map image paths from the support bundle (requires images/ unpacked at repo root)
+gen['sdxl1']    = gen['caption_id'].apply(lambda x: f'images/{x}/image_4.png')
+gen['sdxl2']    = gen['caption_id'].apply(lambda x: f'images/{x}/image_5.png')
+gen['gt_image'] = gen['caption_id'].apply(lambda x: f'images/{x}/image_6.png')
+gen['glide1']   = gen['caption_id'].apply(lambda x: f'images/{x}/image_7.png')
+gen['glide2']   = gen['caption_id'].apply(lambda x: f'images/{x}/image_8.png')
+
+print(gen.iloc[0])
 ```
-
-
-
-    
-### Installing Pre-requisites <a name="prereqs"></a>
-In order to run our models you will need to install the requirements found in requirements.txt
-
-    pip install -r requirements.txt
 
 ## Usage <a name="usage"></a>
 
-### Retrieval Models <a name="retrieval-models"></a>
-The retrieval models can be found at:
+### Retrieval Process <a name="retrieval-process"></a>
+To reproduce the retrieval scores used as ground truth for the retrieval task:
+1. (Optional) Regenerate query embeddings: `python retrieval_process/{blip2,clip}/generate_{blip2,clip}_query_embeddings.py` — cached embeddings are already provided for the three splits.
+2. Run retrieval against the MS-COCO image index: `python retrieval_process/{blip2,clip}/{blip2,clip}_retrieval.py`.
+3. Compute P@10 and RR: `python retrieval_process/clip/compute_clip_retrieval_score.py` (same idea for BLIP-2 via `blip2_full_retrieval_results.py`).
+4. Average the two retrieval models: `python generate_avg_retrieval_scrores.py`.
 
-    \retrieval_models
-        \clip
-            \clip_retrieval.py - CLIP Retrieval Run. Saves Image ids returned.
-            \save_clip_scores.py - CLIP Retrieval Run. Saves the scores for the retrieval.
-            \generate_clip_embeddings.py - Generates CLIP embeddings for the MS-COCO dataset.
-            \generate_clip_query_embeddings.py - Generates CLIP embeddings for queries.
-
-        \blip2
-            \blip2_retrieval.py - BLIP-2 Retrieval Run. Saves Image ids returned.
-            \save_blip2_scores.py - BLIP-2 Retrieval Run. Saves the scores for the retrieval.
-            \generate_blip2_embeddings.py - Generates BLIP-2 embeddings for the MS-COCO image dataset.
-            \generate_blip2_query_embeddings.py - Generates BLIP-2 embeddings for queries.
-
-        \compute_scores.py - Allows the computation of P@10 and RR scores.
-        \generate_average_scores.py - Computes the average of the computed scores (CLIP/BLIP-2).
+For the DrawBench extension, use `generate_{blip2,clip}_drawbench_embeddings.py` followed by `compute_drawbench_gt.py`.
 
 ### Prediction Models <a name="prediction-models"></a>
-Prediction models can be found at:
+Each predictor is self-contained. A typical in-domain run looks like:
+```
+cd models/generative/postgenerative/finetuned_clip
+python generate_dataset.py          # materialize training tensors
+python same_dataset.py              # train + eval in-domain
+python compute_predictions.py       # dump per-query predictions
+python compute_samedataset_correlations.py
+```
+Cross-task (generative → retrieval, etc.) and cross-dataset (MS-COCO → DrawBench) evaluations are exposed via the `cross_dataset.py` / `compute_crosstask_correlations.py` / `compute_crossdataset_correlations.py` scripts in the same folder.
 
-    \predictors
-        \correlation_cnn
-        \finetuned_clip
-        \neural_embeddings
-        \score-variation
+Pre-retrieval predictors live under `models/retrieval/preretrieval/` (`neural_qpp.py`, `compute_correlations.py`).
 
-
-
-Paper Reproduction
-
-Retrieval-Models Results Generation:
-1. Download the extra resource containing the processed retrieval groundtruth.
-2. If you wish to reproduce the retrieval models, go to the retrieval models folder and select the preferred model.
-3. Run ```python {model}_retrieval.py```. This will allow you to rerun the selected model retrieval process.
-4. Run ```python save_{model}_scores.py```. This will compute the scores of the retrieval model and save it to the appropriate location.
+### Ground-Truth & Correlation Utilities <a name="utilities"></a>
+- `compute_gt_correlations.py` — correlations between per-model and averaged ground truths, across splits and tasks (used to build the tables in the paper).
+- `compute_drawbench_gt.py` — produces the DrawBench generative-task ground-truth CSVs from the raw annotations.
+- `generate_avg_retrieval_scrores.py` — averages BLIP-2 and CLIP retrieval scores to produce `dataset/retrieval/ground_truth/average/*.csv`.
 
 #### Domain(s) of Application
-Machine Learning, Computer Vision, Query Performance Prediction, Prompt Performance Prediction, Retrieval Models, Generative Models
+Machine Learning, Computer Vision, Query Performance Prediction, Prompt Performance Prediction, Retrieval Models, Generative Models.
 
 ## Provenance
 ### Collection
 #### Method(s) Used
-- Crowdsourced - Volunteer
+- Crowdsourced — Volunteer.
 
 ### Dataset Version and Maintenance
 #### Maintenance Status
-**Actively Maintained** - No new versions will be made available, but this dataset will be actively maintained, including but not limited to updates to the data.
+**Actively Maintained** — No new versions are planned, but the dataset will continue to receive corrections and minor updates.
 
 #### Version Details
-**Current Version:** 1.0
-**Last Updated:** 05/2024
+**Current Version:** 1.1 (CVPR 2025 camera-ready; adds DrawBench extension and per-model ground-truth CSVs)
+**Last Updated:** 04/2025
 **Release Date:** 05/2024
 
 ## Complete Benchmark <a name="benchmark"></a>
 
 ### Retrieval <a name="benchmark-ret"></a>
-![Retrieval Results Placeholder](retrieval_results.png)
+See the retrieval tables in the paper.
 
 ### Generative <a name="benchmark-gen"></a>
-![Generative Results Placeholder](generative_results.png)
+See the generative tables in the paper.
 
 ## Developed with <a name="developed-with"></a>
-Annotation platform was developed with the following technologies:
+Annotation platform:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -265,35 +286,24 @@ Annotation platform was developed with the following technologies:
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Context-API](https://img.shields.io/badge/Context--Api-000000?style=for-the-badge&logo=react)
 
-Research was conducted using the following technologies:
-    
+Research stack:
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
-OpenAI CLIP Model
-https://github.com/openai/CLIP
+OpenAI CLIP — https://github.com/openai/CLIP
+OpenAI GLIDE — https://github.com/openai/glide-text2im
+Salesforce BLIP-2 — https://github.com/salesforce/LAVIS/tree/main/projects/blip2
+StabilityAI SDXL — https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
-OpenAI GLIDE Model
-https://github.com/openai/glide-text2im
-
-Salesforce BLIP-2 Model
-https://github.com/salesforce/LAVIS/tree/main/projects/blip2
-
-StabilityAI SDXL Model
-https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
-
-## 🎉 Acknowledgements <a name="acknowledgement"></a>
-We thank all researchers for their implication and expertise and annotators for their incredible work amounting to our dataset.
+## Acknowledgements <a name="acknowledgement"></a>
+We thank all researchers for their involvement and expertise, and all the annotators for their incredible work, which is the foundation of this dataset.
 
 ## License <a name="license"></a>
-The MS COCO annotations are released under a Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse.
-The MS COCO images are subject to Flickr Terms of Use https://www.flickr.com/creativecommons/
+The MS-COCO annotations are released under a Creative Commons Attribution 4.0 License — https://cocodataset.org/#termsofuse.
+The MS-COCO images are subject to the Flickr Terms of Use — https://www.flickr.com/creativecommons/.
 
-We release our annotations and generated images maintaining the Creative Commons Attribution 4.0 License https://cocodataset.org/#termsofuse
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed)
-
-
-
+We release our annotations and generated images under the Creative Commons Attribution 4.0 License — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed).
