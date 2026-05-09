@@ -49,7 +49,7 @@ We provide installation instructions, training scripts, and the per-split ground
 ## Note <a name="note"></a>
 If you want to conduct your own research on the dataset (or any of the retrieval/generative setting models), you can download the generated images and the original MS-COCO images we used from the support bundle linked under [Getting Started](#getting-started).
 
-Direct download for the SDXL / GLIDE generated image archive: [images.zip](https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip).
+Direct download for the SDXL / GLIDE generated image archive: [images.zip]([https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ)).
 
 ## Data Card <a name="data-card"></a>
 
@@ -195,7 +195,7 @@ BLIP-2 and CLIP each expose the same pipeline: first generate query embeddings, 
 
 ### Instructions
 1. Clone this repository.
-2. Download the support bundle (generated images) from [SharePoint](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ). You can also use the direct archive: [images.zip](https://fmiunibuc-my.sharepoint.com/personal/radu_ionescu_fmi_unibuc_ro/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2Fradu%5Fionescu%5Ffmi%5Funibuc%5Fro%2FDocuments%2FPQPP%2Fimages%2Ezip).
+2. Download the support bundle (generated images) from [SharePoint](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
 3. Unarchive the bundle inside the repository root so that an `images/` directory appears next to `dataset/`.
 
 ### Installing Pre-requisites <a name="prereqs"></a>
