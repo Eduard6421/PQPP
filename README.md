@@ -29,14 +29,15 @@ The dataset includes human annotations evaluating image retrieval performance us
 ## Citation <a name="citation"></a>
 Please cite our work if you use any material released in this repository.
 
-1. Eduard Poesina, Adriana Valentina Costache, Adrian-Gabriel Chifu, Josiane Mothe, Radu Tudor Ionescu. PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction. In Proceedings of CVPR (2025).
+1. Eduard Poesina, Adriana Valentina Costache, Adrian-Gabriel Chifu, Josiane Mothe, Radu Tudor Ionescu. PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction. In Proceedings of CVPR, pp. 28651-28661, 2025.
 
-Bibtex:
+Bibtex entry:
 ```
 @inproceedings{Poesina-CVPR-2025,
   title="{PQPP: A Joint Benchmark for Text-to-Image Prompt and Query Performance Prediction}",
   author={Poesina, Eduard and Costache, Adriana Valentina and Chifu, Adrian-Gabriel and Mothe, Josiane and Ionescu, Radu Tudor},
   booktitle={Proceedings of CVPR},
+  pages={28651--28661},
   year={2025}
 }
 ```
@@ -60,7 +61,7 @@ Direct download for the SDXL / GLIDE generated image archive: [images.zip]([http
 #### Dataset Snapshot
 Category | Data
 --- | ---
-Size of Dataset | 33.5 GB
+Size of Dataset | 34 GB
 Number of Instances | 10,000 (MS-COCO split) + 200 (DrawBench extension)
 Human Labels Collected | 1,489,836
 
@@ -195,8 +196,10 @@ BLIP-2 and CLIP each expose the same pipeline: first generate query embeddings, 
 
 ### Instructions
 1. Clone this repository.
-2. Download the support bundle (generated images) from [SharePoint](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ).
-3. Unarchive the bundle inside the repository root so that an `images/` directory appears next to `dataset/`.
+2. Download the support bundles (generated images) from:
+   - [SharePoint 1 - Images generated for MS COCO prompts](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/Eb0peYyLDVRNn0EPeY7ZwKUBAd4Yt-Zs_PtEpc-DmQ0P4A?e=oIflTJ)
+   - [SharePoint 2 - Images generated for DrawBench prompts](https://fmiunibuc-my.sharepoint.com/:u:/g/personal/radu_ionescu_fmi_unibuc_ro/IQCmS22QmoruTJUmoTvOy8K1ASTcGUJ7Fnup_uqQGo0vZT4?e=9gGEkX)
+4. Unarchive the bundle inside the repository root so that an `images/` directory appears next to `dataset/`.
 
 ### Installing Pre-requisites <a name="prereqs"></a>
 ```
